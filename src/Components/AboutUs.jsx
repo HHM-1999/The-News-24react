@@ -36,7 +36,7 @@ export default function AboutUs() {
                     <div className="about-us-area2">
                                 <Link to='/' key={state.id} onClick={scrollTop}>
                                     <div className="about-img">
-                                        <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_DOMAIN_URL + state.image} alt={state.name} title={state.name} className="img-fluid  " />
+                                        <img  src={process.env.REACT_APP_DOMAIN_URL + state.image} alt={state.name} title={state.name} className="img-fluid  " />
                                     </div>
                                     <div className="about-us-desc">
                                         <h3 className="Title">{state.name}</h3>
@@ -53,7 +53,7 @@ export default function AboutUs() {
                                     <div className="about-us-area">
                                         <Link to='/' key={nc.id} onClick={scrollTop} >
                                             <div className="about-img">
-                                                <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.image} alt={nc.name} title={nc.name} className="img-fluid " />
+                                                <img src={process.env.REACT_APP_DOMAIN_URL + nc.image} alt={nc.name} title={nc.name} className="img-fluid " />
                                             </div>
                                             <div className="about-us-desc">
                                                 <h3 className="Title">{nc.name}</h3>
