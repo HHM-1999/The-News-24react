@@ -3435,7 +3435,7 @@ p.img-caption {background: #7c7b7b;justify-content: center;display: flex;color: 
 .DTitleInnerBar {display: inline-block;padding: 0;background: #fff;}
 .DTitle, .DTitle a {color: #CF1F27cc;}
 
-.DCatLeadTop {margin-top: 20px;background: #eff5f4;}
+.DCatLeadTop {margin-top: 20px;background: #f0f0f0;}
 .DCatLeadTop .Desc {padding: 7px 10px 0px 4px;}
 .DCatLeadTop .Desc .Title {font-size: 20px;line-height: 28px;}
 .DCatLeadTop .Desc .Brief p {-webkit-line-clamp: 5;margin-top: 10px;}

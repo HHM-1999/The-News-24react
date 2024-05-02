@@ -43,7 +43,7 @@ export default function Home() {
             <main>
                 {/* <Event /> */}
                 <div className="container">
-                    <DocumentTitle title='TheNews24 || দ্য নিউজ ২৪' />
+                    <DocumentTitle title='TheNews24 :: দ্য নিউজ ২৪' />
                     <HomeLdJson />
                     <section>
                         <LeadNews />

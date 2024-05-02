@@ -134,7 +134,7 @@ export default function Category() {
                             <div className="row">
                                 <div className="col-lg-9 col-sm-12">
                                     <>
-                                        {catSlug === 'countries' && <DivisionDistricName />}
+                                        {catSlug === 'country' && <DivisionDistricName />}
                                     </>
                                     <div className="row">
                                         <div className="col-lg-8 col-12 d-flex">
