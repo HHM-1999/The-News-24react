@@ -168,7 +168,7 @@ export default function Header() {
                             <div className="col-12 col-md-3">
                                 <div className="DLogo d-flex justify-content-start">
                                     <a href="/">
-                                        <img src={"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
                                     </a>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@ export default function Header() {
                                 <div className="col-md-12">
                                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                                         <a href="" className="StickyLogo" rel="home">
-                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
+                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
                                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span className="navbar-toggler-icon"></span>
@@ -331,7 +331,7 @@ export default function Header() {
                                             </ul>
                                         </div>
                                         <a href="" className="MBLogo" rel="home">
-                                            <img src="media/common/logo.png" title="<?php echo $sSiteTitle; ?>" alt="<?php echo $sSiteTitle; ?>" className="img-fluid img100" />
+                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
                                         <div className="d-flex justify-content-end SearchArea">
                                             <div className="search">
