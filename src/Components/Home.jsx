@@ -31,7 +31,7 @@ import PrayerTime from './HomeContent/PrayerTime'
 import HomeLdJson from './HomeContent/HomeLdJson'
 import FBpagePlugin from './FBpagePlugin'
 // import Ramadan from './HomeContent/Ramadan'
-import LazyLoaderGIF from '../icon/lazyComponentLoaderGIF.gif'
+// import LazyLoaderGIF from '../icon/lazyComponentLoaderGIF.gif'
 import RLoader from './RLoader'
 
 var allComponentsLoaded = false

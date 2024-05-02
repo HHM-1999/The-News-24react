@@ -34,18 +34,18 @@ export default function Crime() {
                     {crime.map((nc)=>{
                         return(
                             <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
-                            <div className="Imgresize">
-                                <figure className="ImgViewer">
-                                    <picture className="FixingRatio">
-                                        <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageBgPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100 ImgRatio" />
-                                        {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
-                                    </picture>
-                                </figure>
-                            </div>
-                            <div className="Desc">
-                                <h3 className="Title">{nc.ContentHeading}</h3>
-                            </div>
-                       </Link>
+                                <div className="Imgresize">
+                                    <figure className="ImgViewer">
+                                        <picture className="FixingRatio">
+                                            <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageBgPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100 ImgRatio" />
+                                            {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
+                                        </picture>
+                                    </figure>
+                                </div>
+                                <div className="Desc">
+                                    <h3 className="Title">{nc.ContentHeading}</h3>
+                                </div>
+                            </Link>
                         )
                     })
 

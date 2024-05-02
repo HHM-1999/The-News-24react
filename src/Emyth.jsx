@@ -11,13 +11,13 @@ function Emyth() {
     window.addEventListener('scroll', scrollToTopBtn);
     scrollBtn = document.querySelector("#back_to_top");
 
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
+    // var addScript = document.createElement("script");
+    // addScript.setAttribute(
+    //   "src",
+    //   "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    // );
+    // document.body.appendChild(addScript);
+    // window.googleTranslateElementInit = googleTranslateElementInit;
   }, [])
 
   function scrollToTopBtn() {
@@ -28,17 +28,17 @@ function Emyth() {
     }
   }
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "bn",
-        includedLanguages: 'en,bn',
-        autoDisplay: false,
-        layout: window.google.translate.TranslateElement.InlineLayout.HORIZONTAL
-      },
-      "google_translate_element"
-    );
-  };
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "bn",
+  //       includedLanguages: 'en,bn',
+  //       autoDisplay: false,
+  //       layout: window.google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
 
   // function closeText() {
   //   document.querySelector(".Gtranslate").style.display = "none"
@@ -54,10 +54,6 @@ function Emyth() {
       </div> */}
       <div id="back_to_top" onClick={scrollTop} className="back_to_top on d-print-none"><span className="go_up"><i className="fa-solid fa-angles-up"></i></span></div>
       <RouterLink />
-
-
-
-      
     </>
   );
 }

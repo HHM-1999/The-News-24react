@@ -5,8 +5,7 @@ export default function RLoader() {
     return (
         <div className="loading">
             <Header />
-            <div className='loader'>
-            </div>
+            <div className='loader'></div>
         </div>
     )
 }

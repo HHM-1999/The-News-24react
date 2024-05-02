@@ -46,6 +46,7 @@ export default function OnlinePoll() {
                 {poll.map((nc) => {
                     return (
                         <React.Fragment key={nc.PollID} >
+                            <div id="opinion-submit-msg" className="opinion-submit-msg" style={{ display: 'none' }}><h4>আপনার মতামত জমা দেওয়া হয়েছে</h4></div>
                             <div className="Imgresize">
                                 <figure className="ImgViewer">
                                     <picture className="FixingRatio">
