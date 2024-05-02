@@ -5,6 +5,7 @@ import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 // import VideoCat1 from "./VideoCat1";
 import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
+import RLoader from "../RLoader";
 // import VPopularNews from "./VPopularNews";
 var lazyloaded = false
 var limit = 8
@@ -17,12 +18,19 @@ export default function VideoGallery() {
 
     // const [popularVideos, setPopularVideos] = useState([]);
     // const [videoCat, setVideoCat] = useState([]);
-
+    const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
+
+        document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
+        setTimeout(() => { window.location.reload(1); }, 300000);
+        setisLoading(true)
+        setTimeout(() => { setisLoading(false) }, 300);
+
         axios
             .get(`${process.env.REACT_APP_API_URL}videos/16`)
             .then(({ data }) => {
                 if (data.webVideos.length > 0) {
+                    setisLoading(false)
                     setLeadVideoTop(data.webVideos[0])
                     setLeadVideos(data.webVideos.slice(1, 4))
                     setState3(data.webVideos.slice(4, 12))
@@ -54,9 +62,9 @@ export default function VideoGallery() {
         //             }, 1000);
         //         }
         //     })
-        document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
-        const timer = setTimeout(() => { window.location.reload(1); }, 300000);
-        return () => clearTimeout(timer);
+        // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
+        // const timer = setTimeout(() => { window.location.reload(1); }, 300000);
+        // return () => clearTimeout(timer);
     }, [])
 
     const toggleButtonState = () => {
@@ -80,6 +88,7 @@ export default function VideoGallery() {
     return (
         <>
             <main>
+            {isLoading===false ? 
                 <div className="container">
                     <h2 className="DTitle">
                         <Link to={+ '/'} onClick={scrollTop}>
@@ -189,6 +198,7 @@ export default function VideoGallery() {
 
                     {/* <VideoCat1 state={videoCat} /> */}
                 </div>
+                : <RLoader />}
             </main>
         </>
     )

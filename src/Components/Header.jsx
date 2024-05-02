@@ -37,7 +37,6 @@ export default function Header() {
     const [showSubCat4, setShowSubCat4] = useState(false);
     const [showSubCat5, setShowSubCat5] = useState(false);
     const [showSubCat6, setShowSubCat6] = useState(false);
-    const [showSubCat7, setShowSubCat7] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', myFixedNav);
@@ -524,9 +523,9 @@ export default function Header() {
                                                 <div className='MobileMenu-Heading'>
                                                     <li className="mr-auto d-flex justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/others" className='nav-link parent'>অন্যান্য</Link></h3>
-                                                        <h3 onClick={() => setShowSubCat7(!showSubCat7)}>{showSubCat7 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
+                                                        <h3 onClick={() => setShowSubCat(!showSubCat)}>{showSubCat ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
                                                     </li>
-                                                    {showSubCat7 &&
+                                                    {showSubCat &&
                                                         <ul className='SubMenuM'>
                                                             <li onClick={mobileHeader}><Link  to="/migration" onClick={scrollTop}>প্রবাস</Link></li>
                                                             <li onClick={mobileHeader}><Link  to="/education" onClick={scrollTop}>শিক্ষা</Link></li>

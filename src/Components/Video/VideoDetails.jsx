@@ -7,6 +7,7 @@ import ErrorPage from "../ErrorPage";
 import SocialShare from "../SocialShare";
 // import VideoLatestPopularNews from "./VideoLatestPopularNews";
 import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
+import RLoader from "../RLoader";
 var lazyloaded = false
 export default function VideoDetails() {
     let { vdoSlug, vdoID } = useParams();
@@ -15,10 +16,16 @@ export default function VideoDetails() {
 
     const [videosLatestNews, setVideosLatestNews] = useState([]);
     const [videosPopularNews, setVideosPopularNews] = useState([]);
+    const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
+        document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
+        setTimeout(() => { window.location.reload(1); }, 300000);
+        setisLoading(true)
+        setTimeout(() => { setisLoading(false) }, 300);
         axios
             .get(`${process.env.REACT_APP_API_URL}videos-details/${vdoID}`)
             .then(({ data }) => {
+                setisLoading(false)
                 setVideoDetails(data.VideoDetails[0])
                 console.log(data.VideoDetails[0]);
                 setTimeout(function () {
@@ -41,9 +48,9 @@ export default function VideoDetails() {
             .then(({ data }) => {
                 setVideosList(data.allLatestVideos);
             })
-        document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
-        const timer = setTimeout(() => { window.location.reload(1); }, 300000);
-        return () => clearTimeout(timer);
+        // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
+        // const timer = setTimeout(() => { window.location.reload(1); }, 300000);
+        // return () => clearTimeout(timer);
     }, [vdoSlug, vdoID])
 
     if (!localStorage.getItem('VideoView_' + vdoID)) {
@@ -57,6 +64,8 @@ export default function VideoDetails() {
         <>
             {VideoDetails ?
                 <main>
+                    {isLoading===false ?
+                    <>
                     <h2 className="DTitle">
                         <Link to="/video" onClick={scrollTop}>
                             <span className="DTitleInner"><span className="DTitleInnerBar"><span>ভিডিও গ্যালারি</span></span></span>
@@ -137,6 +146,11 @@ export default function VideoDetails() {
                             </div>
                         </div>
                     </div>
+                    </>
+                    :
+                    <RLoader />
+                    }
+                    
                 </main>
                 : <ErrorPage />}
         </>
