@@ -44,20 +44,20 @@ export default function Home() {
     const [isLoading, setisLoading] = useState(true)
     // const [homeAd2, setHomeAd2] = useState([]) // eslint-disable-line no-unused-vars
 
-    const [firstSection, setFirstSection] = useState(false)
-    const [secondSection, setSecondSection] = useState(false)
-    const [thirdSection, setThirdSection] = useState(false)
-    const [fourthSection, setFourthSection] = useState(false)
+    // const [firstSection, setFirstSection] = useState(false)
+    // const [secondSection, setSecondSection] = useState(false)
+    // const [thirdSection, setThirdSection] = useState(false)
+    // const [fourthSection, setFourthSection] = useState(false)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
         setisLoading(true)
         setTimeout(() => { setisLoading(false) }, 300);
 
-        setFirstSection(true)
-        setSecondSection(true)
-        setThirdSection(true)
-        setFourthSection(true)
+        // setFirstSection(true)
+        // setSecondSection(true)
+        // setThirdSection(true)
+        // setFourthSection(true)
         allComponentsLoaded = true
 
     }, [])
@@ -77,7 +77,6 @@ export default function Home() {
                             <section>
                                 <Ads />
                             </section>
-                            {firstSection ?
                                 <>
                                     <section>
                                         <div className="VideoSection">
@@ -119,9 +118,8 @@ export default function Home() {
                                     </section>
                                 </>
 
-                                : ""
-                            }
-                            {secondSection ? <>
+                             
+                         <>
                                 <section>
                                     <div className="container">
                                         <div className="row">
@@ -149,8 +147,8 @@ export default function Home() {
                                 </section>
 
 
-                            </> : ""}
-                            {thirdSection ?
+                            </>
+                      
                                 <>
 
                                     <div className="container">
@@ -193,7 +191,7 @@ export default function Home() {
                                         </section>
                                     </div>
 
-                                </> : ""}
+                                </>
 
 
 
@@ -212,7 +210,7 @@ export default function Home() {
                                 </div>
                             </section>
 
-                            {fourthSection ? <>
+                       <>
                                 <div className="container">
                                     <section className=" + Economics + Politics">
                                         <div className="row">
@@ -283,7 +281,7 @@ export default function Home() {
                                     </div>
                                 </section>
 
-                            </> : ""}
+                            </> 
                         </div>
                     </>
                     : <RLoader />

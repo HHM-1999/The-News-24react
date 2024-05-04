@@ -37,7 +37,7 @@ export default function LeadOpinionSec() {
                             <div className="row">
                                 <div className="col-lg-7 col-7">
                                     <div className="Desc">
-                                        <h3 className="Title"><span>মতামত /</span>{nc.ContentHeading}
+                                        <h3 className="Title"><span> {nc.CategoryName} /</span>{nc.ContentHeading}
                                         </h3>
                                     </div>
                                 </div>
