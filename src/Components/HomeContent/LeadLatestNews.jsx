@@ -71,7 +71,7 @@ export default function LeadLatestNews() {
                         </div>
                     </div>
                 </div>
-                <div className="allnews"><Link to="/archives">সব খবর <i className="fa fa-angle-double-right"></i></Link></div>
+                <div className="allnews"><Link to="/archives"  onClick={scrollTop}>সব খবর <i className="fa fa-angle-double-right"></i></Link></div>
             </section>
 
         </>

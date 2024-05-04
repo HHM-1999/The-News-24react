@@ -1,489 +1,489 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-  <loc>https://www.ekhon.tv/</loc>
+  <loc>https://www.karikori.com/</loc>
   <lastmod>2023-01-16T19:00:00+06:00</lastmod>
   <changefreq>always</changefreq> 
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.ekhon.tv/live</loc>
+  <loc>https://www.karikori.com/live</loc>
   <lastmod>2023-01-16T19:00:00+06:00</lastmod>
   <changefreq>hourly</changefreq> 
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ekhon.tv/pollresult</loc>
+  <loc>https://www.karikori.com/pollresult</loc>
   <lastmod>2023-01-16T19:00:00+06:00</lastmod>
   <changefreq>hourly</changefreq> 
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.ekhon.tv/archives</loc>
+  <loc>https://www.karikori.com/archives</loc>
   <lastmod>2023-01-16T19:00:00+06:00</lastmod>
   <changefreq>hourly</changefreq> 
   <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/all_writers</loc>
+    <loc>https://www.karikori.com/all_writers</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/all_tags</loc>
+    <loc>https://www.karikori.com/all_tags</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/video</loc>
+    <loc>https://www.karikori.com/video</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/photo-feature</loc>
+    <loc>https://www.karikori.com/photo-feature</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka</loc>
+    <loc>https://www.karikori.com/divisions/dhaka</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/dhaka</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/dhaka</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/manikganj</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/manikganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/gazipur</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/gazipur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/narayanganj</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/narayanganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/tangail</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/tangail</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/madaripur</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/madaripur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/munshiganj</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/munshiganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/gopalganj</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/gopalganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/kishoreganj</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/kishoreganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/narsingdi</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/narsingdi</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/shariatpur</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/shariatpur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/rajbari</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/rajbari</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/dhaka/faridpur</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-  
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/bandarban</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/rangamati</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/khagrachhari</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/coxsbazar</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/chattogram</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/feni</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/noakhali</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/lakshmipur</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/cumilla</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/brahmanbaria</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/chattogram/chandpur</loc>
+    <loc>https://www.karikori.com/divisions/dhaka/faridpur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
   
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna</loc>
+    <loc>https://www.karikori.com/divisions/chattogram</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/bagerhat</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/bandarban</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/chuadanga</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/rangamati</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/jashore</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/khagrachhari</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/jhenaidah</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/coxsbazar</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/khulna</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/chattogram</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/kushtia</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/feni</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/magura</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/noakhali</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/meherpur</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/lakshmipur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/narail</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/cumilla</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/khulna/satkhira</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-  
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/brahmanbaria</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/bogura</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/joypurhat</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/naogaon</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/natore</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/pabna</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/rajshahi</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/sirajganj</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-<url>
-    <loc>https://www.ekhon.tv/divisions/rajshahi/chapainawabganj</loc>
+    <loc>https://www.karikori.com/divisions/chattogram/chandpur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
   
 <url>
-    <loc>https://www.ekhon.tv/divisions/sylhet</loc>
+    <loc>https://www.karikori.com/divisions/khulna</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/sylhet/habiganj</loc>
+    <loc>https://www.karikori.com/divisions/khulna/bagerhat</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/sylhet/maulvibazar</loc>
+    <loc>https://www.karikori.com/divisions/khulna/chuadanga</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/sylhet/sunamganj</loc>
+    <loc>https://www.karikori.com/divisions/khulna/jashore</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/sylhet/sylhet</loc>
-    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
-    <changefreq>hourly</changefreq> 
-    <priority>0.80</priority>
-</url>
-  
-<url>
-    <loc>https://www.ekhon.tv/divisions/barishal</loc>
+    <loc>https://www.karikori.com/divisions/khulna/jhenaidah</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/barguna</loc>
+    <loc>https://www.karikori.com/divisions/khulna/khulna</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/barishal</loc>
+    <loc>https://www.karikori.com/divisions/khulna/kushtia</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/bhola</loc>
+    <loc>https://www.karikori.com/divisions/khulna/magura</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/jhalokati</loc>
+    <loc>https://www.karikori.com/divisions/khulna/meherpur</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/patuakhali</loc>
+    <loc>https://www.karikori.com/divisions/khulna/narail</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/barishal/pirojpur</loc>
+    <loc>https://www.karikori.com/divisions/khulna/satkhira</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
   
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/dinajpur</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/bogura</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/gaibandha</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/joypurhat</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/kurigram</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/naogaon</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/lalmonirhat</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/natore</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/nilphamari</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/pabna</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/panchagarh</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/rajshahi</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/rangpur</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/sirajganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/rangpur/thakurgaon</loc>
+    <loc>https://www.karikori.com/divisions/rajshahi/chapainawabganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
   
 <url>
-    <loc>https://www.ekhon.tv/divisions/mymensingh</loc>
+    <loc>https://www.karikori.com/divisions/sylhet</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/mymensingh/mymensingh</loc>
+    <loc>https://www.karikori.com/divisions/sylhet/habiganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/mymensingh/jamalpur</loc>
+    <loc>https://www.karikori.com/divisions/sylhet/maulvibazar</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/mymensingh/sherpur</loc>
+    <loc>https://www.karikori.com/divisions/sylhet/sunamganj</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.ekhon.tv/divisions/mymensingh/netrokona</loc>
+    <loc>https://www.karikori.com/divisions/sylhet/sylhet</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+  
+<url>
+    <loc>https://www.karikori.com/divisions/barishal</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/barguna</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/barishal</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/bhola</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/jhalokati</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/patuakhali</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/barishal/pirojpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+  
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/dinajpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/gaibandha</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/kurigram</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/lalmonirhat</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/nilphamari</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/panchagarh</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/rangpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/rangpur/thakurgaon</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+  
+<url>
+    <loc>https://www.karikori.com/divisions/mymensingh</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/mymensingh/mymensingh</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/mymensingh/jamalpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/mymensingh/sherpur</loc>
+    <lastmod>2023-01-16T19:00:00+06:00</lastmod>
+    <changefreq>hourly</changefreq> 
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://www.karikori.com/divisions/mymensingh/netrokona</loc>
     <lastmod>2023-01-16T19:00:00+06:00</lastmod>
     <changefreq>hourly</changefreq> 
     <priority>0.80</priority>

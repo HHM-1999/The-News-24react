@@ -27,7 +27,7 @@ export default function DForeign() {
     }, [])
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/migration"><span className="ColorBox"></span>প্রবাস</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/migration"  onClick={scrollTop}><span className="ColorBox"></span>প্রবাস</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {

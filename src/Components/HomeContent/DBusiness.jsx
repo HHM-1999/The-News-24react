@@ -28,7 +28,7 @@ export default function DBusiness() {
     return (
         <>
                  
-                 <div className="SectionTitle"><h3><Link to="/trade"><span className="ColorBox"></span>বাণিজ্য</Link></h3></div>
+                 <div className="SectionTitle"><h3><Link to="/trade"  onClick={scrollTop}><span className="ColorBox"></span>বাণিজ্য</Link></h3></div>
                     <div className="DCatStyle1List">
                         {business.map((nc)=>{
                             return (

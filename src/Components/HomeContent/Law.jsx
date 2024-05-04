@@ -29,7 +29,7 @@ export default function Law() {
 
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/court-law"><span className="ColorBox"></span>আইন ও বিচার</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/court-law"  onClick={scrollTop}><span className="ColorBox"></span>আইন ও বিচার</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {law.map((nc) => {

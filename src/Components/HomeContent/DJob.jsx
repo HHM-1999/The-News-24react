@@ -27,7 +27,7 @@ export default function DJob() {
     return (
         <>
 
-            <div className="SectionTitle"><h3><Link to="/jobs"><span className="ColorBox"></span>চাকরি </Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/jobs"  onClick={scrollTop}><span className="ColorBox"></span>চাকরি </Link></h3></div>
             <div className="DCatStyle1List">
                 {job.map((nc) => {
                     return (

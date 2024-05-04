@@ -29,7 +29,7 @@ export default function Cultural() {
 
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="#"><span className="ColorBox"></span>সাহিত্য</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="#"  onClick={scrollTop}><span className="ColorBox"></span>সাহিত্য</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {culture.map((nc)=>{

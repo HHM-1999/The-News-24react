@@ -4,6 +4,7 @@ import DocumentTitle from 'react-document-title'
 import { Link, useParams } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import { scrollTop, banglaDateConvetar, ForLazyLoaderImg } from './AllFunctions'
+import  LoadingGif from '../assets/media/common/loading.gif'
 var lazyloaded = false
 var showMore = true
 var formData = []
@@ -98,7 +99,7 @@ export default function SearchResult() {
                                                 <button type="submit" className="btn btn-lg btn-block ButtonBG mb-3">
                                                     খুঁজুন
                                                     {isLoading === true &&
-                                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "/media/common/loading.gif"} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
+                                                        <img src={LoadingGif} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
                                                     }
                                                 </button>
                                             </div>
@@ -119,7 +120,7 @@ export default function SearchResult() {
                                                 <button type="submit" className="btn btn-lg btn-block ButtonBG mb-3">
                                                     খুঁজুন
                                                     {isLoading === true &&
-                                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "/media/common/loading.gif"} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
+                                                        <img src={LoadingGif} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
                                                     }
                                                 </button>
                                             </div>
@@ -166,7 +167,7 @@ export default function SearchResult() {
                                                     <button onClick={toggleButtonState} className="btn btn-lg btn-block ButtonBG">
                                                         আরো খবর...
                                                         {isLoadingData === true &&
-                                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "/media/common/loading.gif"} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
+                                                            <img src={LoadingGif} alt="loading" title='loading' style={{ width: '28px', marginLeft: '12px' }} />
                                                         }
                                                     </button>
                                                 </div>}

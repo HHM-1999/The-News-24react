@@ -24,7 +24,7 @@ export default function VideoSec() {
     return (
         <>
            
-                    <div className="SectionTitle"><h3><Link to="/video"><span className="ColorBox"></span>ভিডিও</Link></h3></div>
+                    <div className="SectionTitle"><h3><Link to="/video"  onClick={scrollTop}><span className="ColorBox"></span>ভিডিও</Link></h3></div>
                     <div className="MoreVideoArea">
 
                     </div>

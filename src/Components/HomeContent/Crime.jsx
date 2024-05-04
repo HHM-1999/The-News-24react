@@ -28,7 +28,7 @@ export default function Crime() {
 
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/crime"><span className="ColorBox"></span>অপরাধ</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/crime"  onClick={scrollTop}><span className="ColorBox"></span>অপরাধ</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {crime.map((nc)=>{

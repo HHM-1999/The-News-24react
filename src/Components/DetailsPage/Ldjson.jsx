@@ -32,7 +32,7 @@ export default function Ldjson({ news, catName, catSlug }) {
                         "publisher":{
                             "@type":"Organization",
                             "@context":"http://schema.org",
-                            "name":"ekhon.tv",
+                            "name":"TheNews24",
                             "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}",
                             "logo":{
                                 "@context":"http://schema.org",
@@ -45,11 +45,11 @@ export default function Ldjson({ news, catName, catSlug }) {
                                 "height":"109"
                             },
                             "sameAs":[
-                                "https://www.facebook.com/tv.ekhon/",
-                                "https://www.youtube.com/c/EKHONTV",
-                                "https://twitter.com/ekhon_tv",
-                                "https://www.instagram.com/ekhon_tv/?hl=bn",
-                                "https://bd.linkedin.com/company/ekhontv"
+                                "https://www.facebook.com/thenews24digital/",
+                                // "https://www.youtube.com/c/EKHONTV",
+                                // "https://twitter.com/ekhon_tv",
+                                // "https://www.instagram.com/ekhon_tv/?hl=bn",
+                                // "https://bd.linkedin.com/company/ekhontv"
                             ],
                             "id":"${process.env.REACT_APP_FONT_DOMAIN_URL}"
                         },
@@ -149,11 +149,11 @@ export default function Ldjson({ news, catName, catSlug }) {
                                 "height":"109"
                             },
                             "sameAs":[
-                                "https://www.facebook.com/tv.ekhon/",
-                                "https://www.youtube.com/c/EKHONTV",
-                                "https://twitter.com/ekhon_tv",
-                                "https://www.instagram.com/ekhon_tv/?hl=bn",
-                                "https://bd.linkedin.com/company/ekhontv"
+                                "https://www.facebook.com/thenews24digital/",
+                                // "https://www.youtube.com/c/EKHONTV",
+                                // "https://twitter.com/ekhon_tv",
+                                // "https://www.instagram.com/ekhon_tv/?hl=bn",
+                                // "https://bd.linkedin.com/company/ekhontv"
                             ],
                             "id":"${process.env.REACT_APP_FONT_DOMAIN_URL}"
                         },

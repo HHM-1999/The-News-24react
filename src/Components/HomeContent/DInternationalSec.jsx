@@ -27,7 +27,7 @@ export default function DInternationalSec() {
     return (
         <>
             <section className="Country">
-                <div className="SectionTitle"><h3><Link to="/international"><span className="ColorBox"></span>আন্তর্জাতিক</Link></h3></div>
+                <div className="SectionTitle"><h3><Link to="/international"  onClick={scrollTop}><span className="ColorBox"></span>আন্তর্জাতিক</Link></h3></div>
                 <div className="DCountry">
                     <div className="row">
                         <div className="col-lg-8 col-12">
