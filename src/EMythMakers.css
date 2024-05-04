@@ -3495,7 +3495,7 @@ h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F
 .DOnlineVote .VoteAnswer {margin: 12px 0 6px;}
 .DOnlineVote .VoteAnswer label {margin-bottom: 3px;width: 100%;}
 .DOnlineVote .form-check-input {position: relative;margin-top: 0;margin-left: 0;top: 1px;margin-right: 5px !important;width: 20px;height: 20px;}
-.DOnlineVote .form-check-input:focus, .form-check-input:checked {background-color: var(--borderClr2);border-color: unset;border: 1px solid #00000040;outline: unset;box-shadow: unset;}
+.DOnlineVote .form-check-input:focus, .form-check-input:checked {background-color: #b9181f;border-color: unset;border: 1px solid #00000040;outline: unset;box-shadow: unset;}
 .DOnlineVote .VoteSubmit {text-align: center;display: inline-block;margin-right: 10px;}
 .DOnlineVote .VoteSubmit .btn-success {background: #b9181f;border-color: #b9181f;border-radius: 25px;padding: 9px 15px 7px;line-height: 16px;}
 .btn-check:focus+.btn-success, .btn-success:focus {color: #fff;box-shadow: unset;}
@@ -3571,7 +3571,7 @@ h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F
 .DVideoCatTopInner .Desc {padding: 5px 7px;}
 .DVideoCatTopInner .Desc h3 {color:#fff;}
 .DVideoCatTopInner .Brief p {color:#fff;}
-.DVideoCatTopInner .Desc h3:hover {color: var(--borderClr2);}
+.DVideoCatTopInner .Desc h3:hover {color: #b9181f;}
 .DVideoCatListTop2List {width: 100%;padding-top: 15px;position: relative;}
 .DVideoCatListTop2List:first-child {padding-top: 0;margin-top: 0;border-top: none;}
 
