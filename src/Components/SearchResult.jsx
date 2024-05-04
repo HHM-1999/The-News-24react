@@ -90,11 +90,11 @@ export default function SearchResult() {
                         <><h1 className='warningHeaderForSearch'> <span>দুঃখিত,</span> কোন খবর খুঁজে পাওয়া যায়নি।</h1>
                             <div className="row searchResult">
                                 <div className="col-sm-12 d-flex justify-content-center my-5">
-                                    <form className="row g-3" onSubmit={handelSubmit}>
-                                        <div className="col-auto">
+                                    <form className="row g-0" onSubmit={handelSubmit}>
+                                        <div className="col-6">
                                             <input type="text" name="q" placeholder="এখানে লিখুন..." className="form-control" required />
                                         </div>
-                                        <div className="col-auto">
+                                        <div className="col-6">
                                             <div id="btnDiv2" className="text-center">
                                                 <button type="submit" className="btn btn-lg btn-block ButtonBG mb-3">
                                                     খুঁজুন
@@ -111,11 +111,11 @@ export default function SearchResult() {
                         : <>
                             <div className="row searchResult">
                                 <div className="col-sm-12 d-flex justify-content-center my-5">
-                                    <form className="row g-3" onSubmit={handelSubmit}>
-                                        <div className="col-auto">
+                                    <form className="row g-0" onSubmit={handelSubmit}>
+                                        <div className="col-6">
                                             <input type="text" name="q" placeholder="এখানে লিখুন..." className="form-control" required />
                                         </div>
-                                        <div className="col-auto">
+                                        <div className="col-6">
                                             <div id="btnDiv2" className="text-center">
                                                 <button type="submit" className="btn btn-lg btn-block ButtonBG mb-3">
                                                     খুঁজুন

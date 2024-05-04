@@ -27,7 +27,7 @@ export default function LeadOpinionSec() {
 
             <div className="DRightSideAdd">
                 <a href="#">
-                    <img src={"media/Advertisement/13982910857184178936.gif"} />
+                    <img src={"media/Advertisement/lab-pharmacy.jpg"} />
                 </a>
             </div>
             {state3.map((nc) => {

@@ -504,6 +504,8 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 	padding: 5px 10px;
 	position: relative;
 	z-index: 99;
+	max-height: 375px;
+  overflow: auto;
 }
 
 #mobile-nav ul:first-child {
@@ -3674,9 +3676,9 @@ span.DFeatureIcon i.fa-solid.fa-expand {position: absolute;top: 50%;left: 50%;tr
 }
 
 /* Country */
-.DCountryList {padding: 10px 0;}
+/* .DCountryList {padding: 10px 0;}
 .DCountry .DCountryList:first-child {padding-top: 0;}
-.DCountryList .col-5 {padding-right: 0;}
+.DCountryList .col-5 {padding-right: 0;} */
 @media (min-width:991px) {
     .DCountryList.leftSide .col-5 {padding-left: 0;padding-right: calc(var(--bs-gutter-x) * .5);}
     .DInternational .Desc {min-height: 54px;}
