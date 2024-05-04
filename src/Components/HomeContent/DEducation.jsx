@@ -29,7 +29,7 @@ export default function DEducation() {
 
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/education"><span className="ColorBox"></span>শিক্ষা</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/education"  onClick={scrollTop}><span className="ColorBox"></span>শিক্ষা</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {education.map((nc) => {

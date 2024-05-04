@@ -21,7 +21,7 @@ export default function DNational() {
     return (
         <>
             <section className="National">
-                <div className="SectionTitle"><h3><Link to="/national"><span className="ColorBox"></span>জাতীয়</Link></h3></div>
+                <div className="SectionTitle"><h3><Link to="/national"  onClick={scrollTop}><span className="ColorBox"></span>জাতীয়</Link></h3></div>
                 <div className="DNational">
                     <div className="row">
                         {national.map((nc) => {

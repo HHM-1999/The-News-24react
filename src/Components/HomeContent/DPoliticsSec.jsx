@@ -26,7 +26,7 @@ export default function DPoliticsSec() {
     return (
         <>
 
-            <div className="SectionTitle"><h3><Link to="/politics"><span className="ColorBox"></span>রাজনীতি</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/politics"  onClick={scrollTop}><span className="ColorBox"></span>রাজনীতি</Link></h3></div>
             <div className="DCatStyle1List">
                 {politics.map((nc) => {
                     return (

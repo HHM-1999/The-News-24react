@@ -28,7 +28,7 @@ export default function Health() {
     }, [])
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/health"><span className="ColorBox"></span>স্বাস্থ্য</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/health"  onClick={scrollTop}><span className="ColorBox"></span>স্বাস্থ্য</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {health.map((nc) => {
