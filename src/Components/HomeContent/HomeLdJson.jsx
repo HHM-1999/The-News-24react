@@ -7,7 +7,7 @@ export default function HomeLdJson() {
             <script type="application/ld+json">
                 {`
                     {
-                        "name":"ekhon.tv",
+                        "name":"TheNews24",
                         "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}",
                         "logo":{
                             "@context":"http://schema.org",
@@ -20,11 +20,11 @@ export default function HomeLdJson() {
                             "height":"109"
                         },
                         "sameAs":[
-                            "https://www.facebook.com/tv.ekhon/",
-                            "https://www.youtube.com/c/EKHONTV",
-                            "https://twitter.com/ekhon_tv",
-                            "https://www.instagram.com/ekhon_tv/?hl=bn",
-                            "https://bd.linkedin.com/company/ekhontv"
+                            "https://www.facebook.com/thenews24digital/",
+                            // "https://www.youtube.com/c/EKHONTV",
+                            // "https://twitter.com/ekhon_tv",
+                            // "https://www.instagram.com/ekhon_tv/?hl=bn",
+                            // "https://bd.linkedin.com/company/ekhontv"
                         ],
                         "@type":"Organization",
                         "@context":"http://schema.org"
@@ -55,12 +55,12 @@ export default function HomeLdJson() {
                         "@type":"Website",
                         "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}",
                         "interactivityType":"mixed",
-                        "name":"ekhon.tv",
+                        "name":"TheNews24",
                         "headline":"Ekhon TV is an online news portal of Bangladesh. It was established in 2017 with the commitment to publish objective and information-based news.",
                         "keywords":"দ্য নিউজ ২৪,অনলাইন পত্রিকা, পত্রিকা, বাংলাদেশ পত্রিকা, আজকের পত্রিকা, দেশে এখন, বাজার, কাচা বাজার, মুদ্রা বাজার, শেয়ার বাজার, আন্তর্জাতিক বাজার, ক্রিপ্টো, বিদেশে এখন, ক্রিকেট, ফুটবল, এখন মাঠে, এখন আনন্দ, সিনেমা, নাটক, তথ্য প্রযুক্তি, নাগরিক সাংবাদিকতা, পাঠকের কথা, চলতি হাওয়া, পরিবেশ, আবহাওয়া, উদ্যোক্তা",
                         "copyrightHolder":{
                             "@type":"Organization",
-                            "name":"ekhon.tv"
+                            "name":"TheNews24"
                         },
                         "potentialAction":{
                             "@type":"SearchAction",
