@@ -165,7 +165,7 @@ export default function VideoGallery() {
                             <div className="row">
                                 {state3.map((nc) => {
                                     return (
-                                        <div className="col-lg-3 col-12 border-right-inner mb-3" key={nc.WebTVID}>
+                                        <div className="col-lg-3 col-12 border-right-inner " key={nc.WebTVID}>
                                             <div className="DVideoTop2InnerList align-self-stretch">
                                                 <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                                     <div className="row">
