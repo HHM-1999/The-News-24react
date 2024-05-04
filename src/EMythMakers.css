@@ -3701,13 +3701,16 @@ span.DFeatureIcon i.fa-solid.fa-expand {position: absolute;top: 50%;left: 50%;tr
 #Rajshahi:hover .rajshahi-dev path{ fill: #fff; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
 
 #Sylhet:hover path{ fill: #379AE8; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
+#Sylhet:hover .map-pin path{ fill: #DB2028; }
 #Sylhet:hover .sylhet-dev path{ fill: #fff; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
 
 #Mymensingh:hover path{ fill: #379AE8; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
+#Mymensingh:hover .map-pin path{ fill: #DB2028; }
 #Mymensingh:hover .mymensingh-dev path{ fill: #fff; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
 
 #Rangpur:hover polygon{ fill: #379AE8; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
 #Rangpur:hover .rangpur-dev path{ fill: #fff; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
 
 #Dhaka:hover path{ fill: #379AE8; cursor: 'pointer'; transition: 'all 0.5s ease 0s' }
+#Dhaka:hover .map-pin path{ fill: #DB2028; }
 #Dhaka:hover .dhaka-dev path{ fill: #fff; cursor: 'pointer'; transition: "all 0.5s ease 0s" }
