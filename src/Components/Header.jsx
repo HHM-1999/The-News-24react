@@ -146,7 +146,7 @@ export default function Header() {
                             <div className="col-md-4 col-sm-12 d-flex justify-content-end">
                                 <div className="SocialIcon">
                                     <ul>
-                                        <li className="fb-icon"><a href="" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank"  rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="" target="_blank"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="" target="_blank"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="" target="_blank"><i className="fab fa-linkedin"></i></a></li>
@@ -411,10 +411,10 @@ export default function Header() {
                                         <div className="col-xl p-0">
                                             <div className="container extended d-flex justify-content-center align-items-center">
                                                 <div className="social-links ">
-                                                    <a href="#"><i className="fab fa-facebook-f fb icon"></i></a>
-                                                    <a href="#"><i className="fab fa-linkedin-in linkedin icon"></i></a>
-                                                    <a href="#"><i className="fab fa-twitter twitter icon"></i></a>
-                                                    <a href="#"><i className="fab fa-youtube youtube icon"></i></a>
+                                                    <a href="https://www.facebook.com/thenews24digital/" target="_blank"  rel="noreferrer" ><i className="fab fa-facebook-f fb icon"></i></a>
+                                                    <a href="#" target="_blank"  rel="noreferrer"><i className="fab fa-linkedin-in linkedin icon" ></i></a>
+                                                    <a href="#" target="_blank"  rel="noreferrer"><i className="fab fa-twitter twitter icon"></i></a>
+                                                    <a href="#" target="_blank"  rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
                                                 </div>
                                                 <div className="LiveButton">
                                                     <a href="#"><img src={"media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
