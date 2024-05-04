@@ -641,31 +641,37 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 	max-width: 25%;
 	margin: auto;
 	background-color: #f0f0f0;
-	padding: 25px;
+	padding: 10px;
 	margin-bottom: 24px;
 }
 
 .about-us-area {
 	background-color: #f0f0f0;
 	margin-bottom: 24px;
-	padding: 25px;
+	padding: 10px;
 }
 .about-img{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 10px;
 }
 .about-img img {
-	border-radius: 50%;
+	border-radius:0;
 	object-fit: cover;
 	object-position: center;
-	border: 1px solid #fff;
+	/* border: 1px solid #fff; */
 	padding: 10px;
 	aspect-ratio: 1;
+	width: 370px;
+	
 }
 
 .about-us-desc {
 	padding-top: 20px;
-	text-align: center;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 .about-us-desc .Title {
