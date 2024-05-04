@@ -1278,7 +1278,7 @@ a.close-search {
 	padding: 8px;
 	background: #f0f0f0;
 } */
-.fb-page-banner{margin-top:30px;padding:8px;background:#f0f0f0;min-height: 106px;min-width: 304px;}
+.fb-page{margin-top:30px;background:#f0f0f0;min-height: 106px;min-width: 304px;}
 .back_to_top.on {
 	position: fixed;
 	bottom: 50px;
