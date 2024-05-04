@@ -1273,12 +1273,12 @@ a.close-search {
 	max-width: 300px;
 }
 
-.fb-page-banner {
+/* .fb-page-banner {
 	margin-top: 20px;
 	padding: 8px;
 	background: #f0f0f0;
-}
-
+} */
+.fb-page-banner{margin-top:30px;padding:8px;background:#f0f0f0;min-height: 106px;min-width: 304px;}
 .back_to_top.on {
 	position: fixed;
 	bottom: 50px;
