@@ -13,8 +13,8 @@ export default function HomeLdJson() {
                             "@context":"http://schema.org",
                             "@type":"ImageObject",
                             "author":"TheNews24 :: দ্য নিউজ ২৪",
-                            "contentUrl":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/ekhonTVlogo.png",
-                            "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/ekhonTVlogo.png",
+                            "contentUrl":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/logo.png",
+                            "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/logo.png",
                             "name":"logo",
                             "width":"300",
                             "height":"109"
