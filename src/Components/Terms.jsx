@@ -13,8 +13,8 @@ export default function Terms() {
             <main>
                 <div className="container">
                     <div className="TopHomeSection"></div>
-                    <DocumentTitle title=' দ্য নিউজ ২৪ ::   Terms and Conditions' />
-                    <div className="SectionTitleEn"><h3><Link to="/terms-service" onClick={scrollTop}><span className="ColorBox"></span>Terms And Conditions</Link></h3></div>
+                    <DocumentTitle title=' দ্য নিউজ ২৪ ::   Terms and Conditions ' />
+                    <div className="SectionTitleEn"><h3><Link to="/terms-service" onClick={scrollTop}><span className="ColorBox"></span>Terms And Conditions for thenews24.com</Link></h3></div>
                     <div className='row mt-5'>
                         <div className='col-lg-8 col-12'>
                             <div className="policy-details">

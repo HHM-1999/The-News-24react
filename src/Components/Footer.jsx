@@ -47,8 +47,8 @@ export default function Footer() {
                             </div>
                             <div className="col-md-4 d-flex align-items-center justify-content-center  border-right-inner">
                                 <div className="contact ">
-                                    <p>ফোন: +৮৮০ ৯৬১১১৭১৯৮০</p>
-                                    <p>ফ্যাক্স: +8802 550 19709</p>
+                                    <p>ফোন: <a href="tel:+৮৮০ ৯৬১১১৭১৯৮০">+৮৮০ ৯৬১১১৭১৯৮০</a></p>
+                                    {/* <p>ফ্যাক্স: +8802 550 19709</p> */}
                                     <p>ই-মেইল: <a href="mailto:hello@thenews24.com" target="_blank" rel="noreferrer">hello@thenews24.com</a></p>
                                     <p><Link to='/aboutUs'>About Us</Link></p>
                                 </div>
