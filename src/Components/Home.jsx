@@ -77,49 +77,49 @@ export default function Home() {
                             <section>
                                 <Ads />
                             </section>
-                                <>
-                                    <section>
-                                        <div className="VideoSection">
-                                            <div className="container">
-                                                <VideoSec />
+                            <>
+                                <section>
+                                    <div className="VideoSection">
+                                        <div className="container">
+                                            <VideoSec />
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-lg-9 col-12">
+                                                <DCountry />
+                                            </div>
+                                            <div className="col-lg-3 col-md-12 col-sm-12">
+                                                <DDivisionSearch />
                                             </div>
                                         </div>
-                                    </section>
-                                    <section>
-                                        <div className="container">
-                                            <div className="row">
-                                                <div className="col-lg-9 col-12">
-                                                    <DCountry />
-                                                </div>
-                                                <div className="col-lg-3 col-md-12 col-sm-12">
-                                                    <DDivisionSearch />
-                                                </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-lg-9 col-12">
+                                                <DNational />
                                             </div>
-                                        </div>
-                                    </section>
-                                    <section>
-                                        <div className="container">
-                                            <div className="row">
-                                                <div className="col-lg-9 col-12">
-                                                    <DNational />
-                                                </div>
-                                                <div className="col-lg-3 col-sm-12">
-                                                    {/* <div className="DRightSideAdd mt-4">
+                                            <div className="col-lg-3 col-sm-12">
+                                                {/* <div className="DRightSideAdd mt-4">
                                         <RightSideAds />
                                     </div> */}
-                                                    <PrayerTime />
+                                                <PrayerTime />
 
-                                                    <div className="fb-page-banner">
-                                                        <FBpagePlugin />
-                                                    </div>
+                                                <div className="fb-page-banner">
+                                                    <FBpagePlugin />
                                                 </div>
                                             </div>
                                         </div>
-                                    </section>
-                                </>
+                                    </div>
+                                </section>
+                            </>
 
-                             
-                         <>
+
+                            <>
                                 <section>
                                     <div className="container">
                                         <div className="row">
@@ -148,50 +148,50 @@ export default function Home() {
 
 
                             </>
-                      
-                                <>
 
-                                    <div className="container">
-                                        <section className="International + Economics + Politics">
-                                            <div className="row">
-                                                <div className="col-lg-4 col-12">
-                                                    <DPoliticsSec />
+                            <>
 
-                                                </div>
-                                                <div className="col-lg-4 col-12">
-                                                    <DJob />
-
-                                                </div>
-                                                <div className="col-lg-4 col-12">
-                                                    <DBusiness />
-
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                    <section className="container">
+                                <div className="container">
+                                    <section className="International + Economics + Politics">
                                         <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="DAdd2 d-flex  justify-content-center">
-                                                    <Link to="">
-                                                        <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                                    </Link>
-                                                </div>
+                                            <div className="col-lg-4 col-12">
+                                                <DPoliticsSec />
+
+                                            </div>
+                                            <div className="col-lg-4 col-12">
+                                                <DJob />
+
+                                            </div>
+                                            <div className="col-lg-4 col-12">
+                                                <DBusiness />
+
                                             </div>
                                         </div>
                                     </section>
-
-                                    <section className="Entertainment">
-                                        <DEntertainment />
-                                    </section>
-
-                                    <div className="container">
-                                        <section className="Sports">
-                                            <Sports />
-                                        </section>
+                                </div>
+                                <section className="container">
+                                    <div className="row">
+                                        <div className="col-md-12">
+                                            <div className="DAdd2 d-flex  justify-content-center">
+                                                <Link to="">
+                                                    <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                </Link>
+                                            </div>
+                                        </div>
                                     </div>
+                                </section>
 
-                                </>
+                                <section className="Entertainment">
+                                    <DEntertainment />
+                                </section>
+
+                                <div className="container">
+                                    <section className="Sports">
+                                        <Sports />
+                                    </section>
+                                </div>
+
+                            </>
 
 
 
@@ -210,7 +210,7 @@ export default function Home() {
                                 </div>
                             </section>
 
-                       <>
+                            <>
                                 <div className="container">
                                     <section className=" + Economics + Politics">
                                         <div className="row">
@@ -281,7 +281,7 @@ export default function Home() {
                                     </div>
                                 </section>
 
-                            </> 
+                            </>
                         </div>
                     </>
                     : <RLoader />

@@ -44,7 +44,7 @@ export default function PrayerTime() {
     }, [])
     return (
         <>
-                <div className="DPrayer">
+                <div className="DPrayer mb-5">
                     <div className="DPrayersBanner">
                         <Link to="/"><img className="img-fluid img100" src={"media/common/namaz.png"} width={304} height={59} alt="Namaz" title="Namaz" /></Link>
                     </div>

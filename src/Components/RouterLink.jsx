@@ -23,6 +23,8 @@ import CategoryPhotoFeature from './Photo-features/CategoryPhotoFeature';
 import DetailsPhotoFeature from './Photo-features/DetailsPhotoFeature';
 import SearchResult from './SearchResult';
 import AboutUs from './AboutUs';
+import PrivacyPolicy from './Privacy-policy';
+import Terms from './Terms'
 
 
 export default function RouterLink() {
@@ -51,6 +53,9 @@ export default function RouterLink() {
                 <Route path="/photo-feature" element={<CategoryPhotoFeature />} />
                 <Route path="/photo-feature/news/:photoID" element={<DetailsPhotoFeature />} />
                 <Route path="/search/:searchSlug" element={<SearchResult />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms-service" element={<Terms />} />
+
                 <Route path="/*" element={<ErrorPage />} />
 
             </Routes>
