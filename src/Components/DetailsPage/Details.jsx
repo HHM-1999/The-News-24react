@@ -49,7 +49,7 @@ export default function Details() {
                     setCatName(data.category);
                     catID = data.category.CategoryID
                     axios
-                        .get(`${process.env.REACT_APP_API_URL}category-latest-content/${catID}/4`)
+                        .get(`${process.env.REACT_APP_API_URL}category-latest-content/${catID}/5`)
                         .then(({ data }) => {
                             setCatLatest(data.category_latest_contents);
                         });
