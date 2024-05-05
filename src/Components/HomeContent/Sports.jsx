@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
-import LeadTopSlider from './LeadTopSlider'
+// import LeadTopSlider from './LeadTopSlider'
 var lazyloaded = false
 export default function Sports() {
     const [sports, setSports] = useState([])

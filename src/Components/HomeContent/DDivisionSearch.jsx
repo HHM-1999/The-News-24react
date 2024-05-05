@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
+import { scrollTop} from '../AllFunctions'
 
 import BdMap from './BdMap'
  
-var lazyloaded = false
+// var lazyloaded = false
 export default function DDivisionSearch() {
     const [divisionName, setDivisionName] = useState([])
     const [districtName, setDistrictName] = useState([])

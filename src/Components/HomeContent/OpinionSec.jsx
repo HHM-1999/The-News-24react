@@ -38,7 +38,7 @@ export default function OpinionSec() {
                                                         <div className="DImgZoomBlock">
                                                             <picture>
                                                             {nc.ImageSmPath==null?
-                                                             <img data-src={WriterDefaultImg} /> :
+                                                             <img data-src={WriterDefaultImg}  alt={nc.ContentHeading} title={nc.ContentHeading} /> :
                                                              <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
                                                             }
                                                             {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}</picture>

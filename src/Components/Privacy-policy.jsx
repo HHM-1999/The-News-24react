@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
                                     <h2>Changes to the Privacy Policy</h2>
                                     <div className='policy-list'>
                                        <p>thenews24.com reserves the right to update or change its Privacy Policy at any time. Any changes will be posted on this page. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.</p>
-                                       <p>If you have any questions about our Privacy Policy, please feel free to contact us at   <a href="mailto:hello@thenews24.com" target="_blank">hello@thenews24.com</a></p>
+                                       <p>If you have any questions about our Privacy Policy, please feel free to contact us at   <a href="mailto:hello@thenews24.com" target="_blank"  rel="noreferrer">hello@thenews24.com</a></p>
                                     </div>
                                 </div>
                             </div>

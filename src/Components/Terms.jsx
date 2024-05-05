@@ -30,7 +30,7 @@ export default function Terms() {
                                         <ol>7. Changes to Terms: thenews24.com reserves the right to modify or replace these terms and conditions at any time. Your continued use of the website after any such changes constitutes acceptance of the new terms.</ol>
                                         <ol>8. Governing Law: These terms and conditions shall be governed by and construed in accordance with the laws of Bangladesh.</ol>
                                     </ul>
-                                    <p>If you have any questions or concerns about these terms and conditions, please contact us at <a href="mailto:hello@thenews24.com" target="_blank">[hello@thenews24.com]</a>.</p>
+                                    <p>If you have any questions or concerns about these terms and conditions, please contact us at <a href="mailto:hello@thenews24.com" target="_blank"  rel="noreferrer">[hello@thenews24.com]</a>.</p>
                                 </div>
                             </div>
                         </div>

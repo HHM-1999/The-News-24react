@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
-import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
+import { scrollTop} from '../AllFunctions'
 
 
-const { toBengaliNumber } = require('bengali-number');
-var lazyloaded = false
+// const { toBengaliNumber } = require('bengali-number');
+// var lazyloaded = false
 var PollID = 0
 export default function OnlinePoll() {
     const [poll, setPoll] = useState([])
-    const [pollNo, setPollNo] = useState([])
+    // const [pollNo, setPollNo] = useState([])
     useEffect(() => {
         axios
             .get(`${process.env.REACT_APP_API_URL}latest-poll`)
@@ -17,11 +17,11 @@ export default function OnlinePoll() {
                 if (data.poll_latest.length > 0) {
                     setPoll(data.poll_latest);
                     PollID = data.poll_latest[0].PollID
-                    axios
-                        .get(`${process.env.REACT_APP_API_URL}current-poll-result/${PollID}`)
-                        .then(({ data }) => {
-                            setPollNo(data.data)
-                        });
+                    // axios
+                    //     .get(`${process.env.REACT_APP_API_URL}current-poll-result/${PollID}`)
+                    //     .then(({ data }) => {
+                    //         setPollNo(data.data)
+                    //     });
                 }
             });
     }, [])

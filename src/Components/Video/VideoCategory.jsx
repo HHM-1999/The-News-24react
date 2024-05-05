@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 // import VPopularNews from "./VPopularNews";
-import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
+// import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
 import ErrorPage from "../ErrorPage";
 var lazyloaded = false
 var leadLimit = 14

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
+import { Link } from 'react-router-dom'
 
 var lazyloaded = false
 export default function LeadOpinionSec() {
@@ -33,7 +34,7 @@ export default function LeadOpinionSec() {
             {state3.map((nc) => {
                 return (
                     <div className="DHomeLeadList3 align-self-stretch" key={nc.ContentID}>
-                        <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
+                        <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
                             <div className="row">
                                 <div className="col-lg-7 col-7">
                                     <div className="Desc">
@@ -50,7 +51,7 @@ export default function LeadOpinionSec() {
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 )
             })}

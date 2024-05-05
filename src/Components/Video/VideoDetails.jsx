@@ -14,8 +14,8 @@ export default function VideoDetails() {
     const [VideoDetails, setVideoDetails] = useState([]);
     const [videosList, setVideosList] = useState([]);
 
-    const [videosLatestNews, setVideosLatestNews] = useState([]);
-    const [videosPopularNews, setVideosPopularNews] = useState([]);
+    // const [videosLatestNews, setVideosLatestNews] = useState([]);
+    // const [videosPopularNews, setVideosPopularNews] = useState([]);
     const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
@@ -32,16 +32,16 @@ export default function VideoDetails() {
                     lazyloaded = false
                     ForLazyLoaderImg(lazyloaded)
                 }, 1000);
-                axios
-                    .get(`${process.env.REACT_APP_API_URL}webtv-category-video-latest/${data.VideoDetails[0].CategoryID}/10`)
-                    .then(({ data }) => {
-                        setVideosLatestNews(data.categoryWiseLatestVideo)
-                    })
-                axios
-                    .get(`${process.env.REACT_APP_API_URL}webtv-category-video-popular/${data.VideoDetails[0].CategoryID}/10`)
-                    .then(({ data }) => {
-                        setVideosPopularNews(data.categoryWisePopularVideo)
-                    })
+                // axios
+                //     .get(`${process.env.REACT_APP_API_URL}webtv-category-video-latest/${data.VideoDetails[0].CategoryID}/10`)
+                //     .then(({ data }) => {
+                //         setVideosLatestNews(data.categoryWiseLatestVideo)
+                //     })
+                // axios
+                //     .get(`${process.env.REACT_APP_API_URL}webtv-category-video-popular/${data.VideoDetails[0].CategoryID}/10`)
+                //     .then(({ data }) => {
+                //         setVideosPopularNews(data.categoryWisePopularVideo)
+                //     })
             })
         axios
             .get(`${process.env.REACT_APP_API_URL}details-video-latest/4/${vdoID}`)

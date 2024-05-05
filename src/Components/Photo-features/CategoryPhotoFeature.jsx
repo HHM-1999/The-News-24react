@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import DocumentTitle from "react-document-title";
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
-import LatestPopularNews from '../Category/LatestPopularNews';
+// import LatestPopularNews from '../Category/LatestPopularNews';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
 import RLoader from '../RLoader';
 
