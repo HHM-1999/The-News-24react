@@ -41,7 +41,7 @@ export default function Footer() {
                             <div className="col-md-4 d-flex justify-content-start border-right-inner">
                                 <div className="DFooterLogo">
                                     <a href="/">
-                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                     </a>
                                 </div>
                             </div>
