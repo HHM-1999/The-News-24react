@@ -28,7 +28,7 @@ export default function AboutUs() {
     return (
         <>
             <div className="container">
-            <DocumentTitle title=" দ্য নিউজ ২৪ :: About Us" />
+            <DocumentTitle title="দ্য নিউজ ২৪ :: আমাদের সম্পর্কে" />
                 <div className="SectionTitle"><h3><Link to="#"><span className="ColorBox"></span>About Us</Link></h3></div>
                 <section className='about-us-sec'>
                     
