@@ -23,9 +23,9 @@ export default function FBpagePlugin() {
                             height="1000px"
                             data-testid="fb:page Facebook Social Plugin"
                             title="fb:page Facebook Social Plugin"
-                            frameborder={0}
+                            frameBorder={0}
                             allowtransparency="true"
-                            allowfullscreen={true}
+                            allowFullScreen={true}
                             scrolling="no"
                             allow="encrypted-media"
                             style={{

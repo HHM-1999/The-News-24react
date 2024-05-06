@@ -146,15 +146,11 @@ export default function Header() {
                             <div className="col-md-4 col-sm-12 d-flex justify-content-end">
                                 <div className="SocialIcon">
                                     <ul>
-                                        <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank"  rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="" target="_blank"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                                        {/* <!-- <li className="LiveTV">
-
-                                <a href="">লাইভ <img src="<?php echo $sSiteURL; ?>media/common/live.gif" className="img-fluid img100"></a>
-
-                            </li> --> */}
+                                        <li className="LiveTV"><a href="">লাইভ <img src="media/common/live.gif" className="img-fluid img100" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -167,7 +163,7 @@ export default function Header() {
                             <div className="col-12 col-md-3">
                                 <div className="DLogo d-flex justify-content-start">
                                     <a href="/">
-                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
                                     </a>
                                 </div>
                             </div>
@@ -212,9 +208,9 @@ export default function Header() {
                             <div className="row">
                                 <div className="col-md-12">
                                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                                        <a href="/" className="StickyLogo" rel="home">
-                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
-                                        </a>
+                                        <Link to="/" className="StickyLogo" rel="home" onClick={scrollTop}>
+                                            <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        </Link>
                                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span className="navbar-toggler-icon"></span>
                                         </button>
@@ -330,7 +326,7 @@ export default function Header() {
                                             </ul>
                                         </div>
                                         <a href="" className="MBLogo" rel="home">
-                                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                            <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
                                         <div className="d-flex justify-content-end SearchArea">
                                             <div className="search">
@@ -368,9 +364,9 @@ export default function Header() {
                             </div>
                             <div className="col-8 d-flex align-items-center justify-content-center">
                                 <div className="mobLogo">
-                                    <a href="/" onClick={scrollTop}>
-                                        <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
-                                    </a>
+                                    <Link to="/" onClick={scrollTop}>
+                                        <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                    </Link>
 
                                 </div>
                             </div>
@@ -411,10 +407,10 @@ export default function Header() {
                                         <div className="col-xl p-0">
                                             <div className="container extended d-flex justify-content-center align-items-center">
                                                 <div className="social-links ">
-                                                    <a href="https://www.facebook.com/thenews24digital/" target="_blank"  rel="noreferrer" ><i className="fab fa-facebook-f fb icon"></i></a>
-                                                    <a href="#" target="_blank"  rel="noreferrer"><i className="fab fa-linkedin-in linkedin icon" ></i></a>
-                                                    <a href="#" target="_blank"  rel="noreferrer"><i className="fab fa-twitter twitter icon"></i></a>
-                                                    <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank"  rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
+                                                    <a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer" ><i className="fab fa-facebook-f fb icon"></i></a>
+                                                    <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in linkedin icon" ></i></a>
+                                                    <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter twitter icon"></i></a>
+                                                    <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
                                                 </div>
                                                 <div className="LiveButton">
                                                     <a href="#"><img src={"media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
@@ -433,14 +429,14 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat1 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/asia" onClick={scrollTop}>এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/europe" onClick={scrollTop}>ইউরোপ</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/russia" onClick={scrollTop}>রাশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/feature-international" onClick={scrollTop}>ফিচার</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/asia" onClick={scrollTop}>এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/europe" onClick={scrollTop}>ইউরোপ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/russia" onClick={scrollTop}>রাশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/feature-international" onClick={scrollTop}>ফিচার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -454,9 +450,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat2 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/football" onClick={scrollTop}>ফুটবল</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/football" onClick={scrollTop}>ফুটবল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -467,9 +463,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat3 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/hollywood" onClick={scrollTop}>টেক</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/bollywood" onClick={scrollTop}>গেজেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/hollywood" onClick={scrollTop}>টেক</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/bollywood" onClick={scrollTop}>গেজেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -481,11 +477,11 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat4 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/money" onClick={scrollTop}>অর্থ</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/the-industry" onClick={scrollTop}>শিল্প</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/agriculture" onClick={scrollTop}>কৃষি</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/money" onClick={scrollTop}>অর্থ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/the-industry" onClick={scrollTop}>শিল্প</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/agriculture" onClick={scrollTop}>কৃষি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
 
                                                         </ul>
                                                     }
@@ -493,14 +489,14 @@ export default function Header() {
                                                 <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/court-law" className='nav-link parent'>আইন ও বিচার</Link></h3>
-                                                        <h3 onClick={() => setShowSubCat5(!showSubCat5)}>{showSubCat5 ?  <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
+                                                        <h3 onClick={() => setShowSubCat5(!showSubCat5)}>{showSubCat5 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
                                                     </li>
                                                     {showSubCat5 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
@@ -508,13 +504,13 @@ export default function Header() {
                                                 <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/religion" className='nav-link parent'>ধর্ম ও জীবন</Link></h3>
-                                                        <h3 onClick={() => setShowSubCat6(!showSubCat6)}>{showSubCat6 ?  <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
+                                                        <h3 onClick={() => setShowSubCat6(!showSubCat6)}>{showSubCat6 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
                                                     </li>
                                                     {showSubCat6 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/islam" onClick={scrollTop}>ইসলাম</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/hinduism" onClick={scrollTop}>সনাতন</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/islam" onClick={scrollTop}>ইসলাম</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/hinduism" onClick={scrollTop}>সনাতন</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
@@ -527,25 +523,25 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link  to="/migration" onClick={scrollTop}>প্রবাস</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/education" onClick={scrollTop}>শিক্ষা</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/health" onClick={scrollTop}>স্বাস্থ্য</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/information-technology" onClick={scrollTop}>তথ্য প্রযুক্তি</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/motivation" onClick={scrollTop}>অনুপ্রেরণা</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/photo-feature" onClick={scrollTop}>ছবি</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/video" onClick={scrollTop}>ভিডিও</Link></li>
-                                                            <li onClick={mobileHeader}><Link  to="/archives" onClick={scrollTop}>আর্কাইভ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/migration" onClick={scrollTop}>প্রবাস</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/education" onClick={scrollTop}>শিক্ষা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/health" onClick={scrollTop}>স্বাস্থ্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/information-technology" onClick={scrollTop}>তথ্য প্রযুক্তি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/motivation" onClick={scrollTop}>অনুপ্রেরণা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/photo-feature" onClick={scrollTop}>ছবি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/video" onClick={scrollTop}>ভিডিও</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/archives" onClick={scrollTop}>আর্কাইভ</Link></li>
 
                                                         </ul>
                                                     }
                                                 </div>
                                             </ul>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>

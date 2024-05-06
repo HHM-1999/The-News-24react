@@ -58,11 +58,11 @@ export default function OnlinePoll() {
                                 <h3>{nc.QuestionBn}</h3>
                                 <form onSubmit={resultSubmit}>
                                     <div className="VoteAnswer">
-                                        <label className="form-check-label" for="radio1"><input type="radio" className="form-check-input" name="rdoPoll" value="1" /> হ্যাঁ</label>
+                                        <label className="form-check-label" htmlFor="radio1"><input type="radio" id="radio1" className="form-check-input" name="rdoPoll" value="1" />হ্যাঁ</label>                                      
                                         {/* <p>{toBengaliNumber(pollNo.Yes)}%</p> */}
-                                        <label className="form-check-label" for="radio2"><input type="radio" className="form-check-input" name="rdoPoll" value="2" /> না</label>
+                                        <label className="form-check-label" htmlFor="radio2"><input type="radio" id="radio2" className="form-check-input" name="rdoPoll" value="2" /> না</label>
                                         {/* <p>{toBengaliNumber(pollNo.No)}%</p> */}
-                                        <label className="form-check-label" for="radio3"><input type="radio" className="form-check-input" name="rdoPoll" value="3" /> মন্তব্য নেই</label>
+                                        <label className="form-check-label" htmlFor="radio3"><input type="radio" id="radio3" className="form-check-input" name="rdoPoll" value="3" /> মন্তব্য নেই</label>
                                         {/* <p>{toBengaliNumber(pollNo.NoComments)}%</p> */}
                                     </div>
                                     <div className="VoteSubmit">
