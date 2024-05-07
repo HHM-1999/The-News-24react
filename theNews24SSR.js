@@ -9,8 +9,6 @@ var bodyParser = require('body-parser');
 
 // var mysql = require('mysql');
 
-require('dotenv').config();
-
 const cors = require('cors');
 
 app.use(bodyParser.json());
@@ -52,9 +50,9 @@ const dbConfig = require("./ssr/dbCon/dbConfig");
 const bnConfig = dbConfig.bnConfig();
 const mediaConfig = dbConfig.mediaConfig();
 
-var FEndPort = process.env.REACT_APP_FRONT_DOMAIN_PORT;
-// var FEndUrl = process.env.REACT_APP_FONT_DOMAIN_URL;
-var BEndUrl = process.env.REACT_APP_DOMAIN_URL;
+var FEndPort = 3400;
+// var FEndUrl = 'https://www.karikori.com/';
+var BEndUrl = 'https://api.karikori.com/';
 
 // app.enable('trust proxy')
 
@@ -541,67 +539,6 @@ app.get('/search/:searchSlug', function (request, response) {
     });
 });
 
-app.get('/:catSlug/:subCatSlug', async function (request, response) {
-    let catSlug = request.params.catSlug;
-    let subCatSlug = request.params.subCatSlug;
-    console.log('sub Category page visited! ' + catSlug + '/' + subCatSlug);
-    const filePath = path.resolve(__dirname, './build', 'index.html');
-
-    let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle FROM bn_bas_categories WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
-    // let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle, cat.CategoryName catTitle FROM bn_bas_categories JOIN bn_bas_categories cat ON cat.CategoryID=bn_bas_categories.ParentID WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
-    try {
-        const queryData = await bnConfig.query( sql, [subCatSlug] );
-        if (queryData && queryData.length > 0) {
-            let title = queryData[0].subCatTitle;
-            let keyword = title.split(" ");
-            keyword = keyword.toString();
-            fs.readFile(filePath, 'utf8', async function (err, data) {
-                if (err) {
-                    return console.log(err);
-                }
-                data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
-                data = data.replace(/\$OG_TITLE/g, `${title}`);
-                data = data.replace(/\$OG_DESCRIPTION/g, `${title}`);
-                data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
-                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
-                var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
-                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
-                response.send(data);
-            });
-        } else {
-            fs.readFile(filePath, 'utf8', function (err, data) {
-                if (err) {
-                    return console.log(err);
-                }
-                data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
-                data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
-                data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
-                data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
-                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
-                var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
-                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
-                response.send(data);
-            });
-        }
-    }catch (err) {
-        console.log('contentDetails error');
-        console.log(err);
-        fs.readFile(filePath, 'utf8', function (err, data) {
-            if (err) {
-                return console.log(err);
-            }
-            data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
-            data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found - Something Went Wrong`);
-            data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found - Something Went Wrong`);
-            data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found - Something Went Wrong`);
-            data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
-            var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
-            data = data.replace(/\$OG_URL/g, `${fullUrl}`);
-            response.send(data);
-        });
-    }
-});
-
 app.get('/divisions/:divisionSlug', async function (request, response) {
     let divisionSlug = request.params.divisionSlug;
     console.log('Division page visited!' + divisionSlug);
@@ -761,6 +698,67 @@ app.get('/tags/:TagTitle', async function (request, response) {
                 data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
                 data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
                 var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                response.send(data);
+            });
+        }
+    }catch (err) {
+        console.log('contentDetails error');
+        console.log(err);
+        fs.readFile(filePath, 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+            data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+            var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+            data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            response.send(data);
+        });
+    }
+});
+
+app.get('/:catSlug/:subCatSlug', async function (request, response) {
+    let catSlug = request.params.catSlug;
+    let subCatSlug = request.params.subCatSlug;
+    console.log('sub Category page visited! ' + catSlug + '/' + subCatSlug);
+    const filePath = path.resolve(__dirname, './build', 'index.html');
+
+    let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle FROM bn_bas_categories WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
+    // let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle, cat.CategoryName catTitle FROM bn_bas_categories JOIN bn_bas_categories cat ON cat.CategoryID=bn_bas_categories.ParentID WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
+    try {
+        const queryData = await bnConfig.query( sql, [subCatSlug] );
+        if (queryData && queryData.length > 0) {
+            let title = queryData[0].subCatTitle;
+            let keyword = title.split(" ");
+            keyword = keyword.toString();
+            fs.readFile(filePath, 'utf8', async function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
+                data = data.replace(/\$OG_TITLE/g, `${title}`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `${title}`);
+                data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                response.send(data);
+            });
+        } else {
+            fs.readFile(filePath, 'utf8', function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
                 response.send(data);
             });
