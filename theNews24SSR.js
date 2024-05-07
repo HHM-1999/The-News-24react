@@ -541,7 +541,7 @@ app.get('/search/:searchSlug', function (request, response) {
     });
 });
 
-app.get('/:catSlug/sub/:subCatSlug', async function (request, response) {
+app.get('/:catSlug/:subCatSlug', async function (request, response) {
     let catSlug = request.params.catSlug;
     let subCatSlug = request.params.subCatSlug;
     console.log('sub Category page visited! ' + catSlug + '/' + subCatSlug);
