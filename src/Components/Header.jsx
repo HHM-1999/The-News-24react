@@ -429,14 +429,14 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat1 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/asia" onClick={scrollTop}>এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/europe" onClick={scrollTop}>ইউরোপ</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/russia" onClick={scrollTop}>রাশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/feature-international" onClick={scrollTop}>ফিচার</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/asia" onClick={scrollTop}>এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/europe" onClick={scrollTop}>ইউরোপ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/russia" onClick={scrollTop}>রাশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/feature-international" onClick={scrollTop}>ফিচার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/sub/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -450,9 +450,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat2 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/football" onClick={scrollTop}>ফুটবল</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/sub/football" onClick={scrollTop}>ফুটবল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/sub/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/sub/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -463,9 +463,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat3 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/hollywood" onClick={scrollTop}>টেক</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/bollywood" onClick={scrollTop}>গেজেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/hollywood" onClick={scrollTop}>টেক</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/bollywood" onClick={scrollTop}>গেজেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -477,26 +477,27 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat4 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/money" onClick={scrollTop}>অর্থ</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/the-industry" onClick={scrollTop}>শিল্প</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/agriculture" onClick={scrollTop}>কৃষি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/sub/money" onClick={scrollTop}>অর্থ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/sub/the-industry" onClick={scrollTop}>শিল্প</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/sub/agriculture" onClick={scrollTop}>কৃষি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/sub/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/sub/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
 
                                                         </ul>
                                                     }
                                                 </div>
+                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/court-law" onClick={scrollTop}>আইন ও বিচার</Link></li>
                                                 <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
-                                                        <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/court-law" className='nav-link parent'>আইন ও বিচার</Link></h3>
+                                                        <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/jobs" className='nav-link parent'>চাকরি</Link></h3>
                                                         <h3 onClick={() => setShowSubCat5(!showSubCat5)}>{showSubCat5 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
                                                     </li>
                                                     {showSubCat5 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
@@ -508,9 +509,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat6 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/islam" onClick={scrollTop}>ইসলাম</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/hinduism" onClick={scrollTop}>সনাতন</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/sub/islam" onClick={scrollTop}>ইসলাম</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/sub/hinduism" onClick={scrollTop}>সনাতন</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/sub/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
@@ -535,21 +536,17 @@ export default function Header() {
                                                             <li onClick={mobileHeader}><Link to="/photo-feature" onClick={scrollTop}>ছবি</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/video" onClick={scrollTop}>ভিডিও</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/archives" onClick={scrollTop}>আর্কাইভ</Link></li>
-
                                                         </ul>
                                                     }
                                                 </div>
                                             </ul>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </header>
         </>
     )
