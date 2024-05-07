@@ -39,7 +39,7 @@ export default function RouterLink() {
                 <Route path="/pollresult" element={<OnlinePollDetails />} />
                 <Route path="/archives" element={<Archives />} />
                 <Route path="/:catSlug" element={<Category />} />
-                <Route path="/:catSlug/sub/:subCatSlug" element={<SubCategory />} />
+                <Route path="/:catSlug/:subCatSlug" element={<SubCategory />} />
                 <Route path="/:catSlug/news/:id" element={<Details />} />
                 <Route path="/tags/:TagTitle" element={<TagPage />} />
                 <Route path="/all_tags" element={<AllTagList />} />

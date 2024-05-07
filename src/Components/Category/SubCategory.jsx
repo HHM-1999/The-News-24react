@@ -139,8 +139,9 @@ export default function SubCategory() {
                                     <div className="row">
                                         <div className="col-lg-8 col-12 d-flex">
                                             <div className="DCatLeadTop">
+                                                
                                                 {subCatLead ?
-                                                    <Link to={"/" + subCatSlug + "/news/" + subCatLead.ContentID} onClick={scrollTop}>
+                                                    <Link to={"/" + catSlug + "/news/" + subCatLead.ContentID} onClick={scrollTop}>
                                                         <div className="row">
                                                             <div className="col-lg-8 col-12">
                                                                 <div className="DImgZoomBlock">
@@ -163,7 +164,7 @@ export default function SubCategory() {
                                         <div className="col-lg-4 col-12 d-flex">
                                             <div className="DCatTop2 align-self-stretch">
                                                 {subCatLead2 ?
-                                                    <Link to={"/" + subCatSlug + "/news/" + subCatLead2.ContentID} onClick={scrollTop}>
+                                                    <Link to={"/" + catSlug + "/news/" + subCatLead2.ContentID} onClick={scrollTop}>
                                                         <div className="row">
                                                             <div className="col-lg-12 col-sm-4 col-5">
                                                                 <div className="DImgZoomBlock">
@@ -187,7 +188,7 @@ export default function SubCategory() {
                                                 return (
                                                     <div className="col-lg-4 col-12 d-flex" key={nc.ContentID}>
                                                         <div className="DCatTop3tList align-self-stretch">
-                                                            <Link to={"/" + subCatSlug + "/news/" + nc.ContentID} onClick={scrollTop}>
+                                                            <Link to={"/" + catSlug + "/news/" + nc.ContentID} onClick={scrollTop}>
                                                                 <div className="row">
                                                                     <div className="col-lg-12 col-sm-4 col-5">
                                                                         <div className="DImgZoomBlock">
@@ -238,7 +239,7 @@ export default function SubCategory() {
                                                 return (
                                                     <div className="col-lg-6 col-12 d-flex" key={nc.ContentID}>
                                                         <div className="DCatNewsList align-self-stretch">
-                                                            <Link to={"/" + subCatSlug + "/news/" + nc.ContentID} onClick={scrollTop}>
+                                                            <Link to={"/" + catSlug + "/news/" + nc.ContentID} onClick={scrollTop}>
                                                                 <div className="row">
                                                                     <div className="col-lg-5 col-sm-4 col-5">
                                                                         <div className="DImgZoomBlock">

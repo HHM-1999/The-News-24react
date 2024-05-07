@@ -220,15 +220,15 @@ export default function Header() {
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/international" id="navbarDropdown" onClick={scrollTop} role="button" data-bs-toggle="dropdown disable" aria-expanded="false">আন্তর্জাতিক </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/asia">এশিয়া</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/south-asia">দক্ষিণ এশিয়া</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/middle-east">মধ্যপ্রাচ্য </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/europe">ইউরোপ </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/usa">যুক্তরাষ্ট্র </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/russia">রাশিয়া </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/feature-international">ফিচার </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/asia">এশিয়া</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/south-asia">দক্ষিণ এশিয়া</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/middle-east">মধ্যপ্রাচ্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/europe">ইউরোপ </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/usa">যুক্তরাষ্ট্র </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/russia">রাশিয়া </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/feature-international">ফিচার </Link></li>
                                                         {/* <li><Link className="dropdown-item" onClick={scrollTop} to="/district-news">আমেরিকা </Link></li> */}
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub//international-extra">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/international-extra">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/country">সারাদেশ</Link></li>
@@ -237,46 +237,46 @@ export default function Header() {
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/sports" onClick={scrollTop} id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">ক্রীড়াঙ্গন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/football">ফুটবল </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/cricket">ক্রিকেট </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/sports-others">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/football">ফুটবল </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/cricket">ক্রিকেট </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sports-others">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/entertainment" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">বিনোদন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/hollywood">হলিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/bollywood">বলিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/dhallywood">ঢালিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/others-entertainment">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/hollywood">হলিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/bollywood">বলিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/dhallywood">ঢালিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/others-entertainment">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/trade" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">বাণিজ্য </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/money">অর্থ </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/the-industry">শিল্প </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/agriculture">কৃষি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/stock-market">শেয়ার বাজার </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/bank-insurance">ব্যাংক-বীমা </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/money">অর্থ </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/the-industry">শিল্প </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/agriculture">কৃষি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/stock-market">শেয়ার বাজার </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/bank-insurance">ব্যাংক-বীমা </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/court-law">আইন ও বিচার </Link></li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/jobs" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">চাকরি </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/gov-jobs">সরকারি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/private-jobs">বেসরকারি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/ngo-jobs">এনজিও</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/job-others">অন্যান্য</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/gov-jobs">সরকারি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/private-jobs">বেসরকারি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/ngo-jobs">এনজিও</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/job-others">অন্যান্য</Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/religion" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">ধর্ম ও জীবন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/islam">ইসলাম</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/hinduism">সনাতন </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/religion-others">অন্যান্য</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/islam">ইসলাম</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/hinduism">সনাতন </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/religion-others">অন্যান্য</Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/opinion">মতামত </Link></li>
@@ -429,14 +429,14 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat1 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/asia" onClick={scrollTop}>এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/europe" onClick={scrollTop}>ইউরোপ</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/russia" onClick={scrollTop}>রাশিয়া</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/feature-international" onClick={scrollTop}>ফিচার</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/international/sub/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/asia" onClick={scrollTop}>এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/south-asia" onClick={scrollTop}>দক্ষিণ এশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/middle-east" onClick={scrollTop}>মধ্যপ্রাচ্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/europe" onClick={scrollTop}>ইউরোপ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/usa" onClick={scrollTop}>যুক্তরাষ্ট্র</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/russia" onClick={scrollTop}>রাশিয়া</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/feature-international" onClick={scrollTop}>ফিচার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/international/international-extra" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -450,9 +450,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat2 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/sports/sub/football" onClick={scrollTop}>ফুটবল</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/sports/sub/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/sports/sub/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/football" onClick={scrollTop}>ফুটবল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/cricket" onClick={scrollTop}>ক্রিকেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/sports/sports-others" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -463,9 +463,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat3 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/hollywood" onClick={scrollTop}>টেক</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/bollywood" onClick={scrollTop}>গেজেট</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/entertainment/sub/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/hollywood" onClick={scrollTop}>টেক</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/bollywood" onClick={scrollTop}>গেজেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/entertainment/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
                                                 </div>
@@ -477,11 +477,11 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat4 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/trade/sub/money" onClick={scrollTop}>অর্থ</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/trade/sub/the-industry" onClick={scrollTop}>শিল্প</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/trade/sub/agriculture" onClick={scrollTop}>কৃষি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/trade/sub/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/trade/sub/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/money" onClick={scrollTop}>অর্থ</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/the-industry" onClick={scrollTop}>শিল্প</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/agriculture" onClick={scrollTop}>কৃষি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/stock-market" onClick={scrollTop}>শেয়ার বাজার</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/trade/bank-insurance" onClick={scrollTop}>ব্যাংক-বীমা</Link></li>
 
                                                         </ul>
                                                     }
@@ -494,10 +494,10 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat5 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/jobs/sub/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/gov-jobs" onClick={scrollTop}>সরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/private-jobs" onClick={scrollTop}>বেসরকারি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/ngo-jobs" onClick={scrollTop}>এনজিও</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs/job-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
@@ -509,9 +509,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat6 &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/religion/sub/islam" onClick={scrollTop}>ইসলাম</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/religion/sub/hinduism" onClick={scrollTop}>সনাতন</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/religion/sub/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/islam" onClick={scrollTop}>ইসলাম</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/hinduism" onClick={scrollTop}>সনাতন</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/religion/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
                                                     }
