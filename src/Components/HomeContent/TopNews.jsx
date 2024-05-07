@@ -62,7 +62,7 @@ export default function TopNews() {
                                             <div className="col-md-5 col-5">
                                                 <div className="DImgZoomBlock">
                                                     <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
-                                                        {nc.ShowVideo === 1 && <div className="card-video-icon transition" />}
+                                                        {nc.ShowVideo === 1 && <div className="card-video-icon transition" ><i className="fa-solid fa-play"></i></div>}
                                                     </picture>
 
                                                 </div>

@@ -12,7 +12,7 @@ export default function LeadOpinionSec() {
         axios
             .get(`${process.env.REACT_APP_API_URL}json/file/generateSpecial2.json`)
             .then(({ data }) => {
-                if (data.data.length > 0) {
+                if (data.data) {
                     setState3(data.data.slice(0, 2));
                     setTimeout(function () {
                         lazyloaded = false
