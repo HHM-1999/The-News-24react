@@ -220,15 +220,15 @@ export default function Header() {
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/international" id="navbarDropdown" onClick={scrollTop} role="button" data-bs-toggle="dropdown disable" aria-expanded="false">আন্তর্জাতিক </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/asia">এশিয়া</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/south-asia">দক্ষিণ এশিয়া</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/middle-east">মধ্যপ্রাচ্য </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/europe">ইউরোপ </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/usa">যুক্তরাষ্ট্র </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/russia">রাশিয়া </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/feature-international">ফিচার </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/asia">এশিয়া</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/south-asia">দক্ষিণ এশিয়া</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/middle-east">মধ্যপ্রাচ্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/europe">ইউরোপ </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/usa">যুক্তরাষ্ট্র </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/russia">রাশিয়া </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub/feature-international">ফিচার </Link></li>
                                                         {/* <li><Link className="dropdown-item" onClick={scrollTop} to="/district-news">আমেরিকা </Link></li> */}
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international-extra">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/international/sub//international-extra">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/country">সারাদেশ</Link></li>
@@ -237,46 +237,46 @@ export default function Header() {
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/sports" onClick={scrollTop} id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">ক্রীড়াঙ্গন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/football">ফুটবল </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/cricket">ক্রিকেট </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports-others">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/football">ফুটবল </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/cricket">ক্রিকেট </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/sports/sub/sports-others">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/entertainment" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">বিনোদন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/hollywood">হলিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/bollywood">বলিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/dhallywood">ঢালিউড </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/others-entertainment">অন্যান্য </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/hollywood">হলিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/bollywood">বলিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/dhallywood">ঢালিউড </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/entertainment/sub/others-entertainment">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/trade" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">বাণিজ্য </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/money">অর্থ </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/the-industry">শিল্প </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/agriculture">কৃষি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/stock-market">শেয়ার বাজার </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/bank-insurance">ব্যাংক-বীমা </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/money">অর্থ </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/the-industry">শিল্প </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/agriculture">কৃষি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/stock-market">শেয়ার বাজার </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/sub/bank-insurance">ব্যাংক-বীমা </Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/court-law">আইন ও বিচার </Link></li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/jobs" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">চাকরি </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/gov-jobs">সরকারি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/private-jobs">বেসরকারি </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/ngo-jobs">এনজিও</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/job-others">অন্যান্য</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/gov-jobs">সরকারি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/private-jobs">বেসরকারি </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/ngo-jobs">এনজিও</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs/sub/job-others">অন্যান্য</Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/religion" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">ধর্ম ও জীবন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/islam">ইসলাম</Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/hinduism">সনাতন </Link></li>
-                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion-others">অন্যান্য</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/islam">ইসলাম</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/hinduism">সনাতন </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/religion/sub/religion-others">অন্যান্য</Link></li>
                                                     </ul>
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/opinion">মতামত </Link></li>

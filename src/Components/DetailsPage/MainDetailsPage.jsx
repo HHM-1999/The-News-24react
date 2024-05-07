@@ -450,13 +450,13 @@ export default function Details() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row">
+                                                    {/* <div className="row">
                                                         <div className="col-md-12">
                                                             <div className="DAdd1 d-flex  justify-content-center">
                                                                 <Link to="/"><img src={"/media/Advertisement/Advertisement(300X90).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                     <div className="row">
                                                         <div className="col-md-12">
                                                             <div className="DAdd1 d-flex  justify-content-center">

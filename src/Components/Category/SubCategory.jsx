@@ -3,10 +3,11 @@ import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import DocumentTitle from "react-document-title";
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
-import LatestPopularNews from './LatestPopularNews';
+// import LatestPopularNews from './LatestPopularNews';
 import ErrorPage from '../ErrorPage';
 import CategoryPopular from './CategoryPopular';
 import SubCatLdJson from './SubCatLdJson';
+import LeadLatestNews from '../HomeContent/LeadLatestNews';
 
 var lazyloaded = false
 var showMore = true
@@ -47,7 +48,8 @@ export default function SubCategory() {
                     axios
                         .get(`${process.env.REACT_APP_API_URL}json/file/generateCategoryPopular${catID}.json`)
                         .then(({ data }) => {
-                            setcatLatest(data.data);
+                            if (data.data) {
+                            setcatLatest(data.data);}
                         });
                     axios
                         .get(`${process.env.REACT_APP_API_URL}sub-category-content/${catID}/${LeadNewsLimit}`)
@@ -213,7 +215,8 @@ export default function SubCategory() {
                                             <img src="/media/Advertisement/Advertisement(300X90).png" alt="Advertisement" title="Advertisement" />
                                         </Link>
                                     </div>
-                                    <LatestPopularNews />
+                                    {/* <LatestPopularNews /> */}
+                                    <LeadLatestNews />
                                 </div>
                             </div>
                         </section>
