@@ -1,10 +1,8 @@
 const util = require( 'util' );
 const mysql = require( 'mysql' );
 
-require('dotenv').config();
-
-const dbUser = process.env.REACT_APP_DB_USER
-const dbPass = process.env.REACT_APP_DB_PASS
+const dbUser = 'root'
+const dbPass = ''
 
 function bnConfig() {
     const dbConn = mysql.createConnection( {
