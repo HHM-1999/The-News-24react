@@ -292,14 +292,14 @@ export default function Details() {
                    {isLoading === false ? 
                     <div className="container">
                         {/* <div className="LOGOIMG">
-                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                         </div> */}
                         <section>
                             <div className="row d-print-none">
                                 <div className="col-lg-2 col-12 my-2">
                                     <div className="DSecTitle">
                                         <Link to={'/' + catName.Slug}>
-                                            <h2>{catName.CategoryName}</h2>
+                                        <h3><span className="ColorBox"></span>{catName.CategoryName}</h3>
                                         </Link>
                                     </div>
                                 </div>

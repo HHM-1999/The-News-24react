@@ -163,7 +163,7 @@ export default function Header() {
                             <div className="col-12 col-md-3">
                                 <div className="DLogo d-flex justify-content-start">
                                     <a href="/">
-                                        <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                     </a>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@ export default function Header() {
                                 <div className="col-md-12">
                                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                                         <Link to="/" className="StickyLogo" rel="home" onClick={scrollTop}>
-                                            <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                            <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </Link>
                                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span className="navbar-toggler-icon"></span>
@@ -231,7 +231,20 @@ export default function Header() {
                                                         <li><Link className="dropdown-item" onClick={scrollTop} to="/international/international-extra">অন্যান্য </Link></li>
                                                     </ul>
                                                 </li>
-                                                <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/country">সারাদেশ</Link></li>
+                                                {/* <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/country">সারাদেশ</Link></li> */}
+                                                <li className="nav-item dropdown">
+                                                    <Link className="nav-link dropdown-toggle" to="/country" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">সারাদেশ </Link>
+                                                    <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/dhaka">ঢাকা </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/chattogram">চট্টগ্রাম </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/barishal">বরিশাল </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/khulna">খুলনা </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/rajshahi">রাজশাহী</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/sylhet">সিলেট </Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/rangpur">রংপুর</Link></li>
+                                                        <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/mymensingh">ময়মনসিংহ</Link></li>
+                                                    </ul>
+                                                </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/politics">রাজনীতি</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/crime">অপরাধ </Link></li>
                                                 <li className="nav-item dropdown">
@@ -326,7 +339,7 @@ export default function Header() {
                                             </ul>
                                         </div>
                                         <a href="" className="MBLogo" rel="home">
-                                            <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                            <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
                                         <div className="d-flex justify-content-end SearchArea">
                                             <div className="search">
@@ -365,7 +378,7 @@ export default function Header() {
                             <div className="col-8 d-flex align-items-center justify-content-center">
                                 <div className="mobLogo">
                                     <Link to="/" onClick={scrollTop}>
-                                        <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                                        <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                     </Link>
 
                                 </div>

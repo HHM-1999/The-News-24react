@@ -106,7 +106,7 @@ export default function VideoDetails() {
                                     {/* <VideoLatestPopularNews vCatSlug={VideoDetails.Slug} videosLatestNews={videosLatestNews} videosPopularNews={videosPopularNews} /> */}
                                     <div className="DAdd2 d-flex  justify-content-center">
                                         <Link to="#">
-                                            <img data-src={Ads} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                            <img src={Ads} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                         </Link>
                                     </div>
                                 </div>

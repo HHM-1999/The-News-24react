@@ -27,7 +27,8 @@ export default function Lifestyle() {
     }, [])
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/lifestyle"><span className="ColorBox"></span>লাইফস্টাইল</Link></h3></div>
+           <div className="container">
+           <div className="SectionTitle"><h3><Link to="/lifestyle"><span className="ColorBox"></span>লাইফস্টাইল</Link></h3></div>
             <div className="DLifestyle">
                 <div className="row">
                     {lifeStyle.map((nc)=>{
@@ -91,6 +92,7 @@ export default function Lifestyle() {
 
                 </div>
             </div>
+           </div>
         </>
 
     )

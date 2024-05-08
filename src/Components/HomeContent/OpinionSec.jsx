@@ -23,7 +23,8 @@ export default function OpinionSec() {
 
     return (
         <>
-            <div className="row">
+        <div className="container">
+        <div className="row">
                 <div className="col-lg-12 col-12">
                     <div className="SectionTitle"><h3><Link to="/opinion"><span className="ColorBox"></span>মতামত</Link></h3></div>
                     <div className="DCatStyle5">
@@ -60,6 +61,8 @@ export default function OpinionSec() {
 
 
             </div>
+        </div>
+           
 
         </>
 

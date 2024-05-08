@@ -28,7 +28,8 @@ export default function DEntertainment() {
     return (
         <>
 
-            <div className="SectionTitle"><h3><Link to="/entertainment"  onClick={scrollTop}><span className="ColorBox"></span>বিনোদন</Link></h3></div>
+          <div className="container">
+          <div className="SectionTitle"><h3><Link to="/entertainment"  onClick={scrollTop}><span className="ColorBox"></span>বিনোদন</Link></h3></div>
             <div className="DEntertainment">
                 <div className="row">
                     <div className="col-lg-8 col-12">
@@ -127,6 +128,7 @@ export default function DEntertainment() {
                 </div>
             </div>
 
+          </div>
         </>
 
     )

@@ -247,7 +247,7 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 
 .DHeaderNav .navbar-light .navbar-nav .nav-link {
 	color: #222;
-	padding: .7rem 31px .4rem;
+	padding: .7rem 29px .4rem;
 	font-size: 17px;
 	font-weight: bold;
 }
@@ -589,7 +589,7 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 }
 
 .DPrayersTime {
-	background: #a52823;
+	background: #b9181f;
 	color: #f0f0f0;
 }
 
@@ -602,15 +602,15 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 .DPrayersTime .table {
 	margin-bottom: 0;
 	background: #f0f0f0;
-	border-left: 1px solid #a52823;
-	border-right: 1px solid #a52823;
+	border-left: 1px solid #b9181f;
+	border-right: 1px solid #b9181f;
 }
 
 .DPrayersTime .table th {
 	padding: 5px 15px;
-	border-bottom: 1px solid #a52823;
+	border-bottom: 1px solid #b9181f;
 	color: #333;
-	border-right: 1px solid #a52823;
+	border-right: 1px solid #b9181f;
 	font-size: 17px;
 	border-top: 0 solid #dee2e6;
 	text-align: center;
@@ -618,9 +618,9 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 
 .DPrayersTime .table td {
 	padding: 6px 15px 5px;
-	border-bottom: 1px solid #a52823;
+	border-bottom: 1px solid #b9181f;
 	color: #333;
-	border-right: 1px solid #a52823;
+	border-right: 1px solid #b9181f;
 	font-size: 17px;
 	border-top: 0 solid #dee2e6;
 	text-align: center;
@@ -1450,10 +1450,15 @@ a.close-search {
 }
 
 /*============= Video Section =============*/
-.VideoSection {
+/* .VideoSection {
 	margin-top: 30px;
 	padding: 10px 0 30px 0;
+	
+} */
+.videoSection{
+	margin-top: 30px;
 	background: #f0f0f0;
+	padding: 10px 0 30px 0;
 }
 
 .DVideoTop {
@@ -1654,13 +1659,16 @@ a.close-search {
 	color: #222;
 	font-weight: 400;
 }
+.DMoreVideoListItem:hover .Title{
+	color: #0573E6;
+}
 
 .DMoreVideoListItem .ImgViewer {
 	padding-top: 56%;
 }
 
 .DMoreVideoListItem .Desc {
-	padding: 8px 10px;
+	padding: 8px 0px;
 }
 
 .DMoreVideoThumb {
@@ -1756,6 +1764,9 @@ a.close-search {
 	display: flex;
 	position: relative;
 	top: 2px;
+}
+.DLatestNews .DLatestNewsList p:hover{
+	color:#0573E6;
 }
 
 .DLatestNewsHeight.longEnough {
@@ -1991,14 +2002,18 @@ a.close-search {
 }
 
 .DNationalTop .Desc {
-	max-height: 145px;
+	/* max-height: 145px; */
 	overflow: hidden;
 	padding: 5px 8px;
+	height: 125px;
 }
 
 .DNationalTop .Title {
 	font-size: 20px;
 	line-height: 28px;
+}
+.DNationalTop:hover .Title{
+	color: #0074ed;
 }
 
 .DNationalTop .Desc .Brief p {
@@ -2034,6 +2049,9 @@ a.close-search {
 	max-height: 102px;
 	overflow: hidden;
 }
+.DNationalList:hover .Desc .Title{
+	color: #0074ed;
+}
 
 .DNationalList .ImgViewer {
 	padding-top: 58%;
@@ -2061,6 +2079,9 @@ a.close-search {
 .DCountryTop .Desc .Title {
 	font-size: 20px;
 	line-height: 28px;
+}
+.DCountryTop:hover .Desc .Title{
+	color: #0074ed;
 }
 
 .DCountryTop .Desc .Brief p {
@@ -2092,6 +2113,9 @@ a.close-search {
 
 .DCountry .col-lg-4:nth-child(2) .DCountryList {
 	margin-top: 15px;
+}
+.DCountryList:hover .Desc .Title{
+	color: #0074ed;
 }
 
 .AreaSearch .form-control {
@@ -2149,6 +2173,9 @@ a.close-search {
 	font-size: 20px;
 	line-height: 28px;
 }
+.DLifestyleTop:hover .Title{
+	color: #0074ed;
+}
 
 .DLifestyleTop .ImgViewer {
 	padding-top: 60%;
@@ -2169,6 +2196,9 @@ a.close-search {
 .DLifestyleList .Title {
 	font-size: 18px;
 	line-height: 26px;
+}
+.DLifestyleList:hover .Title{
+	color: #0074ed;
 }
 
 .DLifestyleList .Brief p {
@@ -2195,6 +2225,9 @@ a.close-search {
 	font-size: 22px;
 	line-height: 30px;
 }
+.DPhotoGalleryTop:hover .Title{
+	color: #0074ed;
+}
 
 .DPhotoGalleryTop .Brief p {
 	margin-top: 10px;
@@ -2213,6 +2246,9 @@ a.close-search {
 
 .DPhotoGalleryList .Desc {
 	padding: 7px 10px;
+}
+.DPhotoGalleryList:hover .Desc .Title{
+	color: #0074ed;
 }
 
 .DPhotoGalleryList .ImgViewer {
@@ -2280,6 +2316,9 @@ a.close-search {
 	height: 62px;
 	overflow: hidden;
 }
+.DCatStyle2Top:hover .Desc .Title{
+	color: #0074ed;
+}
 
 .DCatStyle2Top .ImgViewer {
 	padding-top: 60%;
@@ -2307,6 +2346,9 @@ a.close-search {
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 25px;
+}
+.DCatStyle2List .Title:hover{
+	color: #0074ed;
 }
 
 
@@ -2390,6 +2432,9 @@ a.close-search {
 	background: #808080;
 	text-decoration: none;
 }
+.allnews:hover a{
+	color: #DB2028;
+}
 
 .LatestList2 i {
 	padding-right: 3px;
@@ -2406,6 +2451,12 @@ a.close-search {
 .SpecialEventTop .Desc {
 	padding: 5px 7px;
 	height: 115px;
+}
+.SpecialEventTop:hover .Desc .Title{
+	color: #0074ed;
+}
+.SpecialEventList:hover .col-7 .Desc .Title{
+	color: #0074ed;
 }
 
 .SpecialEventTop .Brief p {
@@ -2518,6 +2569,9 @@ a.close-search {
 	line-height: 28px;
 	font-weight: 600;
 }
+.DSportsTop:hover .Title{
+	color: #0074ed;
+}
 
 .DSportsTop .Desc .Brief p {
 	-webkit-line-clamp: 3;
@@ -2594,6 +2648,9 @@ a.close-search {
 	font-size: 22px;
 	line-height: 30px;
 }
+.DEntertainmentTop:hover .Title{
+	color: #0074ed;
+}
 
 .DEntertainmentTop .Desc .Brief p {
 	-webkit-line-clamp: 6;
@@ -2654,6 +2711,9 @@ a.close-search {
 .DEnterList2 .Desc {
 	padding: 7px 10px 6px;
 }
+.DEnterList2:hover .Desc .Title{
+	color: #0074ed;
+} 
 
 .DEnterList2 .ImgViewer {
 	padding-top: 57%;
@@ -2792,7 +2852,11 @@ a.close-search {
 .DCatStyle5List .Title {
 	font-size: 16px;
 	line-height: 22px;
+	
 	font-weight: normal;
+}
+.DCatStyle5List:hover .Title{
+	color: #0074ed;
 }
 
 .DCatStyle5List picture img {
@@ -2932,6 +2996,9 @@ a.close-search {
 	font-weight: 600;
 	color: #f0f0f0;
 }
+.DCatStyle1Top:hover .Desc .Title{
+	color: #0074ed;
+}
 
 .DCatStyle1Top .ImgViewer::after {
 	background-image: linear-gradient(180deg, transparent, transparent 50%, #000);
@@ -2958,6 +3025,9 @@ a.close-search {
 	font-size: 18px;
 	line-height: 26px;
 	font-weight: 400;
+}
+.DCatStyle1ListItem:hover .Title{
+	color: #0074ed;
 }
 
 .DCatStyle1ListItem .col-lg-4 {
@@ -3391,7 +3461,7 @@ a.close-search {
 .warningHeader span {color:#b9181f;}
 /* ======================details page===================== */
 /* .DSecTitle h2 {font-size: 32px;font-weight: bold;line-height: 40px;margin-top: 8px;} */
-.DSecTitle h2 {font-size: 24px;font-weight: bold;line-height: 40px;margin-top: 8px;}
+.DSecTitle h3 {font-size: 24px;font-weight: bold;line-height: 40px;margin-top: 8px;}
 .DetailsTop-Form .form-control:focus {background: unset;border-color: unset;outline: unset;box-shadow: unset;}
 .DetailsTop-Form input.form-control.searchNews {width: 90%;}
 .DetailsTop-Form input.form-control {width: 84%;border-radius: 0;padding: 0.4rem 0.75rem 0.2rem;}
@@ -3528,7 +3598,7 @@ p.img-caption {background: #7c7b7b;justify-content: center;display: flex;color: 
 .DCatLeadTop .Desc .Title {font-size: 22px;line-height: 28px;}
 .DCatLeadTop .Desc .Brief p {-webkit-line-clamp: 5;margin-top: 10px;}
 
-.DCatTop2 {background: #eff5f4;margin-top: 20px;width: 100%;}
+.DCatTop2 {background: #f0f0f0;margin-top: 20px;width: 100%;}
 .DCatTop2 .Desc {padding: 5px 7px;}
 
 .DCatTop3tList {background: #eff5f4;margin-top: 20px;width: 100%;}
@@ -3621,7 +3691,16 @@ h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F
 /* .Writer-img {width: 50px;margin-right: 7px;top: -3px;} */
 .DSocialTop, .DAdditionalInfo {text-align: end;}
 /* .DImgZoomBlock.writers picture img {aspect-ratio: 1.1;width: 100%;object-fit: cover;object-position: center;} */
-.detailsPage .DTop3List {padding: 12px 0;}
+.detailsPage .DTop3List {
+	padding: 12px 0;
+	border-bottom: 1px solid #ccc;
+}
+.detailsPage .DTop3List:last-child{
+	border: unset;
+}
+.detailsPage .DTop3List .Desc .Title{
+	font-weight: 400;
+}
 
 /* ===========================Video Gallery======================== */
 .DVideoTopArea {margin-top: 20px;}

@@ -352,7 +352,7 @@ export default function Details() {
                 <main>
                     <div className="container">
                         <div className="LOGOIMG">
-                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL +"media/common/logo.png"}  alt="TheNews24 :: দ্য নিউজ ২৪" title="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL +"media/common/logo.png"}  alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                         </div>
                         <section>
                             <div className="row d-print-none">

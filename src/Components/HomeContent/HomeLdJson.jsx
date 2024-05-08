@@ -12,7 +12,7 @@ export default function HomeLdJson() {
                         "logo":{
                             "@context":"http://schema.org",
                             "@type":"ImageObject",
-                            "author":"TheNews24 :: দ্য নিউজ ২৪",
+                            "author":"TheNews24 || দ্য নিউজ ২৪",
                             "contentUrl":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/logo.png",
                             "url":"${process.env.REACT_APP_FONT_DOMAIN_URL}media/common/logo.png",
                             "name":"logo",

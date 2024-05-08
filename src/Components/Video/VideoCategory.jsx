@@ -3,8 +3,8 @@ import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
+import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
 // import VPopularNews from "./VPopularNews";
-// import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
 import ErrorPage from "../ErrorPage";
 var lazyloaded = false
 var leadLimit = 14
@@ -156,13 +156,13 @@ export default function VideoCategory() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-12 VCAT">
+                                <div className="col-lg-4 col-12">
                                     {/* <VPopularNews vdoPopular={popularVideos} /> */}
                                     <div className="DAdd2 d-flex  justify-content-center">
-                                        <Link to="">
-                                            <img src={"media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                        </Link>
-                                    </div>
+                                    <Link to="#">
+                                        <img src={Ads} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                    </Link>
+                                </div>
                                 </div>
                             </div>
                         </div>

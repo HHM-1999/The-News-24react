@@ -67,133 +67,105 @@ export default function Home() {
                 {/* <Event /> */}
                 {isLoading === false ?
                     <>
-                        <div className="container">
-                            <DocumentTitle title='TheNews24 :: দ্য নিউজ ২৪' />
-                            <HomeLdJson />
+
+                        <DocumentTitle title='TheNews24 || দ্য নিউজ ২৪' />
+                        <HomeLdJson />
+                        <section className='container'>
+                            <LeadNews />
+                        </section>
+                        <>
+
+
+
+                            <div className="videoSection ">
+                                <VideoSec />
+                            </div>
+
+
+
                             <section>
-                                <LeadNews />
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-12">
+                                            <DCountry />
+                                        </div>
+                                        <div className="col-lg-3 col-md-12 col-sm-12">
+                                            <DDivisionSearch />
+                                        </div>
+                                    </div>
+                                </div>
                             </section>
-                            <>
-                                <section>
-                                    <div className="VideoSection">
-                                        <div className="container">
-                                            <VideoSec />
+                            <section>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-12">
+                                            <DNational />
                                         </div>
-                                    </div>
-                                </section>
-                                <section>
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-9 col-12">
-                                                <DCountry />
-                                            </div>
-                                            <div className="col-lg-3 col-md-12 col-sm-12">
-                                                <DDivisionSearch />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section>
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-9 col-12">
-                                                <DNational />
-                                            </div>
-                                            <div className="col-lg-3 col-sm-12">
-                                                {/* <div className="DRightSideAdd mt-4">
+                                        <div className="col-lg-3 col-sm-12">
+                                            {/* <div className="DRightSideAdd mt-4">
                                         <RightSideAds />
                                     </div> */}
-                                                <PrayerTime />
+                                            <PrayerTime />
 
-                                                <div className="fb-page-banner">
-                                                    <FBpagePlugin />
-                                                </div>
+                                            <div className="fb-page-banner">
+                                                <FBpagePlugin />
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-                            </>
-
-
-                            <>
-                                <section>
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-lg-9 col-12">
-                                                <DInternationalSec />
-                                            </div>
-                                            <div className="col-lg-3 col-sm-12">
-                                                <OnlinePoll />
-                                                <div className="DRightSideAdd">
-                                                    <Link to="">
-                                                        <img src={"media/Advertisement/Advertisement(300X90).png"} />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section>
-                                    <div className="DBGWhite">
-                                        <div className="container">
-                                            <OpinionSec />
-                                        </div>
-                                    </div>
-                                </section>
-
-
-                            </>
-
-                            <>
-
-                                <div className="container">
-                                    <section className="International + Economics + Politics">
-                                        <div className="row">
-                                            <div className="col-lg-4 col-12">
-                                                <DPoliticsSec />
-
-                                            </div>
-                                            <div className="col-lg-4 col-12">
-                                                <DJob />
-
-                                            </div>
-                                            <div className="col-lg-4 col-12">
-                                                <DBusiness />
-
-                                            </div>
-                                        </div>
-                                    </section>
                                 </div>
-                                <section className="container">
+                            </section>
+                        </>
+
+
+                        <>
+                            <section>
+                                <div className="container">
                                     <div className="row">
-                                        <div className="col-md-12">
-                                            <div className="DAdd2 d-flex  justify-content-center">
+                                        <div className="col-lg-9 col-12">
+                                            <DInternationalSec />
+                                        </div>
+                                        <div className="col-lg-3 col-sm-12">
+                                            <OnlinePoll />
+                                            <div className="DRightSideAdd">
                                                 <Link to="">
-                                                    <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                    <img src={"media/Advertisement/Advertisement(300X90).png"} />
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-
-                                <section className="Entertainment">
-                                    <DEntertainment />
-                                </section>
-
-                                <div className="container">
-                                    <section className="Sports">
-                                        <Sports />
-                                    </section>
                                 </div>
-
-                            </>
-
-
-
-                            <section className="Lifestyle">
-                                <Lifestyle />
                             </section>
+
+                            <section>
+                                <div className="DBGWhite">
+                                    <OpinionSec />
+
+                                </div>
+                            </section>
+
+
+                        </>
+
+                        <>
+
+                            <div className="container">
+                                <section className="International + Economics + Politics">
+                                    <div className="row">
+                                        <div className="col-lg-4 col-12">
+                                            <DPoliticsSec />
+
+                                        </div>
+                                        <div className="col-lg-4 col-12">
+                                            <DJob />
+
+                                        </div>
+                                        <div className="col-lg-4 col-12">
+                                            <DBusiness />
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                             <section className="container">
                                 <div className="row">
                                     <div className="col-md-12">
@@ -206,79 +178,110 @@ export default function Home() {
                                 </div>
                             </section>
 
-                            <>
-                                <div className="container">
-                                    <section className=" + Economics + Politics">
-                                        <div className="row">
-                                            <div className="col-lg-3 col-12">
-                                                <Crime />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <Technology />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <DForeign />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <Religion />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <Health />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <Law />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                <DEducation />
-                                            </div>
-                                            <div className="col-lg-3 col-12">
-                                                {/* <Cultural /> */}
-                                                <div className="DAdd2 d-flex  justify-content-center">
-                                                    <Link to="">
-                                                        <img src={"media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
+                            <section className="Entertainment">
+                                <DEntertainment />
+                            </section>
+
+                            <div className="container">
+                                <section className="Sports">
+                                    <Sports />
+                                </section>
+                            </div>
+
+                        </>
+
+
+
+                        <section className="Lifestyle">
+                            <Lifestyle />
+                        </section>
+                        <section className="container">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="DAdd2 d-flex  justify-content-center">
+                                        <Link to="">
+                                            <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                        </Link>
+                                    </div>
                                 </div>
-                                <section className="container">
+                            </div>
+                        </section>
+
+                        <>
+                            <div className="container">
+                                <section className=" + Economics + Politics">
                                     <div className="row">
-                                        <div className="col-md-12">
+                                        <div className="col-lg-3 col-12">
+                                            <Crime />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <Technology />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <DForeign />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <Religion />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <Health />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <Law />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <DEducation />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            {/* <Cultural /> */}
                                             <div className="DAdd2 d-flex  justify-content-center">
                                                 <Link to="">
-                                                    <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                    <img src={"media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                                 </Link>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section className="PhotoGallery">
-                                    <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবি</Link></h3></div>
-                                    <div className="DPhotoGallery">
-                                        <div className="row">
-                                            <div className="col-lg-9 col-12">
-                                                <PhotoSection />
+                            </div>
+                            <section className="container">
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <div className="DAdd2 d-flex  justify-content-center">
+                                            <Link to="">
+                                                <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="PhotoGallery">
+                                <div className="container">
+                                <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবি</Link></h3></div>
+                                <div className="DPhotoGallery">
+                                    <div className="row">
+                                        <div className="col-lg-9 col-12">
+                                            <PhotoSection />
+                                        </div>
+                                        <div className="col-lg-3 col-12">
+                                            <div className="DRightSideAdd PT15">
+                                                <Link to="">
+                                                    <img src={"media/Advertisement/13982910857184178936.gif"} />
+                                                </Link>
                                             </div>
-                                            <div className="col-lg-3 col-12">
-                                                <div className="DRightSideAdd PT15">
-                                                    <Link to="">
-                                                        <img src={"media/Advertisement/13982910857184178936.gif"} />
-                                                    </Link>
-                                                </div>
-                                                <div className="DRightSideAdd">
-                                                    <Link to="">
-                                                        <img src={"media/Advertisement/18058797247224877917.png"} />
-                                                    </Link>
-                                                </div>
+                                            <div className="DRightSideAdd">
+                                                <Link to="">
+                                                    <img src={"media/Advertisement/18058797247224877917.png"} />
+                                                </Link>
                                             </div>
                                         </div>
-
                                     </div>
-                                </section>
 
-                            </>
-                        </div>
+                                </div>
+                                </div>
+                            </section>
+
+                        </>
+
                     </>
                     : <RLoader />
                 }

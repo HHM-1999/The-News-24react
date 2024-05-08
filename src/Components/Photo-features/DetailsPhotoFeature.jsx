@@ -62,8 +62,8 @@ export default function DetailsPhotoFeature() {
           {isLoading === false ? 
           <div className="container">
             {/* <div className="LOGOIMG">
-              <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} title="TheNews24 :: দ্য নিউজ ২৪"
-                alt="TheNews24 :: দ্য নিউজ ২৪" className="img-fluid img100" />
+              <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} title="TheNews24 || দ্য নিউজ ২৪"
+                alt="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
             </div> */}
             <DocumentTitle title={contentID.PhotoFeatureTitle} />
             <section>

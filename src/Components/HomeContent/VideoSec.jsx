@@ -6,16 +6,16 @@ import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 var lazyloaded = false
 export default function VideoSec() {
     const [videos, setVideos] = useState([])
-    useEffect(()=>{
+    useEffect(() => {
         axios
-        .get(`${process.env.REACT_APP_API_URL}json/file/generatePositionVideoCategory1.json`)
-        .then(({ data }) => {
-            setVideos(data.data.slice(0, 4))
-            setTimeout(function () {
-                lazyloaded = false
-                ForLazyLoaderImg(lazyloaded)
-            }, 1000);
-        })
+            .get(`${process.env.REACT_APP_API_URL}json/file/generatePositionVideoCategory1.json`)
+            .then(({ data }) => {
+                setVideos(data.data.slice(0, 4))
+                setTimeout(function () {
+                    lazyloaded = false
+                    ForLazyLoaderImg(lazyloaded)
+                }, 1000);
+            })
     }, [])
 
 
@@ -23,15 +23,16 @@ export default function VideoSec() {
 
     return (
         <>
-           
-                    <div className="SectionTitle"><h3><Link to="/video"  onClick={scrollTop}><span className="ColorBox"></span>ভিডিও</Link></h3></div>
-                    <div className="MoreVideoArea">
 
-                    </div>
-                    <div className="row">
-                        {videos.map((nc)=>{
-                            return(
-                                <div className="col-lg-3 col-12 d-flex" key={nc.WebTVID}>
+            <div className="container">
+                <div className="SectionTitle"><h3><Link to="/video" onClick={scrollTop}><span className="ColorBox"></span>ভিডিও</Link></h3></div>
+                <div className="MoreVideoArea">
+
+                </div>
+                <div className="row">
+                    {videos.map((nc) => {
+                        return (
+                            <div className="col-lg-3 col-12 d-flex" key={nc.WebTVID}>
                                 <div className="DMoreVideoListItem align-self-stretch">
                                     <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                         <div className="row">
@@ -57,10 +58,11 @@ export default function VideoSec() {
                                     </Link>
                                 </div>
                             </div>
-                            )
-                        })}
-                    </div>
-            
+                        )
+                    })}
+                </div>
+            </div>
+
 
         </>
 
