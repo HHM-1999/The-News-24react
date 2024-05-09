@@ -685,6 +685,8 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-family: sans-serif !important;
+	
 }
 
 .about-us-desc .design {
@@ -696,6 +698,7 @@ picture img{aspect-ratio:1.7777;width:100%;object-fit:cover;object-position:cent
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-family: SolaimanLipi !important;
 }
 
 /* Mobile Menu Show */
@@ -1177,6 +1180,9 @@ a.close-search {
 
 .contact a {
 	color: #222;
+}
+.contact a:hover{
+	color: #b9181f;
 }
 
 .address {
@@ -2967,6 +2973,10 @@ color: #0074ed;
 	width: 140px;
 }
 
+
+
+
+
 /*============= Category Style 1 =============*/
 .DCatStyle1List {
 	background: #f0f0f0;
@@ -3503,7 +3513,7 @@ color: #0074ed;
 .DLeftSideNews .DTop3List picture img {aspect-ratio: 1.7777;}
 /* .DLeftSideNews .textBorder {min-height: 86px;} */
 .DLeftSideNews a {color: #000;}
-.DLeftSideNews a:hover {color: #b9181f;}
+.DLeftSideNews a:hover{color: #0074ed;}
 
 /* .ContentDetails {position: relative;} */
 .DHeadingSubHeading {font-size: 18px;font-weight: 600;line-height: 28px;padding-bottom: 2px;color: #b9181f;}
@@ -3523,7 +3533,7 @@ color: #0074ed;
 
 .DBottomNews {background: #f0f0f0;padding: 20px 10px;}
 .DBottomNews a {color: #000;}
-.DBottomNews a:hover {color: #b9181f;}
+.DBottomNews a:hover {color: #0074ed;}
 .DBottomNews .col-12:nth-child(3) .DTop3List .textBorder {border-bottom: unset;}
 .DBottomNews .col-12:nth-child(4) .DTop3List .textBorder {border-bottom: unset;}
 .DBottomNews .DTop3List:first-child {padding-top: 10px;}
@@ -3603,13 +3613,22 @@ p.img-caption {background: #7c7b7b;justify-content: center;display: flex;color: 
 .DCatLeadTop {margin-top: 20px;background: #f0f0f0;}
 .DCatLeadTop .Desc {padding: 7px 10px 0px 4px;}
 .DCatLeadTop .Desc .Title {font-size: 22px;line-height: 28px;}
+.DCatLeadTop:hover .Desc .Title{color: #0074ed;}
 .DCatLeadTop .Desc .Brief p {-webkit-line-clamp: 5;margin-top: 10px;}
 
 .DCatTop2 {background: #f0f0f0;margin-top: 20px;width: 100%;}
 .DCatTop2 .Desc {padding: 5px 7px;}
 
+.DCatTop2:hover .Desc .Title{
+	color: #0074ed;
+}
+
 .DCatTop3tList {background: #f0f0f0;margin-top: 20px;width: 100%;}
 .DCatTop3tList .Desc {padding: 5px 7px;}
+
+.DCatTop3tList :hover .Desc .Title{
+	color: #0074ed;
+}
 
 
 
@@ -3618,6 +3637,10 @@ p.img-caption {background: #7c7b7b;justify-content: center;display: flex;color: 
 .DCatNewsList .col-lg-5 {padding-right: 0;}
 .DCatNewsList .Desc {padding: 7px 10px 0 0;}
 .DCatNewsList .Desc .Title {font-size: 20px;line-height: 28px;}
+
+.DCatNewsList:hover .Desc .Title{
+	color: #0074ed;
+}
 #btnDiv .ButtonBG {color: #fff;background: #CF1F27cc;border-radius: 0;padding: 10px 60px;}
 #btnDiv .ButtonBG:focus {border: unset;box-shadow: unset;}
 
@@ -3630,6 +3653,9 @@ p.img-caption {background: #7c7b7b;justify-content: center;display: flex;color: 
 .MostPopularTabList picture img {aspect-ratio: 1.64;}
 .MostPopularTabList .Desc {padding: 0;}
 .MostPopularTabList .Desc .Title {font-size: 16px;line-height: 22px;}
+.MostPopularTabList:hover .Desc .Title{
+	color: #0074ed;
+}
 
 /* Latest News */
 h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F27cc;padding-left: 10px;}
@@ -3783,6 +3809,12 @@ h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F
 .DivisionHeader a img{width: 16px;position: relative;top: -2px;margin-right:8px;}
 .DivisionLeadNews {background-color: #f0f0f0;border-bottom: 1px dotted #ccc;display: block;padding-bottom: 10px;}
 .DivisionLeadNews .Desc .Title {margin-top: 5px;padding: 0 5px;}
+.DivisionLeadNews:hover .Desc .Title{
+	color: #0074ed;
+}
+.DivisionListNews:hover .Desc .Title{
+	color: #0074ed;
+}
 .DivisionListNews {background-color: #f0f0f0;border-bottom: 1px solid #ccc;padding-bottom: 10px;padding-top: 10px;}
 .DivisionListNews .col-lg-7 {padding-left: 0px;}
 .DivisionListNews .Desc {max-height: 131px;overflow: hidden;}
@@ -3794,6 +3826,9 @@ h2.LatestNewsH {font-size: 22px;margin-bottom: 10px;border-left: 4px solid #CF1F
 .DistrictListNews {background-color:#f0f0f0;margin-top: 15px;}
 .DistrictListNews .col-lg-7 {padding-left: 0px;}
 .DistrictListNews .Desc {padding:5px 0;}
+.DistrictListNews:hover .Desc .Title{
+	color: #0074ed;
+}
 .DivisionListNews .Desc .Title {font-size: 18px;line-height: 26px;padding: 0 5px;}
 .DistrictListNews {position: relative;}
 .DistrictListNews .DateTime {font-size: 14px;line-height: 20px;padding-top: 0;position: absolute;bottom: 10px;color: #979797;border: none;}
