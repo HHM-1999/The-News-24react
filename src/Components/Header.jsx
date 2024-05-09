@@ -37,7 +37,7 @@ export default function Header() {
     const [showSubCat4, setShowSubCat4] = useState(false);
     const [showSubCat5, setShowSubCat5] = useState(false);
     const [showSubCat6, setShowSubCat6] = useState(false);
-
+    const [showSubCat7, setShowSubCat7] = useState(false);
     useEffect(() => {
         window.addEventListener('scroll', myFixedNav);
         navbar = document.getElementById("myHeader");
@@ -150,7 +150,7 @@ export default function Header() {
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="" target="_blank"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                                        <li className="LiveTV"><a href="">লাইভ <img src="media/common/live.gif" className="img-fluid img100" /></a></li>
+                                        <li className="LiveTV"><a href="/live">লাইভ <img src="media/common/live.gif" className="img-fluid img100" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -453,7 +453,25 @@ export default function Header() {
                                                         </ul>
                                                     }
                                                 </div>
-                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/country" onClick={scrollTop}>সারাদেশ</Link></li>
+                                                <div className='MobileMenu-Heading '  >
+                                                    <li className="mr-auto d-flex justify-content-between" >
+                                                        <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/country" className=' nav-link parent'>সারাদেশ</Link></h3>
+                                                        <h3 onClick={() => setShowSubCat7(!showSubCat7)}>{showSubCat7 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
+                                                    </li>
+                                                    {showSubCat7 &&
+                                                        <ul className='SubMenuM'>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/dhaka" onClick={scrollTop}>ঢাকা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/chattogram" onClick={scrollTop}>চট্টগ্রাম</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/barishal" onClick={scrollTop}>বরিশাল</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/khulna" onClick={scrollTop}>খুলনা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/rajshahi" onClick={scrollTop}>রাজশাহী</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/sylhet" onClick={scrollTop}>সিলেট</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/rangpur" onClick={scrollTop}>রংপুর</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/divisions/mymensingh" onClick={scrollTop}>ময়মনসিংহ</Link></li>
+                                                        </ul>
+                                                    }
+                                                </div>
+                                                {/* <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/country" onClick={scrollTop}>সারাদেশ</Link></li> */}
                                                 <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/politics" onClick={scrollTop}>রাজনীতি</Link></li>
                                                 <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/crime" onClick={scrollTop}>অপরাধ</Link></li>
                                                 <div className='MobileMenu-Heading  '>

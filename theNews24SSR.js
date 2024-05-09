@@ -477,7 +477,7 @@ app.get('/:catSlug', async function (request, response) {
                     return console.log(err);
                 }
                 data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
-                data = data.replace(/\$OG_TITLE/g, `${title} | ${title} সর্বশেষ খবর :: এখন টিভি`);
+                data = data.replace(/\$OG_TITLE/g, `${title} | ${title} সর্বশেষ খবর :: দ্য নিউজ ২৪`);
                 data = data.replace(/\$OG_DESCRIPTION/g, `${title}`);
                 data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
                 data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
