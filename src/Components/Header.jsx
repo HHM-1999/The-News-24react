@@ -147,10 +147,10 @@ export default function Header() {
                                 <div className="SocialIcon">
                                     <ul>
                                         <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank"><i className="fab fa-youtube"></i></a></li>
-                                        <li className="tw-icon"><a href="" target="_blank"><i className="fab fa-twitter"></i></a></li>
-                                        <li className="li-icon"><a href="" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                                        <li className="LiveTV"><a href="/live">লাইভ <img src="media/common/live.gif" className="img-fluid img100" /></a></li>
+                                        <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
+                                        <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
+                                        <li className="li-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
+                                        <li className="LiveTV"><a href="/live">লাইভ <img src="media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li>
                                     </ul>
                                 </div>
                             </div>
