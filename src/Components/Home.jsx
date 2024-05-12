@@ -200,7 +200,7 @@ export default function Home() {
                                 <div className="col-md-12">
                                     <div className="DAdd2 d-flex  justify-content-center">
                                         <Link to="">
-                                            <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                            <img src={"/media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                         </Link>
                                     </div>
                                 </div>
@@ -234,11 +234,14 @@ export default function Home() {
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             {/* <Cultural /> */}
-                                            <div className="DAdd2 d-flex  justify-content-center">
-                                                <Link to="">
-                                                    <img src={"media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                                </Link>
+                                            <div className="ads-section">
+                                                <div className="DAdd2 d-flex  justify-content-center">
+                                                    <Link to="">
+                                                        <img src={"/media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                    </Link>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </section>
@@ -248,7 +251,7 @@ export default function Home() {
                                     <div className="col-md-12">
                                         <div className="DAdd2 d-flex  justify-content-center">
                                             <Link to="">
-                                                <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                <img src={"/media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                             </Link>
                                         </div>
                                     </div>
@@ -256,27 +259,27 @@ export default function Home() {
                             </section>
                             <section className="PhotoGallery">
                                 <div className="container">
-                                <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবি</Link></h3></div>
-                                <div className="DPhotoGallery">
-                                    <div className="row">
-                                        <div className="col-lg-9 col-12">
-                                            <PhotoSection />
-                                        </div>
-                                        <div className="col-lg-3 col-12">
-                                            <div className="DRightSideAdd PT15">
-                                                <Link to="">
-                                                    <img src={"media/Advertisement/13982910857184178936.gif"} />
-                                                </Link>
+                                    <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবি</Link></h3></div>
+                                    <div className="DPhotoGallery">
+                                        <div className="row">
+                                            <div className="col-lg-9 col-12">
+                                                <PhotoSection />
                                             </div>
-                                            <div className="DRightSideAdd">
-                                                <Link to="">
-                                                    <img src={"media/Advertisement/18058797247224877917.png"} />
-                                                </Link>
+                                            <div className="col-lg-3 col-12">
+                                                <div className="DRightSideAdd PT15">
+                                                    <Link to="">
+                                                        <img src={"/media/Advertisement/13982910857184178936.gif"} />
+                                                    </Link>
+                                                </div>
+                                                <div className="DRightSideAdd">
+                                                    <Link to="">
+                                                        <img src={"/media/Advertisement/18058797247224877917.png"} />
+                                                    </Link>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                </div>
+                                    </div>
                                 </div>
                             </section>
 

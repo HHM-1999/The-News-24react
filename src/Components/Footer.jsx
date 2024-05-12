@@ -85,7 +85,7 @@ export default function Footer() {
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12 text-center">
-                                <p style={{ fontFamily: 'Noto Serif Bengali' }}> &copy; {toBengaliNumber(years)} | <a href="/">দ্য নিউজ ২৪</a>  কর্তৃক সর্বসত্ব ® সংরক্ষিত | উন্নয়নে <a href="https://www.emythmakers.com"
+                                <p style={{ fontFamily:" SolaimanLipi" }}> &copy; {toBengaliNumber(years)} | <a href="/">দ্য নিউজ ২৪</a>  কর্তৃক সর্বসত্ব ® সংরক্ষিত | উন্নয়নে <a href="https://www.emythmakers.com"
                                     target="_blank" rel="noreferrer">ইমিথমেকারস.কম</a></p>
                             </div>
                         </div>
@@ -99,10 +99,10 @@ export default function Footer() {
                         <div className="DScroll">
                             <div className="DScrollSection">
                                 <div className="ScrollHeading d-flex justify-content-center">
-                                    <p>এখনই পাওয়া :</p>
+                                    <p>শিরোনাম:</p>
                                 </div>
                                 <div className="ScrollSubject">
-                                    <Marquee delay='0' speed='70' direction="left" pauseOnHover='true' play='true'>
+                                    <Marquee delay='0' speed='70' direction="left" pauseOnHover='true' play='true' style={{gradientColor: "none"}}>
                                         {breaking.map((nd) => {
                                             return (
                                                 <React.Fragment key={nd.BreakingID}>

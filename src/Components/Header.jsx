@@ -150,7 +150,7 @@ export default function Header() {
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
-                                        <li className="LiveTV"><a href="/live">লাইভ <img src="media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li>
+                                        <li className="LiveTV"><a href="/live">লাইভ <img src="/media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ export default function Header() {
                             <div className="col-12 col-md-9">
                                 <div className="DHeaderAdd d-flex justify-content-end">
                                     <a href="/">
-                                        <img src={"media/Advertisement/56.png"} className="img-fluid img100 border" />
+                                        <img src={"/media/Advertisement/56.png"} className="img-fluid img100 border" />
                                     </a>
                                 </div>
 
@@ -426,7 +426,7 @@ export default function Header() {
                                                     <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
                                                 </div>
                                                 <div className="LiveButton">
-                                                    <a href="/live"><img src={"media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
+                                                    <a href="/live"><img src={"/media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
                                                 </div>
                                             </div>
 
