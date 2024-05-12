@@ -426,7 +426,7 @@ export default function Header() {
                                                     <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
                                                 </div>
                                                 <div className="LiveButton">
-                                                    <a href="#"><img src={"media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
+                                                    <a href="/live"><img src={"media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
                                                 </div>
                                             </div>
 
