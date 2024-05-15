@@ -150,7 +150,7 @@ export default function Header() {
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
-                                        <li className="LiveTV"><a href="/live">লাইভ <img src="/media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li>
+                                        {/* <li className="LiveTV"><a href="/live">লাইভ <img src="/media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -346,9 +346,9 @@ export default function Header() {
                                                 <i onClick={setToggle} className="fas fa-search" aria-hidden="true"></i>
                                                 {toggle && (
                                                     <div className="search-box" >
-                                                        <form onSubmit={handelSubmit} >
+                                                        <form onSubmit={handelSubmit} action="/search/" method="get">
                                                             <input name="q" type="text" placeholder="এখানে লিখুন..." aria-describedby="button-addon3" />
-                                                            <input id="button-addon3" type="submit" className='search-btn' value="খুঁজুন" />
+                                                            <input id="button-addon3" type="submit"  className='search-btn' value="খুঁজুন" />
                                                         </form>
                                                     </div>
                                                 )}
@@ -395,10 +395,10 @@ export default function Header() {
                     <div className="search_block Hide" id="deskSearch">
                         <div className="container">
                             <div className="col-xl p-0">
-                                <form onSubmit={handelSubmit}>
+                                <form onSubmit={handelSubmit} action="/search" method="get">
                                     <div className="search_logo display-flex" style={{ textAlign: 'center' }}>
                                         <input type="text" name="q" placeholder="নিউজ খুঁজতে এখানে লিখুন" className="form-control" />
-                                        <button type="submit" aria-label="submit"><i className="fa fa-search"></i></button>
+                                        <button type="submit" aria-label="submit" ><i className="fa fa-search"></i></button>
                                         <button onClick={mobileHeaderSearch} className="close-search" aria-label="close search"><i className="fa fa-times"></i></button>
                                     </div>
                                 </form>

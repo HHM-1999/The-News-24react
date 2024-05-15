@@ -99,7 +99,7 @@ export default function Footer() {
                         <div className="DScroll">
                             <div className="DScrollSection">
                                 <div className="ScrollHeading d-flex justify-content-center">
-                                    <p>শিরোনাম:</p>
+                                    <p>ব্রেকিং:</p>
                                 </div>
                                 <div className="ScrollSubject">
                                     <Marquee delay='0' speed='70' direction="left" pauseOnHover='true' play='true' style={{gradientColor: "none"}}>
@@ -121,7 +121,7 @@ export default function Footer() {
                                 <div className="DScroll">
                                     <div className="DScrollSection">
                                         <div className="ScrollHeading d-flex justify-content-center">
-                                            <p>শীর্ষ সংবাদ :</p>
+                                            <p>শিরোনাম:</p>
                                         </div>
                                         <div className="ScrollSubject">
                                             <Marquee delay='0' speed='70' direction="left" pauseOnHover='true' play='true'>

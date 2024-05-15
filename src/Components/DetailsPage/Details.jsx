@@ -289,170 +289,172 @@ export default function Details() {
         <>
             {state ?
                 <main>
-                   {isLoading === false ? 
-                    <div className="container">
-                        {/* <div className="LOGOIMG">
+                    {isLoading === false ?
+                        <div className="container">
+                            {/* <div className="LOGOIMG">
                             <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                         </div> */}
-                        <section>
-                            <div className="row d-print-none">
-                                <div className="col-lg-2 col-12 my-2">
-                                    <div className="DSecTitle">
-                                        <Link to={'/' + catName.Slug}>
-                                        <h3><span className="ColorBox"></span>{catName.CategoryName}</h3>
-                                        </Link>
+                            <section>
+                                <div className="row d-print-none">
+                                    <div className="col-lg-2 col-12 my-2">
+                                        <div className="DSecTitle">
+                                            <Link to={'/' + catName.Slug}>
+                                                <h3><span className="ColorBox"></span>{catName.CategoryName}</h3>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-10 col-12 my-2  d-none d-lg-block">
+                                        {/* <DFrom /> */}
                                     </div>
                                 </div>
-                                <div className="col-lg-10 col-12 my-2  d-none d-lg-block">
-                                    {/* <DFrom /> */}
-                                </div>
-                            </div>
-                        </section>
+                            </section>
 
-                        <section id="newsSection">
-                            {state.map((news, i) => {
-                                return (
-                                    <div className="newsDetail" id={news.ContentID} data-title={news.ContentHeading} key={news.ContentID}>
-                                        <Ldjson news={news} catName={catName} catSlug={catSlug} />
-                                        <div className="row mt-2">
-                                            <div className="ContentDetails">
-                                                {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
-                                                <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
-                                                {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
+                            <section id="newsSection">
+                                {state.map((news, i) => {
+                                    return (
+                                        <div className="newsDetail" id={news.ContentID} data-title={news.ContentHeading} key={news.ContentID}>
+                                            <Ldjson news={news} catName={catName} catSlug={catSlug} />
+                                            <div className="row mt-2">
+                                                <div className="col-lg-8 col-12">
+                                                <div className="ContentDetails">
+                                                        {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
+                                                        <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
+                                                        {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-8 col-12">
+                                                    {news.VideoID !== null && news.VideoID !== '' && news.ShowVideo === 1 ?
+                                                        <>
+                                                            <div className={allTags === null ? "col-sm-12 video-container mt-2" : "col-sm-12 video-container"}>
+                                                                {news.VideoType === "youtube" ?
+                                                                    <iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+                                                                    : news.VideoType === "vimeo" ?
+                                                                        <iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                                        : news.VideoType === "facebook" ?
+                                                                            <iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                            : news.VideoType === "instagram" ?
+                                                                                <iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></iframe>
+                                                                                : false}
+                                                            </div>
+                                                            <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
+                                                                {(writer[i] || news.WriterName !== "") ?
+                                                                    <DWriters writer={writer[i]} writersName={news.WriterName} />
+                                                                    : false}
+                                                                <div className='d-flex PRINTBTN'>
+                                                                    <p className="DTopImgCaption" style={{ paddingRight: '10px', paddingTop: '10px' }}>{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
+                                                                    <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
+                                                                    <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
+                                                                </div>
+                                                            </div>
+                                                        </> :
+                                                        <>
+                                                            <div className="DTopImg">
+                                                                <div className="Details">
+                                                                    <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /></picture>
+                                                                </div>
+                                                                {/* <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /> */}
+                                                                <div className="DetailsTopCap">
+                                                                    <p className="DTopImgCaption">{news.ImageBgPathCaption}</p>
+                                                                    {/* <p className="DTopImgCaption">{dateArray[i][1] && banglaDateConvetar(dateArray[i][1])}</p> */}
+                                                                    <p className="DTopImgCaption">{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
+                                                                {(writer[i] || news.WriterName !== "") ?
+                                                                    <DWriters writer={writer[i]} writersName={news.WriterName} />
+                                                                    : false}
+                                                                <div className='d-flex PRINTBTN'>
+                                                                    <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
+                                                                    <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
+                                                                </div>
+                                                            </div>
+                                                        </>
+                                                    }
+                                                </div>
+                                                <div className="col-lg-4 col-12 d-none d-lg-block detailsPage">
+                                                    <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
+                                                </div>
                                             </div>
-                                            <div className="col-lg-8 col-12">
-                                                {news.VideoID !== null && news.VideoID !== '' && news.ShowVideo === 1 ?
-                                                    <>
-                                                        <div className={allTags === null ? "col-sm-12 video-container mt-2" : "col-sm-12 video-container"}>
-                                                            {news.VideoType === "youtube" ?
-                                                                <iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
-                                                                : news.VideoType === "vimeo" ?
-                                                                    <iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                                                                    : news.VideoType === "facebook" ?
-                                                                        <iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                                                                        : news.VideoType === "instagram" ?
-                                                                            <iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></iframe>
-                                                                            : false}
-                                                        </div>
-                                                        <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
-                                                            {(writer[i] || news.WriterName !== "") ?
-                                                                <DWriters writer={writer[i]} writersName={news.WriterName} />
-                                                                : false}
-                                                            <div className='d-flex PRINTBTN'>
-                                                                <p className="DTopImgCaption" style={{ paddingRight: '10px', paddingTop: '10px' }}>{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
-                                                                <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
-                                                                <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
-                                                            </div>
-                                                        </div>
-                                                    </> :
-                                                    <>
-                                                        <div className="DTopImg">
-                                                            <div className="Details">
-                                                                <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100"/></picture>
-                                                            </div>
-                                                            {/* <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /> */}
-                                                            <div className="DetailsTopCap">
-                                                                <p className="DTopImgCaption">{news.ImageBgPathCaption}</p>
-                                                                {/* <p className="DTopImgCaption">{dateArray[i][1] && banglaDateConvetar(dateArray[i][1])}</p> */}
-                                                                <p className="DTopImgCaption">{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
-                                                            {(writer[i] || news.WriterName !== "") ?
-                                                                <DWriters writer={writer[i]} writersName={news.WriterName} />
-                                                                : false}
-                                                            <div className='d-flex PRINTBTN'>
-                                                                <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
-                                                                <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
-                                                            </div>
-                                                        </div>
-                                                    </>
-                                                }
-                                            </div>
-                                            <div className="col-lg-4 col-12 d-none d-lg-block detailsPage">
-                                                <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
-                                            </div>
-                                        </div>
-                                        <div className="row mt-3">
-                                            <div className="col-lg-9 col-12">
-                                                <div className={'ContentDetails page-break table-responsive ContentDetails' + news.ContentID} id="contentDetails">
-                                                    {/* {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
+                                            <div className="row mt-3">
+                                                <div className="col-lg-9 col-12">
+                                                    <div className={'ContentDetails page-break  ContentDetails' + news.ContentID} id="contentDetails">
+                                                        {/* {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
                                                     <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
                                                     {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>} */}
-                                                    {/* <DocumentTitle title={news.ContentHeading} /> */}
-                                                    <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
-                                                    {news.Initial && <p className='fw-bold'>{news.Initial}</p>}
+                                                        {/* <DocumentTitle title={news.ContentHeading} /> */}
+                                                        <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
+                                                        {news.Initial && <p className='fw-bold'>{news.Initial}</p>}
+                                                    </div>
+                                                    <div className="DTagsNews d-print-none">
+                                                        {tagArray && tagArray[i].map((nc) => {
+                                                            return (
+                                                                <Link to={"/tags/" + nc} key={nc} onClick={scrollTop}><p>{nc}</p></Link>
+                                                            )
+                                                        })}
+                                                    </div>
+                                                    <DfbComment contentID={news.ContentID} />
                                                 </div>
-                                                <div className="DTagsNews d-print-none">
-                                                    {tagArray && tagArray[i].map((nc) => {
-                                                        return (
-                                                            <Link to={"/tags/" + nc} key={nc} onClick={scrollTop}><p>{nc}</p></Link>
-                                                        )
-                                                    })}
-                                                </div>
-                                                <DfbComment contentID={news.ContentID} />
-                                            </div>
-                                            <div className="col-lg-3 col-12 d-print-none">
-                                                <div className="DRightAds">
-                                                    <div className="row">
-                                                        <div className="col-md-12">
-                                                            <div className="d-flex  justify-content-center">
-                                                                <Link to="/"><img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
+                                                <div className="col-lg-3 col-12 d-print-none">
+                                                    <div className="DRightAds">
+                                                        <div className="row">
+                                                            <div className="col-md-12">
+                                                                <div className="d-flex  justify-content-center">
+                                                                    <Link to="/"><img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    {/* <div className="row">
+                                                        {/* <div className="row">
                                                         <div className="col-md-12">
                                                             <div className="DAdd1 d-flex  justify-content-center">
                                                                 <Link to="/"><img src={"/media/Advertisement/Advertisement(300X90).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
                                                             </div>
                                                         </div>
                                                     </div> */}
-                                                    <div className="row">
-                                                        <div className="col-md-12">
-                                                            <div className="DAdd1 d-flex  justify-content-center">
-                                                                <Link to="/"><img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
+                                                        <div className="row">
+                                                            <div className="col-md-12">
+                                                                <div className="DAdd1 d-flex  justify-content-center">
+                                                                    <Link to="/"><img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Advertisement" title="Advertisement" className="img-fluid img100" /></Link>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="col-sm-12 d-print-none">
-                                            <div className="row">
-                                                <div className="col-sm-12">
-                                                    <div className="astrodivider">
-                                                        <div className="astrodividermask"></div>
-                                                        <span><i className="fa fa-chevron-circle-down" aria-hidden="true"></i></span></div>
+                                            <div className="col-sm-12 d-print-none">
+                                                <div className="row">
+                                                    <div className="col-sm-12">
+                                                        <div className="astrodivider">
+                                                            <div className="astrodividermask"></div>
+                                                            <span><i className="fa fa-chevron-circle-down" aria-hidden="true"></i></span></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )
-                            })}
-                        </section>
+                                    )
+                                })}
+                            </section>
 
-                        <section>
-                            <div className="row mt-3 d-print-none">
-                                <div className="col-lg-9 col-12">
-                                    <div className="row d-block d-lg-none">
-                                        <div className="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 my-4">
-                                            <DFrom />
+                            <section>
+                                <div className="row mt-3 d-print-none">
+                                    <div className="col-lg-9 col-12">
+                                        <div className="row d-block d-lg-none">
+                                            <div className="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 my-4">
+                                                <DFrom />
+                                            </div>
+                                        </div>
+                                        <div className="DRelatedNews">
+                                            <DCatPopular catPopular={catPopular} catName={catName.CategoryName} catSlug={catSlug} />
                                         </div>
                                     </div>
-                                    <div className="DRelatedNews">
-                                        <DCatPopular catPopular={catPopular} catName={catName.CategoryName} catSlug={catSlug} />
+                                    <div className="col-lg-3 col-12">
+                                        <div className="mt-4 d-block d-lg-none">
+                                            <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-12">
-                                    <div className="mt-4 d-block d-lg-none">
-                                        <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div> :
-                    <RLoader />}
+                            </section>
+                        </div> :
+                        <RLoader />}
                 </main>
                 : <ErrorPage />}
         </>

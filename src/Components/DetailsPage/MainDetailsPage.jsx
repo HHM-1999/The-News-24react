@@ -352,7 +352,7 @@ export default function Details() {
                 <main>
                     <div className="container">
                         <div className="LOGOIMG">
-                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL +"media/common/logo.png"}  alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
+                            <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                         </div>
                         <section>
                             <div className="row d-print-none">
@@ -375,10 +375,12 @@ export default function Details() {
                                     <div className="newsDetail" id={news.ContentID} data-title={news.ContentHeading} key={news.ContentID}>
                                         <Ldjson news={news} catName={catName} catSlug={catSlug} />
                                         <div className="row mt-2">
-                                            <div className="ContentDetails">
-                                                {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
-                                                <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
-                                                {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
+                                            <div className="col-lg-8 col-12">
+                                                <div className="ContentDetails">
+                                                    {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
+                                                    <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
+                                                    {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
+                                                </div>
                                             </div>
                                             <div className="col-lg-8 col-12">
                                                 {news.VideoID !== null && news.VideoID !== '' ?
