@@ -2260,6 +2260,12 @@ a.close-search {
 	width: 100%;
 	background: #f0f0f0;
 }
+.PhotoGalleryList {
+	padding-bottom: 10px;
+}
+.PhotoGalleryList .Desc{
+	height: 50px;
+}
 
 .DPhotoGalleryList .Desc {
 	padding: 7px 10px;
@@ -2577,7 +2583,7 @@ a.close-search {
 
 .DSportsTop .Desc {
 	padding: 8px 10px 6px;
-	max-height: 130px;
+	/* max-height: 130px; */
 	overflow: hidden;
 }
 
@@ -2585,13 +2591,14 @@ a.close-search {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 600;
+	height: 65px;
 }
 .DSportsTop:hover .Title{
 	color: #0074ed;
 }
 
 .DSportsTop .Desc .Brief p {
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 2;
 	margin-top: 10px;
 }
 
@@ -2611,7 +2618,7 @@ a.close-search {
 }
 
 .DSportsTop2List {
-	padding: 10px 0;
+	padding: 14px 0;
 	border-bottom: 1px dashed #ddd;
 }
 
@@ -2875,7 +2882,7 @@ color: #0074ed;
 .DCatStyle5List .Title {
 	font-size: 16px;
 	line-height: 22px;
-	
+	margin-top: 10px;
 	font-weight: normal;
 }
 .DCatStyle5List:hover .Title{

@@ -321,7 +321,7 @@ export default function Header() {
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
                                                                 <ul className="nav flex-column">
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/motivation">অনুপ্রেরণা</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/photo-feature">ছবি</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/photo-feature">ছবিঘর</Link></li>
                                                                 </ul>
                                                             </div>
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
@@ -564,7 +564,7 @@ export default function Header() {
                                                             <li onClick={mobileHeader}><Link to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/motivation" onClick={scrollTop}>অনুপ্রেরণা</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/photo-feature" onClick={scrollTop}>ছবি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/photo-feature" onClick={scrollTop}>ছবিঘর</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/video" onClick={scrollTop}>ভিডিও</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/archives" onClick={scrollTop}>আর্কাইভ</Link></li>
                                                         </ul>

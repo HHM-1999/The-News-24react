@@ -259,7 +259,7 @@ export default function Home() {
                             </section>
                             <section className="PhotoGallery">
                                 <div className="container">
-                                    <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবি</Link></h3></div>
+                                    <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবিঘর</Link></h3></div>
                                     <div className="DPhotoGallery">
                                         <div className="row">
                                             <div className="col-lg-9 col-12">

@@ -9,6 +9,7 @@ import ErrorPage from '../ErrorPage';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
 import RLoader from '../RLoader';
 var lazyloaded = false
+
 export default function DivisionSlug() {
     const [divisionName, setDivisionName] = useState([])
     const [isLoading, setisLoading] = useState(true)
@@ -23,7 +24,7 @@ export default function DivisionSlug() {
                 if (data.districtContent.length !== 0) {
                     setisLoading(false)
                     setDivisionName(data.districtContent[0].DivisionNameBn);
-                    setDivision(data.districtContent);
+                    setDivision(data.districtContent.slice(0,4));
                     setTimeout(function () {
                         lazyloaded = false
                         ForLazyLoaderImg(lazyloaded)
@@ -69,7 +70,7 @@ export default function DivisionSlug() {
                                                         {nc.content.map((nd, i) => {
                                                             return (
                                                                 <div className="DivisionBody">
-                                                                    {i === 0 ?
+                                                                    {i === 0  ?
                                                                         <div className="DivisionLeadNews">
                                                                             <Link to={"/" + nd.Slug + "/news/" + nd.ContentID} onClick={scrollTop}>
                                                                                 <div className="DImgBlock card-video-part">

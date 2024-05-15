@@ -7,6 +7,7 @@ import DocumentTitle from 'react-document-title';
 import LatestPopularNews from '../Category/LatestPopularNews'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import ErrorPage from '../ErrorPage';
+import LeadLatestNews from '../HomeContent/LeadLatestNews';
 
 var lazyloaded = false
 var showMore = true
@@ -195,7 +196,8 @@ export default function WritersPage() {
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-12 mb-4 Subcat">
-                                <LatestPopularNews />
+                                {/* <LatestPopularNews /> */}
+                                <LeadLatestNews />
                             </div>
                         </div>
 

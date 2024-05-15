@@ -66,7 +66,7 @@ export default function Sports() {
                                     <div className="DSportsTop2List">
                                         <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                             <div className="row">
-                                                <div className="col-5">
+                                                <div className="col-4">
                                                     <div className="Imgresize">
                                                         <figure className="ImgViewer">
                                                             <picture className="FixingRatio">
@@ -76,7 +76,7 @@ export default function Sports() {
                                                         </figure>
                                                     </div>
                                                 </div>
-                                                <div className="col-7">
+                                                <div className="col-8">
                                                     <div className="Des8">
                                                         <h2 className="Title">{nc.ContentHeading}</h2>
                                                     </div>

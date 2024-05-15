@@ -96,7 +96,7 @@ export default function DetailsPhotoFeature() {
                           </LightgalleryItem> : ""}
                       </div>
                       <div className="DetailsTopBrief">
-                        <p className="DTopImgCaption">{contentID.Caption} {contentID.ImageSource ? <span className='DImgSource'><i className="fa-sharp fa-solid fa-grip-lines-vertical"></i> ছবি: {contentID.ImageSource}</span> : ""}</p>
+                        <p className="DTopImgCaption">{contentID.Caption} {contentID.ImageSource ? <span className='DImgSource'><i className="fa-sharp fa-solid fa-grip-lines-vertical"></i> ছবিঘর: {contentID.ImageSource}</span> : ""}</p>
                       </div>
                     </div>
                     {contentID.featuer_images ? <>
@@ -112,7 +112,7 @@ export default function DetailsPhotoFeature() {
                                   </LightgalleryItem>
                                 </div>
                                 <div className="DetailsTopBrief">
-                                  <p className="DTopImgCaption">{nc.Caption} {nc.ImageSource ? <span className='DImgSource'><i className="fa-sharp fa-solid fa-grip-lines-vertical"></i> ছবি: {nc.ImageSource}</span> : ""}</p>
+                                  <p className="DTopImgCaption">{nc.Caption} {nc.ImageSource ? <span className='DImgSource'><i className="fa-sharp fa-solid fa-grip-lines-vertical"></i> ছবিঘর: {nc.ImageSource}</span> : ""}</p>
                                 </div>
                               </div>
                             )
