@@ -54,7 +54,7 @@ export default function DCountry() {
                                     <div className="SpecialEventList">
                                     <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.CategoryID} onClick={scrollTop} >
                                         <div className="row">
-                                            <div className="col-lg-5 col-5">
+                                            <div className="col-lg-4 col-4">
                                                 <div className="DImgZoomBlock">
                                                     <picture>
                                                         <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
@@ -62,7 +62,7 @@ export default function DCountry() {
                                                     </picture>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-7 col-7">
+                                            <div className="col-lg-8 col-8">
                                                 <div className="Desc">
                                                     <h2 className="Title FW700">{nc.ContentHeading} </h2>
                                                 </div>

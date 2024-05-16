@@ -24,7 +24,7 @@ export default function LeadOpinionSec() {
 
 
     return (
-        <>
+        <div className='BorderLeft'>
 
             <div className="DRightSideAdd">
                 <a href="#">
@@ -56,7 +56,7 @@ export default function LeadOpinionSec() {
                 )
             })}
 
-        </>
+        </div>
 
     )
 }

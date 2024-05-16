@@ -13,23 +13,25 @@ export default function LeadNews() {
                     <div className="col-lg-9">
                         <div className="row">
                             <div className="col-lg-8 col-12">
-                            <TopNews />
+                                <div className="topNewsSection">
+                                    <TopNews />
+                                </div>
+
                             </div>
                             <div className="col-lg-4 col-12">
-                            <LeadLatestNews />
+                                <LeadLatestNews />
                             </div>
                             <Ads />
                         </div>
                     </div>
                     <div className="col-lg-3 col-12">
-                        <LeadOpinionSec />
-
+                            <LeadOpinionSec />
                     </div>
-                 
-                    
+
+
                 </div>
             </div>
-            
+
         </>
 
     )

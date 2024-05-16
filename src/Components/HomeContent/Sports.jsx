@@ -30,11 +30,11 @@ export default function Sports() {
             <div className="SectionTitle"><h3><Link to="/sports"><span className="ColorBox"></span>ক্রীড়াঙ্গন</Link></h3></div>
             <div className="DSports">
                 <div className="row">
-                    <div className="col-lg-8 col-12">
+                    <div className="col-lg-8 col-12 ">
                         <div className="row">
                             {sports.map((nc) => {
                                 return (
-                                    <div className="col-lg-6 col-12">
+                                    <div className="col-lg-6 col-12 BorderRight mt-3">
                                         <div className="DSportsTop">
                                             <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                                 <div className="Imgresize">
@@ -59,11 +59,11 @@ export default function Sports() {
                         </div>
 
                     </div>
-                    <div className="col-lg-4 col-12">
+                    <div className="col-lg-4 col-12 ">
                         <div className="DSportsTop2">
                             {sports2.map((nc) => {
                                 return (
-                                    <div className="DSportsTop2List">
+                                    <div className="DSportsTop2List BorderRight mt-2">
                                         <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                             <div className="row">
                                                 <div className="col-4">

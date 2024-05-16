@@ -74,9 +74,6 @@ export default function Home() {
                             <LeadNews />
                         </section>
                         <>
-
-
-
                             <div className="videoSection ">
                                 <VideoSec />
                             </div>
@@ -90,7 +87,10 @@ export default function Home() {
                                             <DCountry />
                                         </div>
                                         <div className="col-lg-3 col-md-12 col-sm-12">
-                                            <DDivisionSearch />
+                                            <div className="BorderLeft">
+                                                <DDivisionSearch />
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -152,15 +152,22 @@ export default function Home() {
                                 <section className="International + Economics + Politics">
                                     <div className="row">
                                         <div className="col-lg-4 col-12">
-                                            <DPoliticsSec />
+                                            <div className="BorderRight">
+                                                <DPoliticsSec />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4 col-12">
+                                            <div className="BorderRight">
+                                                <DJob />
+                                            </div>
+
 
                                         </div>
                                         <div className="col-lg-4 col-12">
-                                            <DJob />
+                                          
+                                                <DBusiness />
+                                       
 
-                                        </div>
-                                        <div className="col-lg-4 col-12">
-                                            <DBusiness />
 
                                         </div>
                                     </div>
@@ -212,22 +219,35 @@ export default function Home() {
                                 <section className=" + Economics + Politics">
                                     <div className="row">
                                         <div className="col-lg-3 col-12">
+                                            <div className="BorderRight">
                                             <Crime />
+                                            </div>
+                                            
                                         </div>
                                         <div className="col-lg-3 col-12">
+                                            <div className="BorderRight">
                                             <Technology />
+                                            </div>
+                                           
                                         </div>
                                         <div className="col-lg-3 col-12">
+                                            <div className="BorderRight">
                                             <DForeign />
+                                            </div>
+                                            
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <Religion />
                                         </div>
                                         <div className="col-lg-3 col-12">
-                                            <Health />
+                                            <div className="BorderRight"> <Health /></div>
+                                           
                                         </div>
                                         <div className="col-lg-3 col-12">
+                                            <div className="BorderRight">
                                             <Law />
+                                            </div>
+                                          
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <DEducation />
