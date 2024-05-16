@@ -274,7 +274,7 @@ picture img {
 
 .DHeaderNav .navbar-light .navbar-nav .nav-link {
 	color: #222;
-	padding: .7rem 29px .4rem;
+	padding: .7rem 33px .4rem;
 	font-size: 17px;
 	font-weight: bold;
 }
@@ -673,7 +673,23 @@ picture img {
 /* ========================About us========================= */
 .about-us-sec {
 	margin: 60px 0;
+	
 }
+.aboutTitle{
+	margin-top: 10px;
+}
+ .aboutTitle  a{
+	font-size: 17px;
+	
+	font-weight: 600;
+	color: #F00000 !important;
+	font-family: SolaimanLipi !important;
+}
+.aboutTitle:hover a{
+	color: #333 !important;
+}
+
+
 
 .about-us-area2 {
 	max-width: 25%;
@@ -1097,7 +1113,7 @@ a.close-search {
 }
 
 .sticky .DHeaderNav .navbar-light .navbar-nav .nav-link {
-	padding: 1.1rem 0.7rem 1rem;
+	padding: 1.1rem 0.8rem 1rem;
 	font-size: 16px;
 }
 
@@ -3962,7 +3978,8 @@ a.close-search {
 #contentDetails p {
 	font-size: 18px !important;
 	line-height: 28px !important;
-	padding: 10px 0 !important;
+	/* padding: 10px 0 !important; */
+	padding-bottom: 15px;
 	word-wrap: break-word !important;
 }
 

@@ -50,12 +50,12 @@ export default function Footer() {
                                     <p>ফোন: <a href="tel:+৮৮০ ৯৬১১১৭১৯৮০">+৮৮০ ৯৬১১১৭১৯৮০</a></p>
                                     {/* <p>ফ্যাক্স: +8802 550 19709</p> */}
                                     <p>ই-মেইল: <a href="mailto:hello@thenews24.com" target="_blank" rel="noreferrer">hello@thenews24.com</a></p>
-                                    <p><Link to='/aboutUs'>About Us</Link></p>
+                                    <p className='aboutTitle'><Link to='/aboutUs'>আমাদের সম্পর্কে</Link></p>
                                 </div>
                             </div>
                             <div className="col-md-4 d-flex align-items-center justify-content-center">
                                 <div className="MoreInfo">
-                                    <h5>সম্পাদক ও প্রকাশক: মো. আনোয়ারুল ইসলাম</h5>
+                                    {/* <h5>সম্পাদক ও প্রকাশক: মো. আনোয়ারুল ইসলাম</h5> */}
                                     <p> কর্পোরেট অফিস: বাড়ি : ২১ (৮ তলা), ব্লক : এ, রোড : ০১, মহানগর প্রজেক্ট, হাতিরঝিল, ঢাকা-১২১৯ ৷</p>
                                 </div>
                             </div>

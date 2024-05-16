@@ -29,7 +29,7 @@ export default function AboutUs() {
         <>
             <div className="container">
             <DocumentTitle title="দ্য নিউজ ২৪ :: আমাদের সম্পর্কে" />
-                <div className="SectionTitleEn"><h3><Link to="#"><span className="ColorBox"></span>About Us</Link></h3></div>
+                <div className="SectionTitle"><h3><Link to="#"><span className="ColorBox"></span>আমাদের সম্পর্কে</Link></h3></div>
                 <section className='about-us-sec'>
                     
 
@@ -41,6 +41,7 @@ export default function AboutUs() {
                                     <div className="about-us-desc">
                                         <h3 className="Title">{state.name}</h3>
                                         <p className='design'>{state.designation}</p>
+                                        <p className='design'>ID    </p>
                                     </div>
 
                                 </Link>
@@ -58,6 +59,7 @@ export default function AboutUs() {
                                             <div className="about-us-desc">
                                                 <h3 className="Title">{nc.name}</h3>
                                                 <p className='design'>{nc.designation}</p>
+                                                <p className='design'>ID    </p>
                                             </div>
 
                                         </Link>
