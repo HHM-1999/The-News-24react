@@ -2649,9 +2649,9 @@ a.close-search {
 	color: #F00000;
 }
 
-.SpecialEventList .col-7 .Desc .Title {
+.SpecialEventList .Desc .Title {
 	line-height: 24px;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 /* Map */
