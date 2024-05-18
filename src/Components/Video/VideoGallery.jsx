@@ -99,7 +99,7 @@ export default function VideoGallery() {
 
                     <div className="DVideoTopArea">
                         <div className="row">
-                            <div className="col-lg-8 col-12 border-right-inner">
+                            <div className="col-lg-8 col-12" style={{borderRight: "1px solid #e2e2e2" ,paddingRight:"20px"}}>
                                 <div className="DVideoTopInner">
                                     <Link to={"/video/show/" + leadVideoTop.WebTVID} onClick={scrollTop}>
                                         <div className="row">
@@ -126,7 +126,7 @@ export default function VideoGallery() {
                                     <div className="row">
                                         {leadVideos.map((nc) => {
                                             return (
-                                                <div className="col-lg-4 col-12 border-right-inner" key={nc.WebTVID}>
+                                                <div className="col-lg-4 col-12 " key={nc.WebTVID}>
                                                     <div className="DVideoTop2InnerList align-self-stretch">
                                                         <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                                             <div className="row">
@@ -152,9 +152,9 @@ export default function VideoGallery() {
 
 
                             </div>
-                            <div className="col-lg-4 col-12">
+                            <div className="col-lg-4 col-12 " >
                                 {/* <VPopularNews vdoPopular={popularVideos} /> */}
-                                <div className="DAdd2 d-flex  justify-content-center">
+                                <div className=" d-flex   justify-content-center">
                                     <Link to="#">
                                         <img src={Ads} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                     </Link>
@@ -165,7 +165,7 @@ export default function VideoGallery() {
                             <div className="row">
                                 {state3.map((nc) => {
                                     return (
-                                        <div className="col-lg-3 col-12 border-right-inner " key={nc.WebTVID}>
+                                        <div className="col-lg-3 col-12  " key={nc.WebTVID}>
                                             <div className="DVideoTop2InnerList align-self-stretch">
                                                 <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                                     <div className="row">

@@ -158,7 +158,7 @@ export default function Archives() {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row archiveSection">
                     {news.map((nc) => {
                         return (
                             <div className="col-lg-6 col-sm-12" key={nc.ContentID}>

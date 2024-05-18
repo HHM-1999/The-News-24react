@@ -61,6 +61,11 @@ p {
 	border-right: 1px solid #e2e2e2;
 	padding-right: 10px;
 }
+.DBorderRight{
+	border-right: 1px solid #e2e2e2;
+	padding-right: 10px;
+	margin-top: 20px;
+}
 .BorderBottom {
 	border-bottom: 1px solid #eee
 }
@@ -2388,8 +2393,16 @@ a.close-search {
 }
 
 .PhotoGalleryList {
-	padding-bottom: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e2e2;
 }
+.PhotoGallery  .col-lg-6.col-12:nth-child(3) .PhotoGalleryList{
+	border-bottom: none;
+}
+.PhotoGallery  .col-lg-6.col-12:nth-child(4) .PhotoGalleryList{
+	border-bottom: none;
+}
+
 
 .PhotoGalleryList .Desc {
 	height: 50px;
@@ -2510,6 +2523,9 @@ a.close-search {
 .DLPSTab2 {
 	margin-bottom: 0;
 	margin-top: 20px;
+	border-right: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+	border-top: 1px solid #e2e2e2;
 }
 
 .DLPSTab2 .nav-tabs {
@@ -3648,6 +3664,25 @@ a.close-search {
 		width: 100%;
 		padding-bottom: 15px;
 	}
+	.DCatLeadTop {
+		/* margin-top: 20px; */
+		background: #fff;
+		border-right:none;
+	}
+	.BorderLeft{
+		border-left: none;
+		padding-left: none;
+	}
+	.BorderRight{
+		border-right: none;
+		padding-right: none;
+	}
+	.DBorderRight{
+		border-right:none;
+		padding-right: none;
+		margin-top: none;
+	}
+
 
 
 }
@@ -4392,8 +4427,9 @@ p.img-caption {
 }
 
 .DCatLeadTop {
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	background: #fff;
+	border-right: 1px solid #e2e2e2;
 }
 
 .DCatLeadTop .Desc {
@@ -4413,11 +4449,9 @@ p.img-caption {
 	-webkit-line-clamp: 5;
 	margin-top: 10px;
 }
-.DCatLeadTop 
-
-.DCatTop2 {
+ .DCatTop2 {
 	background: #fff;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	width: 100%;
 }
 
@@ -4431,9 +4465,15 @@ p.img-caption {
 
 .DCatTop3tList {
 	background: #fff;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	width: 100%;
+	border-right: 1px solid #e2e2e2;
+	padding-right: 20px;
 }
+.DCatTop3 .col-lg-4:nth-child(3) .DCatTop3tList {
+	border-right:none;
+}
+
 
 .DCatTop3tList .Desc {
 	padding: 5px 3px;
@@ -4442,13 +4482,31 @@ p.img-caption {
 .DCatTop3tList :hover .Desc .Title {
 	color: #0074ed;
 }
+.DCatTop3 {
+	border-top: 1px solid #e2e2e2;
+	margin-top: 15px;
+	padding-top: 15px;
+}
 
 
-
+/* 
 .DCatNewsList {
 	background: #fff;
 	margin-top: 20px;
 	width: 100%;
+} */
+.DCatNewsList {
+	background: #fff;
+	/* margin-top: 20px; */
+	width: 100%;
+	border-top: 1px solid #e2e2e2;
+	padding: 20px 0;
+}
+.DCatNewsListArea .col-lg-6.col-12:nth-child(1) .DCatNewsList{
+	border-top:none;
+}
+.DCatNewsListArea .col-lg-6.col-12:nth-child(2) .DCatNewsList{
+	border-top:none;
 }
 
 .DCatNewsList picture img {
@@ -4682,7 +4740,15 @@ h2.LatestNewsH {
 /* =====================archive ====================== */
 .archiveListNews {
 	background: #fff;
-	margin-top: 20px;
+	/* margin-top: 20px; */
+	padding: 20px 0;
+	border-top: 1px solid #e2e2e2;
+}
+.archiveSection .col-lg-6.col-sm-12:nth-child(1) .archiveListNews{
+	border-top:none;
+}
+.archiveSection .col-lg-6.col-sm-12:nth-child(2) .archiveListNews{
+	border-top:none;
 }
 
 .archiveListNews .col-sm-4 {
@@ -4909,6 +4975,13 @@ h2.LatestNewsH {
 .DVideoTop2InnerList {
 	width: 100%;
 	padding-bottom: 20px;
+	border-right: 1px solid #e2e2e2;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+.DVideoTop2Inner .col-lg-4:nth-child(3) .DVideoTop2InnerList{
+	border-right: none;
+	padding-right: 0px;
 }
 
 .DVideoTop2Inner .col-lg-4:last-child {
@@ -4917,6 +4990,7 @@ h2.LatestNewsH {
 
 .DVideoTop2InnerList .Desc {
 	padding: 5px 5px 0;
+	height: 50px;
 }
 
 .VideoGalleryTop {
@@ -5165,7 +5239,7 @@ h2.LatestNewsH {
 }
 
 .DivisionLeadNews {
-	background-color: #f0f0f0;
+	background-color: #fff;
 	border-bottom: 1px dotted #ccc;
 	display: block;
 	padding-bottom: 10px;
@@ -5189,7 +5263,7 @@ h2.LatestNewsH {
 }
 
 .DivisionListNews {
-	background-color: #f0f0f0;
+	background-color: #fff;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -5231,8 +5305,10 @@ h2.LatestNewsH {
 }
 
 .DistrictListNews {
-	background-color: #f0f0f0;
-	margin-top: 15px;
+	background-color: #fff;
+	/* margin-top: 15px; */
+	border-bottom: 1px solid #e2e2e2;
+	padding: 20px 0;
 }
 
 .DistrictListNews .col-lg-7 {
@@ -5262,7 +5338,7 @@ h2.LatestNewsH {
 	line-height: 20px;
 	padding-top: 0;
 	position: absolute;
-	bottom: 10px;
+	bottom: 17px;
 	color: #979797;
 	border: none;
 }

@@ -101,9 +101,9 @@ export default function CategoryPhotoFeature() {
                     </h2>
 
                     <section>
-                        <div className="PhotoGallery page mt-4">
+                        <div className="PhotoGallery page mt-4 ">
                             <div className="row">
-                                <div className="col-lg-6 col-12">
+                                <div className="col-lg-6 col-12 BorderRight">
                                     <div className="PhotoGalleryTop">
                                         <Link to={"/photo-feature/news/" + catLeadNews1.PhotoFeatureID} onClick={scrollTop}>
                                             <div className="DImgZoomBlock">
@@ -119,11 +119,11 @@ export default function CategoryPhotoFeature() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 col-12">
+                                <div className="col-lg-6 col-12 ">
                                     <div className="row">
                                         {catLeadNews2.map((nc) => {
                                             return (
-                                                <div className="col-lg-6 col-12 d-flex" key={nc.PhotoFeatureID}>
+                                                <div className="col-lg-6 col-12 d-flex BorderRight" key={nc.PhotoFeatureID}>
                                                     <div className="PhotoGalleryList align-self-stretch">
                                                         <Link to={"/photo-feature/news/" + nc.PhotoFeatureID} onClick={scrollTop}>
                                                             <div className="row">
@@ -159,8 +159,8 @@ export default function CategoryPhotoFeature() {
 
                     <section>
                         <div className="row">
-                            <div className="col-lg-9 col-sm-12">
-                                <h2 className="LatestNewsH mt-4">ছবিঘর বিভাগের সব খবর</h2>
+                            <div className="col-lg-9 col-sm-12 mt-4 BorderRight">
+                                <h2 className="LatestNewsH ">ছবিঘর বিভাগের সব খবর</h2>
                                 <section className="DCatNewsListArea">
                                     <div className="row">
                                         {catNewsMore.map((nc) => {

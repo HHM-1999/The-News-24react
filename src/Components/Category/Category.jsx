@@ -141,13 +141,13 @@ export default function Category() {
 
                             <section>
                                 <div className="row">
-                                    <div className="col-lg-9 col-sm-12">
+                                    <div className="col-lg-9 col-sm-12 DBorderRight">
                                         <>
                                             {catSlug === 'country' && <DivisionDistricName />}
                                         </>
                                         <div className="row">
                                             <div className="col-lg-8 col-12 d-flex">
-                                                <div className="DCatLeadTop">
+                                                <div className="DCatLeadTop BorderRight">
                                                     {catLeadNews1 ?
                                                         <Link to={"/" + catLeadNews1.Slug + "/news/" + catLeadNews1.ContentID} onClick={scrollTop}>
                                                             <div className="row">
@@ -238,8 +238,8 @@ export default function Category() {
 
                             <section>
                                 <div className="row">
-                                    <div className="col-lg-9 col-sm-12">
-                                        <h2 className="LatestNewsH mt-4">{catName.CategoryName} বিভাগের সব খবর</h2>
+                                    <div className="col-lg-9 col-sm-12 mt-4 BorderRight">
+                                        <h2 className="LatestNewsH ">{catName.CategoryName} বিভাগের সব খবর</h2>
                                         <section className="DCatNewsListArea">
                                             <div className="row">
                                                 {catNewsMore.map((nc) => {

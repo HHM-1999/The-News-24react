@@ -498,7 +498,9 @@ export default function Header() {
                                                         </ul>
                                                     }
                                                 </div>
-                                                <div className='MobileMenu-Heading'>
+                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/entertainment" onClick={scrollTop}>বিনোদন</Link></li>
+                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/trade" onClick={scrollTop}>বাণিজ্য</Link></li>
+                                                {/* <div className='MobileMenu-Heading'>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/entertainment" className='nav-link parent'>বিনোদন</Link></h3>
                                                         <h3 onClick={() => setShowSubCat3(!showSubCat3)}>{showSubCat3 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
@@ -510,9 +512,9 @@ export default function Header() {
                                                             <li onClick={mobileHeader}><Link to="/entertainment/dhallywood" onClick={scrollTop}>অন্যান্য</Link></li>
                                                         </ul>
                                                     }
-                                                </div>
+                                                </div> */}
 
-                                                <div className='MobileMenu-Heading'>
+                                                {/* <div className='MobileMenu-Heading'>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/trade" className='nav-link parent'>বাণিজ্য</Link></h3>
                                                         <h3 onClick={() => setShowSubCat4(!showSubCat4)}>{showSubCat4 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
@@ -527,9 +529,9 @@ export default function Header() {
 
                                                         </ul>
                                                     }
-                                                </div>
+                                                </div> */}
                                                 <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/court-law" onClick={scrollTop}>আইন ও বিচার</Link></li>
-                                                <div className='MobileMenu-Heading '>
+                                                {/* <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/jobs" className='nav-link parent'>চাকরি</Link></h3>
                                                         <h3 onClick={() => setShowSubCat5(!showSubCat5)}>{showSubCat5 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
@@ -543,7 +545,7 @@ export default function Header() {
 
                                                         </ul>
                                                     }
-                                                </div>
+                                                </div> */}
                                                 <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/religion" className='nav-link parent'>ধর্ম ও জীবন</Link></h3>
@@ -552,7 +554,7 @@ export default function Header() {
                                                     {showSubCat6 &&
                                                         <ul className='SubMenuM'>
                                                             <li onClick={mobileHeader}><Link to="/religion/islam" onClick={scrollTop}>ইসলাম</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/religion/hinduism" onClick={scrollTop}>সনাতন</Link></li>
+                                                            {/* <li onClick={mobileHeader}><Link to="/religion/hinduism" onClick={scrollTop}>সনাতন</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/religion/religion-others" onClick={scrollTop}>অন্যান্য</Link></li>
 
                                                         </ul>
@@ -575,8 +577,11 @@ export default function Header() {
                                                             <li onClick={mobileHeader}><Link to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/motivation" onClick={scrollTop}>অনুপ্রেরণা</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/jobs" onClick={scrollTop}>চাকরি</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/photo-feature" onClick={scrollTop}>ছবিঘর</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/video" onClick={scrollTop}>ভিডিও</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/agriculture" onClick={scrollTop}>কৃষি</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/environment-and-climate" onClick={scrollTop}>পরিবেশ ও জলবায়ু</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/archives" onClick={scrollTop}>আর্কাইভ</Link></li>
                                                         </ul>
                                                     }
