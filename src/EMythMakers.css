@@ -1750,6 +1750,10 @@ a.close-search {
 	background-color: #f0f0f0;
 	position: relative;
 	width: 100%;
+ padding:  0 10px;
+}
+.Dmargin{
+	margin: 0 20px;
 }
 
 
@@ -4409,6 +4413,7 @@ p.img-caption {
 	-webkit-line-clamp: 5;
 	margin-top: 10px;
 }
+.DCatLeadTop 
 
 .DCatTop2 {
 	background: #fff;
@@ -4536,7 +4541,8 @@ h2.LatestNewsH {
 }
 
 .DTop3List {
-	padding: 10px 0;
+	/* padding: 10px 0; */
+	border-bottom: 1px solid #e2e2e2;
 }
 
 .DTop3List.homePage picture img {
@@ -4833,7 +4839,7 @@ h2.LatestNewsH {
 /* .DImgZoomBlock.writers picture img {aspect-ratio: 1.1;width: 100%;object-fit: cover;object-position: center;} */
 .detailsPage .DTop3List {
 	padding: 12px 0;
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 }
 
 .detailsPage .DTop3List:last-child {
@@ -5688,18 +5694,32 @@ span.DFeatureIcon i.fa-solid.fa-expand {
 	line-height: 27px;
 }
 
-.slick-track {
+/* .slick-track {
 	max-width: 100%;
 	display: -webkit-box;
-}
+} */
 
-.slick-slide div {
+/* .slick-slide div {
 	height: 100%;
-}
+} */
 
-.slick-list {
+/* .slick-list {
 	overflow: hidden;
-}
+} */
+.slick-next {
+	right: -12px !important;
+	background: #fff !important;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+	color: #F00000 !important;
+	font-size: 26px !important;
+	background-color: #f0f0f0;
+  }
+  .slick-prev {
+	left: -18px !important;
+	background: #fff !important;
+  }
 
 .scrollSec {
 	margin-top: 5px;

@@ -329,13 +329,13 @@ export default function Header() {
                                                                 <ul className="nav flex-column">
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/motivation">অনুপ্রেরণা</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/photo-feature">ছবিঘর</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/">কৃষি</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/agriculture">কৃষি</Link></li>
                                                                 </ul>
                                                             </div>
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
                                                                 <ul className="nav flex-column">
                                                                     {/* <li><Link className="dropdown-item" onClick={scrollTop} to="/video">ভিডিও</Link></li> */}
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/">পরিবেশ ও জলবায়ু</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/environment-and-climate">পরিবেশ ও জলবায়ু</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/lifestyle">লাইফস্টাইল</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/archives">আর্কাইভ</Link></li>
                                                                     

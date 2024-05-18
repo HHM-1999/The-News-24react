@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
+import Slider from 'react-slick';
+
 
 var lazyloaded = false
 export default function VideoSec() {
@@ -10,7 +12,7 @@ export default function VideoSec() {
         axios
             .get(`${process.env.REACT_APP_API_URL}json/file/generatePositionVideoCategory1.json`)
             .then(({ data }) => {
-                setVideos(data.data.slice(0, 4))
+                setVideos(data.data.slice(0, 8))
                 setTimeout(function () {
                     lazyloaded = false
                     ForLazyLoaderImg(lazyloaded)
@@ -18,7 +20,46 @@ export default function VideoSec() {
             })
     }, [])
 
-
+    var settings = {
+        centerPadding: "50px",
+        className: "center",
+        centerMode: true,
+        dots: false,
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+        pauseOnFocus: true,
+        Speed: 100,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
 
     return (
@@ -29,14 +70,15 @@ export default function VideoSec() {
                 <div className="MoreVideoArea">
 
                 </div>
-                <div className="row">
-                    {videos.map((nc) => {
-                        return (
-                            <div className="col-lg-3 col-12 d-flex" key={nc.WebTVID}>
-                                <div className="DMoreVideoListItem align-self-stretch">
-                                    <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
-                                        <div className="row">
-                                            <div className="col-lg-12 col-12">
+                <div className="slider-container">
+               
+                    <div className="row Dmargin">
+                       
+                    <Slider {...settings}>
+                            {videos.map((nc) => {
+                                return (
+                                        <div className="DMoreVideoListItem   " key={nc.WebTVID} style={{padding:"0 10px",margin:"0 10px"}}>
+                                            <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                                 <div className="DMoreVideoThumb">
                                                     <div className="Imgresize">
                                                         <figure className="ImgViewer">
@@ -48,19 +90,25 @@ export default function VideoSec() {
                                                     </div>
                                                     <div className="card-video-img transition"></div>
                                                 </div>
-                                            </div>
-                                            <div className="col-lg-12 col-12">
                                                 <div className="Desc">
                                                     <h3 className="Title">{nc.WebTVHeading}</h3>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        )
-                    })}
+                             
+
+
+                                )
+                            })}
+                         </Slider>
+
+                    </div>
+                 
+
+
                 </div>
+
+ 
             </div>
 
 

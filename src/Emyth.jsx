@@ -4,6 +4,8 @@ import "lightgallery.js/dist/css/lightgallery.css";
 import RouterLink from './Components/RouterLink';
 import { useEffect } from 'react';
 import { scrollTop } from './Components/AllFunctions';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 var scrollBtn
 
 function Emyth() {
