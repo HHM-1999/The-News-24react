@@ -93,7 +93,7 @@ export default function TagPage() {
                                             {nc.ImageThumbPath ? (
                                                 <>
                                                     <div className="col-lg-2 col-sm-4 col-5">
-                                                        <img src={process.env.REACT_APP_IMG_Tag + nc.ImagePath} alt={nc.TagTitle} title={nc.TagTitle} className="img-fluid img100" />
+                                                        <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Tag + nc.ImagePath} alt={nc.TagTitle} title={nc.TagTitle} className="img-fluid img100" />
                                                     </div>
                                                     <div className="col-lg-10 col-sm-8 col-7">
                                                         <div className="Desc">

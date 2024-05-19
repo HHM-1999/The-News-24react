@@ -24,7 +24,7 @@ export default function LeadOpinionSec() {
 
 
     return (
-        <div className='BorderLeft'>
+        <>
 
             <div className="DRightSideAdd">
                 <a href="#">
@@ -45,8 +45,8 @@ export default function LeadOpinionSec() {
                                 <div className="col-lg-5 col-5">
                                     <div className="DImgZoomBlock">
                                         <picture><img
-                                             src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
-                                              {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
+                                            src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
+                                            {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
                                         </picture>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ export default function LeadOpinionSec() {
                 )
             })}
 
-        </div>
+        </>
 
     )
 }
