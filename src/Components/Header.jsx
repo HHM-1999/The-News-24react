@@ -21,21 +21,21 @@ var sticky = 0
 var navbarMobile
 var sticky2 = 0
 export default function Header() {
-    const useToggle = (initialState) => {
-        const [toggleValue, setToggleValue] = useState(initialState);
+    // const useToggle = (initialState) => {
+    //     const [toggleValue, setToggleValue] = useState(initialState);
 
-        const toggler = () => { setToggleValue(!toggleValue) };
-        return [toggleValue, toggler]
-    };
-    const [toggle, setToggle] = useToggle();
+    //     const toggler = () => { setToggleValue(!toggleValue) };
+    //     return [toggleValue, toggler]
+    // };
+    // const [toggle, setToggle] = useToggle();
 
     let navigate = useNavigate();
     const [showSubCat, setShowSubCat] = useState(false);
     const [showSubCat1, setShowSubCat1] = useState(false);
     const [showSubCat2, setShowSubCat2] = useState(false);
-    const [showSubCat3, setShowSubCat3] = useState(false);
-    const [showSubCat4, setShowSubCat4] = useState(false);
-    const [showSubCat5, setShowSubCat5] = useState(false);
+    // const [showSubCat3, setShowSubCat3] = useState(false);
+    // const [showSubCat4, setShowSubCat4] = useState(false);
+    // const [showSubCat5, setShowSubCat5] = useState(false);
     const [showSubCat6, setShowSubCat6] = useState(false);
     const [showSubCat7, setShowSubCat7] = useState(false);
     useEffect(() => {
@@ -89,33 +89,48 @@ export default function Header() {
         }
     }
 
+    // function mobileHeaderSearch(e) {
+    //     e.preventDefault();
+    //     var search = document.getElementById("deskSearch");
+    //     var element2 = document.getElementById("closeBTN");
+    //     var element = document.getElementById("menuBTN");
+    //     if (search.style.display === "block") {
+    //         search.style.display = "none";
+    //         if (search.style.display === "none") {
+    //             element2.classList.add('hide')
+    //             element2.classList.remove('show')
+    //             element.classList.add('show')
+    //             element.classList.remove('hide')
+    //         }
+    //     } else {
+    //         search.style.display = "block";
+    //         if (search.style.display === "block") {
+    //             element2.classList.add('show')
+    //             element2.classList.remove('hide')
+    //             element.classList.add('hide')
+    //             element.classList.remove('show')
+    //         }
+    //     }
+    //     var x = document.getElementById("mobileSearch");
+    //     if (x.style.display === "block") {
+    //         x.style.display = "none";
+    //     } else {
+    //         x.style.display = "block";
+    //     }
+    // }
     function mobileHeaderSearch(e) {
         e.preventDefault();
-        var search = document.getElementById("deskSearch");
-        var element2 = document.getElementById("closeBTN");
-        var element = document.getElementById("menuBTN");
-        if (search.style.display === "block") {
-            search.style.display = "none";
-            if (search.style.display === "none") {
-                element2.classList.add('hide')
-                element2.classList.remove('show')
-                element.classList.add('show')
-                element.classList.remove('hide')
-            }
+        var searchWeb = document.getElementById("deskSearch");
+        if (searchWeb.style.display === "none") {
+            searchWeb.style.display = "block";
         } else {
-            search.style.display = "block";
-            if (search.style.display === "block") {
-                element2.classList.add('show')
-                element2.classList.remove('hide')
-                element.classList.add('hide')
-                element.classList.remove('show')
-            }
+            searchWeb.style.display = "none";
         }
-        var x = document.getElementById("mobileSearch");
-        if (x.style.display === "block") {
-            x.style.display = "none";
+        var searchMobile = document.getElementById("mobileSearchBar");
+        if (searchMobile.style.display === "none") {
+            searchMobile.style.display = "block";
         } else {
-            x.style.display = "block";
+            searchMobile.style.display = "none";
         }
     }
 
@@ -124,12 +139,8 @@ export default function Header() {
         const txt = e.target.q.value;
         navigate('/search/' + txt)
     }
-
-
     return (
         <>
-
-
             <header>
                 <div className="HeaderTopBar stickyHide">
                     <div className="container">
@@ -247,7 +258,7 @@ export default function Header() {
                                                 </li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/politics">রাজনীতি</Link></li>
                                                 <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/crime">অপরাধ </Link></li>
-                                               
+
                                                 <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" to="/sports" onClick={scrollTop} id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">ক্রীড়াঙ্গন </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
@@ -307,7 +318,7 @@ export default function Header() {
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/migration">প্রবাস</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/education">শিক্ষা</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/todays-sports">আজকের খেলা</Link></li>
-                                                                     
+
                                                                 </ul>
                                                             </div>
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
@@ -338,7 +349,7 @@ export default function Header() {
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/environment-and-climate">পরিবেশ ও জলবায়ু</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/lifestyle">লাইফস্টাইল</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/archives">আর্কাইভ</Link></li>
-                                                                    
+
                                                                 </ul>
                                                             </div>
 
@@ -352,18 +363,20 @@ export default function Header() {
                                         <a href="" className="MBLogo" rel="home">
                                             <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
-                                        <div className="d-flex justify-content-end SearchArea">
+                                        <div className="d-flex justify-content-end SearchArea" >
                                             <div className="search">
-                                                <i onClick={setToggle} className="fas fa-search" aria-hidden="true"></i>
-                                                {toggle && (
-                                                    <div className="search-box" >
-                                                        <form onSubmit={handelSubmit} action="/search/" method="get">
+                                                <i onClick={mobileHeaderSearch} className="fas fa-search" aria-hidden="true"></i>
+                                                <div className="search-box" id="mobileSearchBar" style={{ display: 'none' }} >
+                                                    <form onSubmit={handelSubmit}>
+                                                        <div className="searchArea">
                                                             <input name="q" type="text" placeholder="এখানে লিখুন..." aria-describedby="button-addon3" />
-                                                            <input id="button-addon3" type="submit" className='search-btn' value="খুঁজুন" />
-                                                        </form>
-                                                    </div>
-                                                )}
+                                                            {/* <input  id="button-addon3" type="submit" aria-label="submit" className='search-btn' value="খুঁজুন" /> */}
+                                                            <button id="button-addon3" className='search-btn' type="submit" aria-label="submit">খুঁজুন</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
+
                                         </div>
 
 

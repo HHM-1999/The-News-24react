@@ -41,7 +41,7 @@ export default function AboutUs() {
                                     <div className="about-us-desc">
                                         <h3 className="Title">{state.name}</h3>
                                         <p className='design'>{state.designation}</p>
-                                        <p className='design'>{state.employee_id}  </p>
+                                        <p className='design'>Employee Id : {state.employee_id}  </p>
                                     </div>
 
                                 </Link>
@@ -59,7 +59,7 @@ export default function AboutUs() {
                                             <div className="about-us-desc">
                                                 <h3 className="Title">{nc.name}</h3>
                                                 <p className='design'>{nc.designation}</p>
-                                                <p className='design'>{nc.employee_id} </p>
+                                                <p className='design'>Employee Id : {nc.employee_id} </p>
                                             </div>
 
                                         </Link>

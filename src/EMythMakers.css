@@ -4871,6 +4871,9 @@ h2.LatestNewsH {
 .archiveListNews .Desc {
 	padding: 5px 0;
 }
+.col-lg-6.col-sm-12:nth-child(1) .archiveListNews{
+	border-top: none;
+}
 
 /* =========Tag List & writers List======= */
 .DTagListArea .row {
