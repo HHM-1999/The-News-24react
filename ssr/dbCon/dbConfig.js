@@ -1,8 +1,8 @@
 const util = require( 'util' );
 const mysql = require( 'mysql' );
 
-const dbUser = 'root'
-const dbPass = ''
+const dbUser = 't73n3ms42'
+const dbPass = 'sbe7pGBqGCTlC26'
 
 function bnConfig() {
     const dbConn = mysql.createConnection( {
