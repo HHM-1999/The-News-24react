@@ -21,7 +21,7 @@ export default function DCountry() {
 
     return (
         <>
-        <div className="SectionTitle"><h3><Link to="/country"  onClick={scrollTop}><span className="ColorBox"></span>সারাদেশ</Link></h3></div>
+        <div className="SectionTitle"><h3><Link to="/country"  onClick={scrollTop}><span className="ColorBox"></span>স্বদেশ</Link></h3></div>
                     <div className="row">
                         {country.map((nc,i)=>{
 

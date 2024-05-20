@@ -153,6 +153,12 @@ picture img {
 .hide {
 	display: none;
 }
+.SportsButton a{
+	color: #F00000;
+}
+.SportsButton{
+	padding-bottom: 5px;
+}
 
 .HeaderTopBar {
 	background: #ddd;
@@ -269,13 +275,6 @@ picture img {
 .DSocialLink ul li a .fa-rss:hover {
 	background: #EB632D;
 }
-
-.DHeaderNav {
-	background: transparent;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
-
 .DHeaderNav .navbar {
 	background: #fff !important;
 	padding: 0;
@@ -283,7 +282,7 @@ picture img {
 
 .DHeaderNav .navbar-light .navbar-nav .nav-link {
 	color: #222;
-	padding: .7rem 33px .4rem;
+	padding: .7rem 39px .4rem;
 	font-size: 17px;
 	font-weight: bold;
 }
@@ -1127,7 +1126,7 @@ a.close-search {
 }
 
 .sticky .DHeaderNav .navbar-light .navbar-nav .nav-link {
-	padding: 1.1rem 0.8rem 1rem;
+	padding: 1.1rem 1rem 1rem;
 	font-size: 16px;
 }
 
@@ -1158,10 +1157,11 @@ a.close-search {
 }
 
 .SocialIcon ul .LiveTV {
-	height: 30px;
+	/* height: 30px; */
 	text-align: center;
 	line-height: 30px;
 	color: #f0f0f0;
+	margin-right: 20px;
 }
 
 .SocialIcon ul .LiveTV a {
@@ -1220,10 +1220,11 @@ a.close-search {
 }
 
 .DFooterBg {
-	background: #BEBEBE;
+	background: #fff;
 	padding: 30px 0;
 	color: #222;
 	margin-top: 30px;
+	border-top: 2px solid #e2e2e2;
 }
 
 .DFooterLogo img {
@@ -1284,19 +1285,28 @@ a.close-search {
 
 .DFooterBottomBg {
 	padding: 15px 0;
-	background: #212529;
+	background: #e2e2e2;
 	margin-bottom: 36px;
+	border-top: 1px solid #d2d2d2;
 }
 
 .DFooterBottomBg p {
-	color: #f0f0f0;
+	color: #000;
 	font-size: 17px;
 }
 
 .DFooterBottomBg p a {
-	color: #f0f0f0;
+	color: #000;
 }
-
+.DFooterBottomBg p a:hover {
+	color: #F00000;
+}
+.DFooterBottomBg p a  span{
+	color: #3e3e3e;
+}
+.DFooterBottomBg p a  span:hover{
+	color: #0074ed;
+}
 .DBannerAdd {
 	padding-top: 20px;
 }
@@ -2576,9 +2586,9 @@ a.close-search {
 }
 
 .DLPSTab2 .nav-tabs .nav-item a.active {
-	background: #808080;
+	background: #f0f0f0;
 	font-weight: 600;
-	color: #f0f0f0;
+	color: #333;
 }
 
 .DLPSTab2 .PanelHeight {
@@ -2622,8 +2632,8 @@ a.close-search {
 	text-align: center;
 	border: none;
 	padding: 5px;
-	color: #f0f0f0;
-	background: #808080;
+	color: #333;
+	background: #e2e2e2;
 	text-decoration: none;
 }
 
@@ -3117,7 +3127,8 @@ a.close-search {
 }
 
 .SectionTitle h3::before {
-	background: #ededed;
+	/* background: #ededed; */
+	background: #ddd;
 	width: 100%;
 }
 
@@ -5012,13 +5023,15 @@ h2.LatestNewsH {
 }
 
 .DVideoTopInner {
-	background-color: #4a4a48;
+	background-color: #fff;
 	width: 100%;
+	border-bottom: 1px solid #e2e2e2;
+	padding-bottom: 20px;
 }
 
-.DVideoTopInner .Desc {
+/* .DVideoTopInner .Desc {
 	padding: 20px 20px 10px 0;
-}
+} */
 
 .NewsTitle {
 	position: relative;
@@ -5027,7 +5040,7 @@ h2.LatestNewsH {
 .DVideoTopInner .Title {
 	font-size: 20px;
 	line-height: 40px;
-	color: #f5f5f5;
+	color: #000;
 	font-weight: 700;
 	font-family: sans-serif !important;
 }
@@ -5045,12 +5058,12 @@ h2.LatestNewsH {
 .DVideoTopInner .Brief p {
 	margin-top: 12px;
 	-webkit-line-clamp: 5;
-	color: #e3e3e3;
+	color: #333;
 	line-height: 24px;
 }
 
 .DVideoTop2Inner {
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	margin-top: 20px;
 }
 

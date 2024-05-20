@@ -157,10 +157,12 @@ export default function Header() {
                             <div className="col-md-4 col-sm-12 d-flex justify-content-end">
                                 <div className="SocialIcon">
                                     <ul>
+                                        <li className="LiveTV"><a href="/todays-sports">আজকের খেলা</a></li>
                                         <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
+
                                         {/* <li className="LiveTV"><a href="/live">লাইভ <img src="/media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li> */}
                                     </ul>
                                 </div>
@@ -244,7 +246,7 @@ export default function Header() {
                                                 </li>
                                                 {/* <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/country">সারাদেশ</Link></li> */}
                                                 <li className="nav-item dropdown">
-                                                    <Link className="nav-link dropdown-toggle" to="/country" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">সারাদেশ </Link>
+                                                    <Link className="nav-link dropdown-toggle" to="/country" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">স্বদেশ </Link>
                                                     <ul className="dropdown-menu DiplayInline" aria-labelledby="navbarDropdown">
                                                         <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/dhaka">ঢাকা </Link></li>
                                                         <li><Link className="dropdown-item" onClick={scrollTop} to="/divisions/chattogram">চট্টগ্রাম </Link></li>
@@ -288,7 +290,7 @@ export default function Header() {
                                                         <li><Link className="dropdown-item" onClick={scrollTop} to="/trade/bank-insurance">ব্যাংক-বীমা </Link></li>
                                                     </ul>
                                                 </li> */}
-                                                <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/court-law">আইন ও বিচার </Link></li>
+                                                <li className="nav-item"><Link className="nav-link" onClick={scrollTop} to="/migration">প্রবাস </Link></li>
 
                                                 {/* <li className="nav-item dropdown">
                                                     <Link className="nav-link dropdown-toggle" onClick={scrollTop} to="/jobs" id="navbarDropdown" role="button" data-bs-toggle="dropdown disable" aria-expanded="false">চাকরি </Link>
@@ -315,9 +317,9 @@ export default function Header() {
                                                         <div className="row w-100 ">
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
                                                                 <ul className="nav flex-column">
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/migration">প্রবাস</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/court-law">আইন ও বিচার</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/education">শিক্ষা</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/todays-sports">আজকের খেলা</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs">চাকরি</Link></li>
 
                                                                 </ul>
                                                             </div>
@@ -328,13 +330,7 @@ export default function Header() {
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/horoscope">রাশিফল</Link></li>
                                                                 </ul>
                                                             </div>
-                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
-                                                                <ul className="nav flex-column">
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/the-news-special">দ্য নিউজ স্পেশাল</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/reader-s-news">পাঠকের সংবাদ</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs">চাকরি</Link></li>
-                                                                </ul>
-                                                            </div>
+
 
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
                                                                 <ul className="nav flex-column">
@@ -350,6 +346,13 @@ export default function Header() {
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/lifestyle">লাইফস্টাইল</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/archives">আর্কাইভ</Link></li>
 
+                                                                </ul>
+                                                            </div>
+                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
+                                                                <ul className="nav flex-column">
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/the-news-special">দ্য নিউজ স্পেশাল</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/reader-s-news">পাঠকের সংবাদ</Link></li>
+                                                                    
                                                                 </ul>
                                                             </div>
 
@@ -449,11 +452,14 @@ export default function Header() {
                                                     <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter twitter icon"></i></a>
                                                     <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
                                                 </div>
-                                                {/* <div className="LiveButton">
-                                                    <a href="/live"><img src={"/media/common/live2.gif"} alt="Live" title="Live" className="img-fluid" /></a>
-                                                </div> */}
+                                               
                                             </div>
 
+                                        </div>
+                                        <div className="col-12 d-flex justify-content-center">
+                                        <div className="SportsButton">
+                                                    <a href="/todays-sports">আজকের খেলা</a>
+                                                </div>
                                         </div>
                                         <div className="col-12">
                                             <ul>
@@ -479,7 +485,7 @@ export default function Header() {
                                                 </div>
                                                 <div className='MobileMenu-Heading '  >
                                                     <li className="mr-auto d-flex justify-content-between" >
-                                                        <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/country" className=' nav-link parent'>সারাদেশ</Link></h3>
+                                                        <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/country" className=' nav-link parent'>স্বদেশ </Link></h3>
                                                         <h3 onClick={() => setShowSubCat7(!showSubCat7)}>{showSubCat7 ? <i className=" fa-solid fa-xmark  rotate"></i> : <i className="fas fa-plus open-menu  "></i>}</h3>
                                                     </li>
                                                     {showSubCat7 &&
@@ -543,7 +549,7 @@ export default function Header() {
                                                         </ul>
                                                     }
                                                 </div> */}
-                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/court-law" onClick={scrollTop}>আইন ও বিচার</Link></li>
+                                                <li className="nav-item" onClick={mobileHeader}><Link className="nav-link" to="/migration" onClick={scrollTop}>প্রবাস</Link></li>
                                                 {/* <div className='MobileMenu-Heading '>
                                                     <li className="mr-auto d-flex  justify-content-between">
                                                         <h3 onClick={mobileHeader}><Link onClick={scrollTop} to="/jobs" className='nav-link parent'>চাকরি</Link></h3>
@@ -581,9 +587,9 @@ export default function Header() {
                                                     </li>
                                                     {showSubCat &&
                                                         <ul className='SubMenuM'>
-                                                            <li onClick={mobileHeader}><Link to="/migration" onClick={scrollTop}>প্রবাস</Link></li>
+                                                            <li onClick={mobileHeader}><Link to="/court-law" onClick={scrollTop}>আইন ও বিচার </Link></li>
                                                             <li onClick={mobileHeader}><Link to="/education" onClick={scrollTop}>শিক্ষা</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li>
+                                                            {/* <li onClick={mobileHeader}><Link to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/health" onClick={scrollTop}>স্বাস্থ্য</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/information-technology" onClick={scrollTop}>তথ্য প্রযুক্তি</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li>

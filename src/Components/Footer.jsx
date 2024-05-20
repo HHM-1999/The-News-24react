@@ -86,7 +86,7 @@ export default function Footer() {
                         <div className="row">
                             <div className="col-sm-12 text-center">
                                 <p style={{ fontFamily:" SolaimanLipi" }}> &copy; {toBengaliNumber(years)} | <a href="/">দ্য নিউজ ২৪</a>  কর্তৃক সর্বসত্ব ® সংরক্ষিত | উন্নয়নে <a href="https://www.emythmakers.com"
-                                    target="_blank" rel="noreferrer">ইমিথমেকারস.কম</a></p>
+                                    target="_blank" rel="noreferrer"><span>ইমিথমেকারস.কম</span></a></p>
                             </div>
                         </div>
                     </div>
