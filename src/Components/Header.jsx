@@ -183,7 +183,7 @@ export default function Header() {
                             <div className="col-12 col-md-9">
                                 <div className="DHeaderAdd d-flex justify-content-end">
                                     <a href="/">
-                                        <img src={"/media/Advertisement/56.png"} className="img-fluid img100 border" />
+                                        <img src={"/media/Advertisement/Advertisement(728X90).png"} className="img-fluid img100 border" />
                                     </a>
                                 </div>
 

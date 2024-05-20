@@ -72,6 +72,7 @@ export default function Home() {
                         <HomeLdJson />
                         <section className='container'>
                             <LeadNews />
+                            <Ads />
                         </section>
                         <>
                             <div className="videoSection ">
@@ -95,6 +96,9 @@ export default function Home() {
                                     </div>
                                 </div>
                             </section>
+                            <>
+                            <Ads />
+                            </>
                             <section>
                                 <div className="container">
                                     <div className="row">
@@ -115,13 +119,16 @@ export default function Home() {
                                 </div>
                             </section>
                         </>
-
+                        <>
+                            <Ads />
+                        </>
 
                         <>
                             <section>
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-lg-9 col-12">
+
                                             <DInternationalSec />
                                         </div>
                                         <div className="col-lg-3 col-sm-12">
@@ -164,9 +171,9 @@ export default function Home() {
 
                                         </div>
                                         <div className="col-lg-4 col-12">
-                                          
-                                                <DBusiness />
-                                       
+
+                                            <DBusiness />
+
 
 
                                         </div>
@@ -176,11 +183,12 @@ export default function Home() {
                             <section className="container">
                                 <div className="row">
                                     <div className="col-md-12">
-                                        <div className="DAdd2 d-flex  justify-content-center">
+                                        {/* <div className="DAdd2 d-flex  justify-content-center">
                                             <Link to="">
                                                 <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                             </Link>
-                                        </div>
+                                        </div> */}
+                                          <Ads />
                                     </div>
                                 </div>
                             </section>
@@ -188,6 +196,9 @@ export default function Home() {
                             <section className="Entertainment">
                                 <DEntertainment />
                             </section>
+                            <>
+                            <Ads />
+                            </>
 
                             <div className="container">
                                 <section className="Sports">
@@ -205,11 +216,7 @@ export default function Home() {
                         <section className="container">
                             <div className="row">
                                 <div className="col-md-12">
-                                    <div className="DAdd2 d-flex  justify-content-center">
-                                        <Link to="">
-                                            <img src={"/media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                        </Link>
-                                    </div>
+                                <Ads />
                                 </div>
                             </div>
                         </section>
@@ -220,34 +227,34 @@ export default function Home() {
                                     <div className="row">
                                         <div className="col-lg-3 col-12">
                                             <div className="BorderRight">
-                                            <Crime />
+                                                <Crime />
                                             </div>
-                                            
+
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <div className="BorderRight">
-                                            <Technology />
+                                                <Technology />
                                             </div>
-                                           
+
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <div className="BorderRight">
-                                            <DForeign />
+                                                <DForeign />
                                             </div>
-                                            
+
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <Religion />
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <div className="BorderRight"> <Health /></div>
-                                           
+
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <div className="BorderRight">
-                                            <Law />
+                                                <Law />
                                             </div>
-                                          
+
                                         </div>
                                         <div className="col-lg-3 col-12">
                                             <DEducation />
@@ -257,7 +264,7 @@ export default function Home() {
                                             <div className="ads-section">
                                                 <div className="DAdd2 d-flex  justify-content-center">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/18058797247224877917.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                                     </Link>
                                                 </div>
                                             </div>
@@ -269,11 +276,7 @@ export default function Home() {
                             <section className="container">
                                 <div className="row">
                                     <div className="col-md-12">
-                                        <div className="DAdd2 d-flex  justify-content-center">
-                                            <Link to="">
-                                                <img src={"/media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
-                                            </Link>
-                                        </div>
+                                    <Ads />
                                     </div>
                                 </div>
                             </section>
@@ -288,12 +291,12 @@ export default function Home() {
                                             <div className="col-lg-3 col-12">
                                                 <div className="DRightSideAdd PT15">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/13982910857184178936.gif"} />
+                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} />
                                                     </Link>
                                                 </div>
                                                 <div className="DRightSideAdd">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/18058797247224877917.png"} />
+                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} />
                                                     </Link>
                                                 </div>
                                             </div>

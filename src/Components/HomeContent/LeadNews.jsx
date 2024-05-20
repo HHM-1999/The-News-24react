@@ -21,7 +21,7 @@ export default function LeadNews() {
                             <div className="col-lg-4 col-12">
                                 <LeadLatestNews />
                             </div>
-                            <Ads />
+                            {/* <Ads /> */}
                         </div>
                     </div>
                     <div className="col-lg-3 col-12">

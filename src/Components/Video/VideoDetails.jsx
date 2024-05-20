@@ -6,7 +6,7 @@ import { scrollTop, ForLazyLoaderImg, banglaDateConvetar } from '../AllFunctions
 import ErrorPage from "../ErrorPage";
 import SocialShare from "../SocialShare";
 // import VideoLatestPopularNews from "./VideoLatestPopularNews";
-import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
+import Ads from '../../assets/media/Advertisement/Advertisement (300X250).png'
 import RLoader from "../RLoader";
 var lazyloaded = false
 export default function VideoDetails() {

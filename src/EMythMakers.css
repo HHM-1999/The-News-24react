@@ -318,8 +318,8 @@ picture img {
 	border: 0px solid #ccc;
 	font-weight: 400;
 	font-size: 14px;
-	background: #808080;
-	color: #f0f0f0;
+	background: #f0f0f0;
+	color: #333;
 	left: -25px;
 }
 
@@ -327,13 +327,13 @@ picture img {
 .dropdown-item:hover {
 	color: #eee;
 	text-decoration: none;
-	background: #555;
+	background: #F00000;
 }
 
 .dropdown-item {
 	padding: .3rem 0.8rem;
 	font-weight: 400;
-	color: #f0f0f0;
+	color: #333;
 	font-size: 17px;
 	min-width: auto;
 }
@@ -360,7 +360,7 @@ picture img {
 	width: 100%;
 	margin-top: 0;
 	min-width: 1260px;
-	background: #808080 !important;
+	background: #F0F0F0 !important;
 	border-bottom: 3px solid #F00000;
 }
 
@@ -414,7 +414,7 @@ picture img {
 }
 
 .open-menu {
-	color: #333;
+	color: #000;
 	cursor: pointer;
 	font-size: 17px;
 	position: absolute;
@@ -426,7 +426,7 @@ picture img {
 
 .rotate {
 	/* transform: rotate(135deg); */
-	color: #900;
+	color: #0074ed;
 	cursor: pointer;
 	font-size: 17px;
 	position: absolute;
@@ -518,7 +518,7 @@ picture img {
 
 .rotate {
 	/* transform: rotate(135deg); */
-	color: #900;
+	color: #0074ed;
 }
 
 .overflow {
@@ -568,7 +568,7 @@ picture img {
 }
 
 #mobile-nav ul li:hover {
-	background: #808080;
+	background: #F00000;
 	color: #fff;
 }
 
@@ -591,16 +591,16 @@ picture img {
 }
 
 #mobile-nav .SubMenuM {
-	background-color: #808080;
+	background-color: #F0F0F0;
 }
 
 #mobile-nav .SubMenuM li:hover {
-	background: #555;
+	background: #F00000;
 
 }
 
 #mobile-nav .SubMenuM li a {
-	color: #f0f0f0;
+	color: #333;
 	display: inline-block;
 	font-size: 16px;
 	padding: 8px 15px;
@@ -3583,7 +3583,8 @@ a.close-search {
 
 	.NewsTitle .Title {
 		border-bottom: unset;
-		padding-bottom: unset;
+		padding-bottom: 10px;
+		-webkit-line-clamp: 2;
 	}
 
 	.DSportsTop .Desc .Brief p {

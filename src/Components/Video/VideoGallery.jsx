@@ -3,10 +3,8 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
-// import VideoCat1 from "./VideoCat1";
-import Ads from '../../assets/media/Advertisement/18058797247224877917.png'
+import Ads from '../../assets/media/Advertisement/Advertisement (300X250).png'
 import RLoader from "../RLoader";
-// import VPopularNews from "./VPopularNews";
 var lazyloaded = false
 var limit = 8
 var offset = 0
@@ -15,9 +13,6 @@ export default function VideoGallery() {
     const [leadVideos, setLeadVideos] = useState([]);
     const [state3, setState3] = useState([])
     const [showBtnForMoreNews, setShowBtnForMoreNews] = useState(true);
-
-    // const [popularVideos, setPopularVideos] = useState([]);
-    // const [videoCat, setVideoCat] = useState([]);
     const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
 
@@ -43,28 +38,6 @@ export default function VideoGallery() {
                     }, 1000);
                 }
             })
-        // axios
-        //     .get(`${process.env.REACT_APP_API_URL}videos-popular/10`)
-        //     .then(({ data }) => {
-        //         if (data.webVideosLatest.length > 0) {
-        //             setPopularVideos(data.webVideosLatest);
-        //         }
-        //     });
-
-        // axios
-        //     .get(`${process.env.REACT_APP_API_URL}webtv-category-wise-video`)
-        //     .then(({ data }) => {
-        //         if (data.webtvCategory_video.length > 0) {
-        //             setVideoCat(data.webtvCategory_video)
-        //             setTimeout(function () {
-        //                 lazyloaded = false
-        //                 ForLazyLoaderImg(lazyloaded)
-        //             }, 1000);
-        //         }
-        //     })
-        // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
-        // const timer = setTimeout(() => { window.location.reload(1); }, 300000);
-        // return () => clearTimeout(timer);
     }, [])
 
     const toggleButtonState = () => {
