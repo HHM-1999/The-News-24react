@@ -72,7 +72,6 @@ export default function Home() {
                         <HomeLdJson />
                         <section className='container'>
                             <LeadNews />
-                            <Ads />
                         </section>
                         <>
                             <div className="videoSection ">
