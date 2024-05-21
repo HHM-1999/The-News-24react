@@ -383,7 +383,7 @@ export default function Details() {
                                                     {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>} */}
                                                         {/* <DocumentTitle title={news.ContentHeading} /> */}
                                                         <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
-                                                        {news.Initial && <p className='fw-bold'>{news.Initial}</p>}
+                                                        {news.Initial && <p className='fw-bold'></p>} 
                                                     </div>
                                                     <div className="DTagsNews d-print-none">
                                                         {tagArray && tagArray[i].map((nc) => {

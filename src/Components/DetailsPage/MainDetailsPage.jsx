@@ -429,7 +429,7 @@ export default function Details() {
                                                     {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>} */}
                                                     {/* <DocumentTitle title={news.ContentHeading} /> */}
                                                     <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
-                                                    {news.Initial && <p className='fw-bold'>{news.Initial}</p>}
+                                                    {news.Initial && <p className='fw-bold'></p>}
                                                     {/* {relatedNews[i] ? 
                                                     <DRelatedNews relatedNews={relatedNews[i]} />
                                                 : false } */}

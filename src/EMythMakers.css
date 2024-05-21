@@ -155,13 +155,20 @@ picture img {
 }
 .SportsButton a{
 	color: #F00000;
+	margin-right: 10px;
 }
+.SportsButton a:first-child{
+	border-right: 2px solid #e2e2e2;
+	padding-right: 10px;
+}
+
 .SportsButton{
 	padding-bottom: 5px;
+
 }
 
 .HeaderTopBar {
-	background: #ddd;
+	background: #f0f0f0;
 }
 
 .DateTime p {
@@ -1166,7 +1173,7 @@ a.close-search {
 
 .SocialIcon ul .LiveTV a {
 	color: #F00000;
-	padding: 0 0 0 10px;
+	/* padding: 0 0 0 10px; */
 	font-weight: bold;
 	position: relative;
 	top: 1px;
@@ -1284,8 +1291,8 @@ a.close-search {
 }
 
 .DFooterBottomBg {
-	padding: 15px 0;
-	background: #e2e2e2;
+	padding: 10px 0;
+	background: #f0f0f0;
 	margin-bottom: 36px;
 	border-top: 1px solid #d2d2d2;
 }
@@ -1582,8 +1589,8 @@ a.close-search {
 	
 } */
 .videoSection {
-	margin-top: 30px;
-	background: #f0f0f0;
+	/* margin-top: 30px; */
+	background: #fff;
 	padding: 10px 0 30px 0;
 }
 
@@ -1774,7 +1781,7 @@ a.close-search {
 
 .DMoreVideoListItem {
 	margin-top: 20px;
-	background-color: #f0f0f0;
+	background-color: #fff;
 	position: relative;
 	width: 100%;
 	padding: 0 10px;
@@ -2510,7 +2517,7 @@ a.close-search {
 
 .DCatStyle2Top .Desc {
 	padding: 5px 5px;
-	height: 62px;
+	height: 59px;
 	overflow: hidden;
 }
 
@@ -3053,8 +3060,8 @@ a.close-search {
 
 /*============= Category Style 5 =============*/
 .DBGWhite {
-	background: #f0f0f0;
-	margin: 30px 0 10px 0;
+	background: #fff;
+	margin: 0px 0 10px 0;
 	padding: 5px 0 30px 0;
 }
 
