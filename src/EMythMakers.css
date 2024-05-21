@@ -693,10 +693,11 @@ picture img {
 
 .aboutTitle {
 	margin-top: 10px;
+	margin-right: 15px;
 }
 
 .aboutTitle a {
-	font-size: 17px;
+	font-size: 16px;
 
 	font-weight: 600;
 	color: #F00000 !important;
@@ -1233,9 +1234,18 @@ a.close-search {
 	margin-top: 30px;
 	border-top: 2px solid #e2e2e2;
 }
+.DFooterLogo {
+	margin: auto 0;
+}
 
 .DFooterLogo img {
-	width: 200px;
+	/* width: 200px; */
+	width: 120px;
+}
+.footerIcon {
+	color: #0074ed;
+	margin-right: 5px;
+	font-size: 14px;
 }
 
 .footer h5 {
