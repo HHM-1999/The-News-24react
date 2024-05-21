@@ -3071,7 +3071,8 @@ a.close-search {
 }
 
 .DCatStyle5List .col-lg-4 {
-	padding-right: 0;
+	margin-right: 0px;
+	border-right: 1px solid #e2e2e2;
 }
 
 .DCatStyle5List .WriterName {
