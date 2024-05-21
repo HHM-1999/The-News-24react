@@ -24,40 +24,24 @@ import Religion from './HomeContent/Religion'
 import Health from './HomeContent/Health'
 import Law from './HomeContent/Law'
 import DEducation from './HomeContent/DEducation'
-// import Cultural from './HomeContent/Cultural'
 import PhotoSection from './HomeContent/PhotoSection'
 import PrayerTime from './HomeContent/PrayerTime'
 // import Event from './HomeContent/Event'
 import HomeLdJson from './HomeContent/HomeLdJson'
 import FBpagePlugin from './FBpagePlugin'
 // import Ramadan from './HomeContent/Ramadan'
-// import LazyLoaderGIF from '../icon/lazyComponentLoaderGIF.gif'
-import RLoader from './RLoader'
+// import RLoader from './RLoader'
 
 var allComponentsLoaded = false
 export default function Home() {
-    // useEffect(() => {
-    //     document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
-    //     const timer = setTimeout(() => { window.location.reload(1); }, 300000);
-    //     return () => clearTimeout(timer);
-    // }, [])
-    const [isLoading, setisLoading] = useState(true)
-    // const [homeAd2, setHomeAd2] = useState([]) // eslint-disable-line no-unused-vars
+    // const [isLoading, setisLoading] = useState(true)
 
-    // const [firstSection, setFirstSection] = useState(false)
-    // const [secondSection, setSecondSection] = useState(false)
-    // const [thirdSection, setThirdSection] = useState(false)
-    // const [fourthSection, setFourthSection] = useState(false)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
 
-        // setFirstSection(true)
-        // setSecondSection(true)
-        // setThirdSection(true)
-        // setFourthSection(true)
         allComponentsLoaded = true
 
     }, [])
@@ -65,7 +49,7 @@ export default function Home() {
         <>
             <main>
                 {/* <Event /> */}
-                {isLoading === false ?
+             
                     <>
 
                         <DocumentTitle title='TheNews24 || দ্য নিউজ ২৪' />
@@ -308,8 +292,8 @@ export default function Home() {
                         </>
 
                     </>
-                    : <RLoader />
-                }
+                  
+             
 
 
 

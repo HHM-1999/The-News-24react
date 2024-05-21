@@ -11,7 +11,7 @@ import DFrom from './DFrom'
 import DSocialShare from './DSocialShare'
 import DfbComment from './DfbComment'
 import Ldjson from './Ldjson'
-import RLoader from '../RLoader'
+// import RLoader from '../RLoader'
 var lazyloaded = false
 var dateArray = []
 var allTags
@@ -31,21 +31,21 @@ export default function Details() {
     const [catLatest, setCatLatest] = useState([])
     const [catPopular, setCatPopular] = useState([])
     const [writer, setWriter] = useState([]);
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
 
     const PrintAble = () => { window.print(); };
     useEffect(() => {
         // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         contentLoaded = false
         axios
             .get(`${process.env.REACT_APP_API_URL}category/${catSlug}`)
             .then(({ data }) => {
                 if (data.category !== null) {
-                    setisLoading(false)
+                    // setisLoading(false)
                     setCatName(data.category);
                     catID = data.category.CategoryID
                     axios
@@ -289,7 +289,7 @@ export default function Details() {
         <>
             {state ?
                 <main>
-                    {isLoading === false ?
+        
                         <div className="container">
                             {/* <div className="LOGOIMG">
                             <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
@@ -454,7 +454,7 @@ export default function Details() {
                                 </div>
                             </section>
                         </div> :
-                        <RLoader />}
+                   
                 </main>
                 : <ErrorPage />}
         </>

@@ -8,7 +8,7 @@ import ErrorPage from '../ErrorPage';
 import CategoryPopular from './CategoryPopular';
 import SubCatLdJson from './SubCatLdJson';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
-import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var showMore = true
@@ -30,13 +30,13 @@ export default function SubCategory() {
 
     const [subCatreadMore, setSubCatreadMore] = useState([]);
     const [catLatest, setcatLatest] = useState([])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
 
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         offset = 0
         axios
             .get(`${process.env.REACT_APP_API_URL}sub-category-by-slug/${subCatSlug}`)
@@ -130,7 +130,6 @@ export default function SubCategory() {
         <>
             {CatName ?
                 <main>
-                          {isLoading === false ?
                     <div className="container">
                         <h2 className="DTitle">
                             <Link to={+ '/'} onClick={scrollTop}>
@@ -278,9 +277,7 @@ export default function SubCategory() {
                         </section>
 
                     </div>
-                    :
-                    <RLoader /> 
-                                    }
+                   
                 </main>
                 : <ErrorPage />}
         </>

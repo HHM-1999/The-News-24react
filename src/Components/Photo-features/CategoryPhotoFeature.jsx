@@ -5,7 +5,7 @@ import DocumentTitle from "react-document-title";
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 // import LatestPopularNews from '../Category/LatestPopularNews';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
-import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var showMore = true
@@ -18,18 +18,18 @@ export default function CategoryPhotoFeature() {
 
     const [catLeadNews1, setcatLeadNews1] = useState([])
     const [catLeadNews2, setcatLeadNews2] = useState([])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         offset = 0
         axios
             .get(`${process.env.REACT_APP_API_URL}json/file/generatePhotoFeature.json`)
             .then(({ data }) => {
                 if (data.data) {
-                    setisLoading(false)
+                    // setisLoading(false)
                     setcatLeadNews1(data.data[0]);
                     setcatLeadNews2(data.data.slice(1, 5));
                     // leadNews position array ------ start
@@ -91,7 +91,7 @@ export default function CategoryPhotoFeature() {
     return (
         <>
             <main>
-            {isLoading === false ? 
+       
                 <div className="container">
                     <h2 className="DTitle">
                         <Link to={+ '/'} onClick={scrollTop}>
@@ -200,8 +200,7 @@ export default function CategoryPhotoFeature() {
                     </section>
 
                 </div>
-                :
-                <RLoader />}
+                
             </main>
         </>
     )
