@@ -1,12 +1,12 @@
 const util = require( 'util' );
 const mysql = require( 'mysql' );
 
-const dbUser = 't73n3ms42'
-const dbPass = 'sbe7pGBqGCTlC26'
+const dbUser = 'root'
+const dbPass = ''
 
 function bnConfig() {
     const dbConn = mysql.createConnection( {
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 3306,
         user: dbUser,
         password: dbPass,
@@ -27,7 +27,7 @@ function bnConfig() {
 
 function mediaConfig() {
     const dbConnMedia = mysql.createConnection( {
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 3306,
         user: dbUser,
         password: dbPass,
@@ -48,7 +48,7 @@ function mediaConfig() {
 
 function genConfig() {
     const dbConnGeneral = mysql.createConnection( {
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 3306,
         user: dbUser,
         password: dbPass,
