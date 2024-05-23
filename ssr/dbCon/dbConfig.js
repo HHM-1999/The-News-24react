@@ -1,12 +1,10 @@
 const util = require( 'util' );
 const mysql = require( 'mysql' );
 
-<<<<<<< HEAD
 // const dbUser = 't73n3ms42'
 // const dbPass = 'sbe7pGBqGCTlC26'
 
-=======
->>>>>>> 4444dd6afe6fb0ccd931a5d5fe6de63bb051c8ca
+
 const dbUser = 'root'
 const dbPass = ''
 
