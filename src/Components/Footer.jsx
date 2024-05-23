@@ -38,7 +38,7 @@ export default function Footer() {
                 <div className="DFooterBg">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-2 d-flex justify-content-start border-right-inner">
+                            <div className="col-md-3 d-flex justify-content-start border-right-inner">
                                 <div className="DFooterLogo">
                                     <a href="/">
                                         <img src={process.env.REACT_APP_DOMAIN_URL+"media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
@@ -52,7 +52,7 @@ export default function Footer() {
                                 <p className='aboutTitle'><Link to='/aboutUs'><span className='footerIcon'><i className="fa-solid fa-user"></i></span>আমাদের সম্পর্কে</Link></p>
                                 <p className='aboutTitle'><Link to='/aboutUs'><span className='footerIcon'><i className="fa-solid fa-film"></i></span>বিজ্ঞাপন</Link></p>
                             </div>
-                            <div className="col-md-4 d-flex align-items-center justify-content-center">
+                            <div className="col-md-3 d-flex align-items-center justify-content-center">
                                 <div className="MoreInfo">
                                     {/* <h5>সম্পাদক ও প্রকাশক: মো. আনোয়ারুল ইসলাম</h5> */}
                                     <p> কর্পোরেট অফিস: বাড়ি : ২১ (৮ তলা), ব্লক : এ, রোড : ০১, মহানগর প্রজেক্ট, হাতিরঝিল, ঢাকা-১২১৯ ৷</p>
