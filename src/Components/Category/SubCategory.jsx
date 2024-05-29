@@ -9,6 +9,7 @@ import CategoryPopular from './CategoryPopular';
 import SubCatLdJson from './SubCatLdJson';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
 // import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var showMore = true
@@ -31,10 +32,13 @@ export default function SubCategory() {
     const [subCatreadMore, setSubCatreadMore] = useState([]);
     const [catLatest, setcatLatest] = useState([])
     // const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
 
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
         offset = 0

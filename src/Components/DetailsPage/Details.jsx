@@ -12,6 +12,7 @@ import DSocialShare from './DSocialShare'
 import DfbComment from './DfbComment'
 import Ldjson from './Ldjson'
 // import RLoader from '../RLoader'
+// import RLoader from '../RLoader'
 var lazyloaded = false
 var dateArray = []
 var allTags
@@ -32,6 +33,7 @@ export default function Details() {
     const [catPopular, setCatPopular] = useState([])
     const [writer, setWriter] = useState([]);
     // const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
 
     const PrintAble = () => { window.print(); };
     useEffect(() => {
@@ -40,11 +42,14 @@ export default function Details() {
         setTimeout(() => { window.location.reload(1); }, 300000);
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         contentLoaded = false
         axios
             .get(`${process.env.REACT_APP_API_URL}category/${catSlug}`)
             .then(({ data }) => {
                 if (data.category !== null) {
+                    // setisLoading(false)
                     // setisLoading(false)
                     setCatName(data.category);
                     catID = data.category.CategoryID

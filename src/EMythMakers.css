@@ -180,9 +180,11 @@ picture img {
 .SportsButton{
 	padding-bottom: 5px;
 
+
 }
 
 .HeaderTopBar {
+	background: #f0f0f0;
 	background: #f0f0f0;
 }
 
@@ -761,10 +763,11 @@ picture img {
 
 /* .aboutTitle {
 	margin-top: 10px;
+	margin-right: 15px;
 }
 
 .aboutTitle a {
-	font-size: 17px;
+	font-size: 16px;
 
 	font-weight: 600;
 	color: #F00000 !important;
@@ -1251,6 +1254,7 @@ a.close-search {
 .SocialIcon ul .LiveTV a {
 	color: #F00000;
 	/* padding: 0 0 0 10px; */
+	/* padding: 0 0 0 10px; */
 	font-weight: bold;
 	position: relative;
 	top: 1px;
@@ -1318,6 +1322,9 @@ a.close-search {
 	margin-top: 30px;
 	border-top: 2px solid #e2e2e2;
 }
+.DFooterLogo {
+	margin: auto 0;
+}
 
 .DFooterLogo img {
 	width: 120px;
@@ -1376,9 +1383,9 @@ a.close-search {
 	border-top: 1px solid #e2e2e2;
 }
 
-.MoreInfo {
+/* .MoreInfo {
 	padding-left: 20px;
-}
+} */
 
 .MoreInfo p {
 	font-size: 17px;
@@ -2757,6 +2764,7 @@ a.close-search {
 
 .DCatStyle2Top .Desc {
 	padding: 5px 5px;
+	height: 59px;
 	height: 59px;
 	overflow: hidden;
 }

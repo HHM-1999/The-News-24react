@@ -10,6 +10,7 @@ import { format } from 'date-fns'
 import DocumentTitle from 'react-document-title';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
 // import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false;
 export default function DetailsPhotoFeature() {
@@ -17,10 +18,13 @@ export default function DetailsPhotoFeature() {
   const [contentID, setContentID] = useState([])
   const [catLatest, setcatLatest] = useState([])
   // const [isLoading, setisLoading] = useState(true)
+  // const [isLoading, setisLoading] = useState(true)
   useEffect(() => {
     // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
     document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
     setTimeout(() => { window.location.reload(1); }, 300000);
+    // setisLoading(true)
+    // setTimeout(() => { setisLoading(false) }, 300);
     // setisLoading(true)
     // setTimeout(() => { setisLoading(false) }, 300);
     axios
@@ -31,6 +35,7 @@ export default function DetailsPhotoFeature() {
       .get(`${process.env.REACT_APP_API_URL}photo-feature-details/${photoID}`)
       .then(({ data }) => {
         if (data.data.length > 0) {
+          // setisLoading(false)
           // setisLoading(false)
           setContentID(data.data[0]);
           console.log(data.data[0])

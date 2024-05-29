@@ -5,6 +5,7 @@ import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import Ads from '../../assets/media/Advertisement/Advertisement (300X250).png'
 // import RLoader from "../RLoader";
+// import RLoader from "../RLoader";
 var lazyloaded = false
 var limit = 8
 var offset = 0
@@ -13,11 +14,13 @@ export default function VideoGallery() {
     const [leadVideos, setLeadVideos] = useState([]);
     const [state3, setState3] = useState([])
     const [showBtnForMoreNews, setShowBtnForMoreNews] = useState(true);
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
 
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
 
@@ -25,6 +28,7 @@ export default function VideoGallery() {
             .get(`${process.env.REACT_APP_API_URL}videos/16`)
             .then(({ data }) => {
                 if (data.webVideos.length > 0) {
+                    // setisLoading(false)
                     // setisLoading(false)
                     setLeadVideoTop(data.webVideos[0])
                     setLeadVideos(data.webVideos.slice(1, 4))

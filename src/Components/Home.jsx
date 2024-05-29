@@ -24,7 +24,6 @@ import Religion from './HomeContent/Religion'
 import Health from './HomeContent/Health'
 import Law from './HomeContent/Law'
 import DEducation from './HomeContent/DEducation'
-// import Cultural from './HomeContent/Cultural'
 import PhotoSection from './HomeContent/PhotoSection'
 import PrayerTime from './HomeContent/PrayerTime'
 // import Event from './HomeContent/Event'
@@ -53,11 +52,9 @@ export default function Home() {
         setTimeout(() => { window.location.reload(1); }, 300000);
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
 
-        // setFirstSection(true)
-        // setSecondSection(true)
-        // setThirdSection(true)
-        // setFourthSection(true)
         allComponentsLoaded = true
 
     }, [])

@@ -62,7 +62,14 @@ export default function Footer() {
                                     <p>ই-মেইল: <a href="mailto:hello@thenews24.com" target="_blank" rel="noreferrer">hello@thenews24.com</a> , <a href="mailto:info@thenews24.com" target="_blank" rel="noreferrer">info@thenews24.com</a></p>
                                     
                                 </div>
+                                    <div className="contact ">
+                                    <p>ফোন: <a href="tel:+৮৮০ ৯৬১১১৭১৯৮০">+৮৮০ ৯৬১১১৭১৯৮০</a> , <a href="tel:+৮৮০১৩৩২৫০২৬০০">+৮৮০১৩৩২৫০২৬০০</a> ,<a href="tel:+৮৮০১৩৩২৫০২৩০০">+৮৮০১৩৩২৫০২৩০০</a></p>
+                                    {/* <p>ফ্যাক্স: +8802 550 19709</p> */}
+                                    <p>ই-মেইল: <a href="mailto:hello@thenews24.com" target="_blank" rel="noreferrer">hello@thenews24.com</a> , <a href="mailto:info@thenews24.com" target="_blank" rel="noreferrer">info@thenews24.com</a></p>
+                                    
                                 </div>
+                                </div>
+                               
                                
                             </div>
                         </div>

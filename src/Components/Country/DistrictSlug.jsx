@@ -9,6 +9,7 @@ import ErrorPage from '../ErrorPage';
 // import LatestPopularNews from '../Category/LatestPopularNews';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
 // import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var limit = 10
@@ -32,6 +33,7 @@ export default function DistrictSlug() {
             .get(`${process.env.REACT_APP_API_URL}district-division-content/${divisionSlug}/${dristrictSlug}`)
             .then(({ data }) => {
                 if (data.districtContent.content.length !== 0) {
+                    // setisLoading(false)
                     // setisLoading(false)
                     setDristrictName(data.districtContent)
                     Did = data.districtContent.DistrictID
@@ -82,6 +84,8 @@ export default function DistrictSlug() {
         // return () => clearTimeout(timer);
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
     }, [divisionSlug, dristrictSlug])

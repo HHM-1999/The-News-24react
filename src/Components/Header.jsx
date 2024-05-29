@@ -153,6 +153,7 @@ export default function Header() {
                                         <li className="LiveTV"><a href='/namaj'>নামাজের সময়</a></li>
                                         <li className="LiveTV"><a href="/todays-sports">আজকের খেলা</a></li>
                                         <li className="LiveTV"><a href="/horoscope">রাশিফল</a></li>
+                                        <li className="LiveTV"><a href="/horoscope">রাশিফল</a></li>
                                         <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
@@ -346,6 +347,7 @@ export default function Header() {
                                                                 <ul className="nav flex-column">
                                                                     {/* <li><Link className="dropdown-item" onClick={scrollTop} to="/video">ভিডিও</Link></li> */}
 
+
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/lifestyle">লাইফস্টাইল</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/agriculture">কৃষি</Link></li>
 
@@ -460,6 +462,7 @@ export default function Header() {
                                                     <a href="#" target="_blank" rel="noreferrer" ><i class="fab fa-whatsapp whatsapp"></i></a>
 
                                                 </div>
+
 
                                             </div>
 
@@ -602,6 +605,7 @@ export default function Header() {
                                                             {/* <li onClick={mobileHeader}><Link to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/health" onClick={scrollTop}>স্বাস্থ্য</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/information-technology" onClick={scrollTop}>তথ্য প্রযুক্তি</Link></li>
+                                                            {/* <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li> */}
                                                             {/* <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>

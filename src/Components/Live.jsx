@@ -5,15 +5,15 @@ import { scrollTop } from './AllFunctions'
 import DocumentTitle from 'react-document-title'
 // import LatestPopularNews from './Category/LatestPopularNews'
 import LeadLatestNews from './HomeContent/LeadLatestNews'
-import RLoader from './RLoader'
+// import RLoader from './RLoader'
 export default function Live() {
     const [state, setState] = useState([])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         axios
             .get(`${process.env.REACT_APP_API_URL}live-video`)
             .then(({ data }) => {
@@ -25,7 +25,7 @@ export default function Live() {
     }, [])
     return (
         <>
-            {isLoading === false ?
+   
                 <main>
                     <h2 className="DTitle">
                         <Link to={+ '/'} onClick={scrollTop}>
@@ -55,9 +55,7 @@ export default function Live() {
                         </div>
                     </div>
                 </main>
-                :
-                <RLoader />
-            }
+            
         </>
     )
 }
