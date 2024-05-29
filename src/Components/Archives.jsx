@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { scrollTop, banglaDateConvetar, ForLazyLoaderImg } from './AllFunctions'
 import { useLocation } from 'react-router-dom';
-import RLoader from './RLoader'
+// import RLoader from './RLoader'
 
 var lazyloaded = false
 var offset = 0
@@ -20,21 +20,21 @@ export default function Archives() {
     const { state } = useLocation();
     const [allCategoryList, setAllCategoryList] = useState([]);
     const [news, setNews] = useState([]);
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     // console.log(state);
     useEffect(() => {
         // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         // window.scrollTo(0, 0)
         // state = { 'start_date': "", 'end_date': "", 'category_name': "0", 'limit': limit, 'offset': offset }
         if (state) {
             axios
                 .post(`${process.env.REACT_APP_API_URL}archive`, state)
                 .then(({ data }) => {
-                    setisLoading(false)
+                    // setisLoading(false)
                     setNews(data.archive_data);
                     if (data.archive_data.length < limit) {
                         showMore = false
@@ -112,7 +112,7 @@ export default function Archives() {
 
     return (
         <main>
-              {isLoading===false ? 
+          
             <div className="container">
                 <div className="TopHomeSection"></div>
                 <DocumentTitle title=" দ্য নিউজ ২৪ :: আর্কাইভস" />
@@ -192,8 +192,8 @@ export default function Archives() {
                         <button onClick={toggleButtonState} id="ajax-more-btn" className="btn btn-lg btn-block ButtonBG">আরো খবর...</button>
                     </div>}
             </div>
-            :
-            <RLoader />}
+      
+    
 
         </main>
     )

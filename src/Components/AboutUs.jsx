@@ -36,7 +36,7 @@ export default function AboutUs() {
                     <div className="about-us-area2">
                                 <Link to='/' key={state.id} onClick={scrollTop}>
                                     <div className="about-img">
-                                        <img  src={process.env.REACT_APP_DOMAIN_URL + state.image} alt={state.name} title={state.name} className="img-fluid  " />
+                                        <img data-src={'/media/common/profile.png'} src={process.env.REACT_APP_DOMAIN_URL + state.image} alt={state.name} title={state.name} className="img-fluid  " />
                                     </div>
                                     <div className="about-us-desc">
                                         <h3 className="Title">{state.name}</h3>

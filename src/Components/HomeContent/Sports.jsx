@@ -34,8 +34,8 @@ export default function Sports() {
                         <div className="row">
                             {sports.map((nc) => {
                                 return (
-                                    <div className="col-lg-6 col-12 BorderRight mt-3">
-                                        <div className="DSportsTop">
+                                    <div className="col-lg-6 col-12  mt-3">
+                                        <div className="DSportsTop BorderRight">
                                             <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                                 <div className="Imgresize">
                                                     <figure className="ImgViewer">
@@ -59,11 +59,11 @@ export default function Sports() {
                         </div>
 
                     </div>
-                    <div className="col-lg-4 col-12 ">
+                    <div className="col-lg-4 col-12  ">
                         <div className="DSportsTop2">
                             {sports2.map((nc) => {
                                 return (
-                                    <div className="DSportsTop2List BorderRight mt-2">
+                                    <div className="DSportsTop2List  mt-2">
                                         <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                             <div className="row">
                                                 <div className="col-4">

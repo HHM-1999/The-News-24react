@@ -9,20 +9,20 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 import { format } from 'date-fns'
 import DocumentTitle from 'react-document-title';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
-import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false;
 export default function DetailsPhotoFeature() {
   let { photoID } = useParams();
   const [contentID, setContentID] = useState([])
   const [catLatest, setcatLatest] = useState([])
-  const [isLoading, setisLoading] = useState(true)
+  // const [isLoading, setisLoading] = useState(true)
   useEffect(() => {
     // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
     document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
     setTimeout(() => { window.location.reload(1); }, 300000);
-    setisLoading(true)
-    setTimeout(() => { setisLoading(false) }, 300);
+    // setisLoading(true)
+    // setTimeout(() => { setisLoading(false) }, 300);
     axios
       .get(`${process.env.REACT_APP_API_URL}photo-feature-hit-count/${photoID}`)
       .then(({ data }) => {
@@ -31,7 +31,7 @@ export default function DetailsPhotoFeature() {
       .get(`${process.env.REACT_APP_API_URL}photo-feature-details/${photoID}`)
       .then(({ data }) => {
         if (data.data.length > 0) {
-          setisLoading(false)
+          // setisLoading(false)
           setContentID(data.data[0]);
           console.log(data.data[0])
           setTimeout(function () {
@@ -59,7 +59,7 @@ export default function DetailsPhotoFeature() {
     <>
       {contentID ?
         <main>
-          {isLoading === false ? 
+ 
           <div className="container">
             {/* <div className="LOGOIMG">
               <img src={process.env.REACT_APP_FONT_DOMAIN_URL + "media/common/logo.png"} width={187} height={68} title="TheNews24 || দ্য নিউজ ২৪"
@@ -70,7 +70,8 @@ export default function DetailsPhotoFeature() {
               <div className="row mt-5 Photo_feature">
                 <div className="col-lg-2 col-12 d-print-none">
                   <div className="WritterName my-2">
-                    <p><i className="fa-solid fa-pen"></i> {contentID.Writer}<span className='DInitial'>, দ্য নিউজ ২৪</span></p>
+                    <p><i className="fa-solid fa-pen"></i> {contentID.Writer}
+                    </p>
                   </div>
                   <div className="DPublishTime">
                     <p><i className="fas fa-clock"></i>  প্রকাশিত: {contentID.create_date ? banglaDateConvetar(format(new Date(contentID.create_date), 'dd MMMM yyyy')) : ""}</p>
@@ -170,8 +171,8 @@ export default function DetailsPhotoFeature() {
                 </div>
               </div>
             </section>
-          </div> :
-          <RLoader />}
+          </div> 
+         
         </main >
         : <ErrorPage />}
     </>

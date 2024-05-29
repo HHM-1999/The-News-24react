@@ -32,7 +32,7 @@ import HomeLdJson from './HomeContent/HomeLdJson'
 import FBpagePlugin from './FBpagePlugin'
 // import Ramadan from './HomeContent/Ramadan'
 // import LazyLoaderGIF from '../icon/lazyComponentLoaderGIF.gif'
-import RLoader from './RLoader'
+// import RLoader from './RLoader'
 
 var allComponentsLoaded = false
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
     //     const timer = setTimeout(() => { window.location.reload(1); }, 300000);
     //     return () => clearTimeout(timer);
     // }, [])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     // const [homeAd2, setHomeAd2] = useState([]) // eslint-disable-line no-unused-vars
 
     // const [firstSection, setFirstSection] = useState(false)
@@ -51,8 +51,8 @@ export default function Home() {
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
 
         // setFirstSection(true)
         // setSecondSection(true)
@@ -65,7 +65,7 @@ export default function Home() {
         <>
             <main>
                 {/* <Event /> */}
-                {isLoading === false ?
+            
                     <>
 
                         <DocumentTitle title='TheNews24 || দ্য নিউজ ২৪' />
@@ -73,6 +73,9 @@ export default function Home() {
                         <section className='container'>
                             <LeadNews />
                         </section>
+                        <>
+                        <Ads  />
+                        </>
                         <>
                             <div className="videoSection ">
                                 <VideoSec />
@@ -96,7 +99,17 @@ export default function Home() {
                                 </div>
                             </section>
                             <>
-                            <Ads />
+                                {/* <Ads /> */}
+                                <div className="row">
+                                    <div className="col-12">
+                                    <div className="DAdd2 d-flex  justify-content-center">
+                                    <Link to="">
+                                        <img src={"/media/Advertisement/145142-1683193093.jpeg"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                    </Link>
+                                </div>
+                                    </div>
+                                </div>
+                               
                             </>
                             <section>
                                 <div className="container">
@@ -119,7 +132,12 @@ export default function Home() {
                             </section>
                         </>
                         <>
-                            <Ads />
+                            {/* <Ads /> */}
+                            <div className="DAdd2 d-flex  justify-content-center">
+                                <Link to="">
+                                    <img src={"/media/Advertisement/2148954953036687476.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                </Link>
+                            </div>
                         </>
 
                         <>
@@ -132,9 +150,9 @@ export default function Home() {
                                         </div>
                                         <div className="col-lg-3 col-sm-12">
                                             <OnlinePoll />
-                                            <div className="DRightSideAdd">
+                                            <div className="DRightSideAdd mt-2">
                                                 <Link to="">
-                                                    <img src={"media/Advertisement/Advertisement(300X90).png"} />
+                                                    <img src={"/media/Advertisement/ispahani.gif"} />
                                                 </Link>
                                             </div>
                                         </div>
@@ -157,15 +175,15 @@ export default function Home() {
                             <div className="container">
                                 <section className="International + Economics + Politics">
                                     <div className="row">
-                                        <div className="col-lg-4 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-4 col-12 BorderRight2">
+                                       
                                                 <DPoliticsSec />
-                                            </div>
+                                          
                                         </div>
-                                        <div className="col-lg-4 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-4 col-12 BorderRight2 " >
+                                        
                                                 <DJob />
-                                            </div>
+                                      
 
 
                                         </div>
@@ -182,12 +200,12 @@ export default function Home() {
                             <section className="container">
                                 <div className="row">
                                     <div className="col-md-12">
-                                        {/* <div className="DAdd2 d-flex  justify-content-center">
+                                        <div className="DAdd2 d-flex  justify-content-center">
                                             <Link to="">
                                                 <img src={"media/Advertisement/570203398507806717.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                             </Link>
-                                        </div> */}
-                                          <Ads />
+                                        </div>
+                                        {/* <Ads /> */}
                                     </div>
                                 </div>
                             </section>
@@ -196,7 +214,12 @@ export default function Home() {
                                 <DEntertainment />
                             </section>
                             <>
-                            <Ads />
+                                {/* <Ads /> */}
+                                <div className="DAdd2 d-flex mt-2  justify-content-center">
+                                        <Link to="">
+                                            <img src={"/media/Advertisement/ads2.jpeg"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                        </Link>
+                                    </div>
                             </>
 
                             <div className="container">
@@ -214,8 +237,13 @@ export default function Home() {
                         </section>
                         <section className="container">
                             <div className="row">
-                                <div className="col-md-12">
-                                <Ads />
+                                <div className="col-md-12 mt-2">
+                                    {/* <Ads /> */}
+                                    <div className="DAdd2 d-flex  justify-content-center">
+                                        <Link to="">
+                                            <img src={"/media/Advertisement/12565849791804438290.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -224,35 +252,26 @@ export default function Home() {
                             <div className="container">
                                 <section className=" + Economics + Politics">
                                     <div className="row">
-                                        <div className="col-lg-3 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-3 col-12 BorderRight2 mb-3 mt-3">
                                                 <Crime />
-                                            </div>
-
                                         </div>
-                                        <div className="col-lg-3 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-3 col-12 BorderRight2 mb-3 mt-3">
                                                 <Technology />
-                                            </div>
-
                                         </div>
-                                        <div className="col-lg-3 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-3 col-12 BorderRight2 mb-3 mt-3">
                                                 <DForeign />
-                                            </div>
-
                                         </div>
-                                        <div className="col-lg-3 col-12">
+                                        <div className="col-lg-3 col-12 ">
                                             <Religion />
                                         </div>
-                                        <div className="col-lg-3 col-12">
-                                            <div className="BorderRight"> <Health /></div>
+                                        <div className="col-lg-3 col-12 BorderRight2">
+                                            <Health /> 
 
                                         </div>
-                                        <div className="col-lg-3 col-12">
-                                            <div className="BorderRight">
+                                        <div className="col-lg-3 col-12 BorderRight2">
+                                     
                                                 <Law />
-                                            </div>
+                                        
 
                                         </div>
                                         <div className="col-lg-3 col-12">
@@ -263,7 +282,7 @@ export default function Home() {
                                             <div className="ads-section">
                                                 <div className="DAdd2 d-flex  justify-content-center">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                        <img src={"/media/Advertisement/15824348306179494464.gif"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                                                     </Link>
                                                 </div>
                                             </div>
@@ -275,7 +294,12 @@ export default function Home() {
                             <section className="container">
                                 <div className="row">
                                     <div className="col-md-12">
-                                    <Ads />
+                                        {/* <Ads /> */}
+                                        <div className="DAdd2 d-flex  justify-content-center">
+                                                    <Link to="">
+                                                        <img src={"/media/Advertisement/ads.jpeg"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                                    </Link>
+                                                </div>
                                     </div>
                                 </div>
                             </section>
@@ -290,12 +314,12 @@ export default function Home() {
                                             <div className="col-lg-3 col-12">
                                                 <div className="DRightSideAdd PT15">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} />
+                                                        <img src={"/media/Advertisement/15217118239208940339.png"} />
                                                     </Link>
                                                 </div>
                                                 <div className="DRightSideAdd">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/Advertisement (300X250).png"} />
+                                                        <img src={"/media/Advertisement/300x250.gif"} />
                                                     </Link>
                                                 </div>
                                             </div>
@@ -308,8 +332,8 @@ export default function Home() {
                         </>
 
                     </>
-                    : <RLoader />
-                }
+                  
+                
 
 
 

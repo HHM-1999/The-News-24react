@@ -8,6 +8,7 @@ import LatestPopularNews from '../Category/LatestPopularNews'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import ErrorPage from '../ErrorPage';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
+// import Profile from '../../../src/assets/media/common/profile.png'
 
 var lazyloaded = false
 var showMore = true
@@ -93,7 +94,7 @@ export default function WritersPage() {
                                                 {nc.ImagePath ? (
                                                     <>
                                                         <div className="col-lg-2 col-sm-4 col-5">
-                                                            <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Writer + nc.ImagePath} alt={nc.WriterName} title={nc.WriterName} className="img-fluid img100" />
+                                                            <img src={process.env.REACT_APP_IMG_Writer + nc.ImagePath} alt={nc.WriterName} title={nc.WriterName} className="img-fluid img100" />
                                                         </div>
                                                         <div className="col-lg-10 col-sm-8 col-7">
                                                             <div className="Desc">

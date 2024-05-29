@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import DocumentTitle from 'react-document-title'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import Ads from '../../assets/media/Advertisement/Advertisement (300X250).png'
-import RLoader from "../RLoader";
+// import RLoader from "../RLoader";
 var lazyloaded = false
 var limit = 8
 var offset = 0
@@ -18,14 +18,14 @@ export default function VideoGallery() {
 
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
 
         axios
             .get(`${process.env.REACT_APP_API_URL}videos/16`)
             .then(({ data }) => {
                 if (data.webVideos.length > 0) {
-                    setisLoading(false)
+                    // setisLoading(false)
                     setLeadVideoTop(data.webVideos[0])
                     setLeadVideos(data.webVideos.slice(1, 4))
                     setState3(data.webVideos.slice(4, 12))
@@ -61,7 +61,6 @@ export default function VideoGallery() {
     return (
         <>
             <main>
-            {isLoading===false ? 
                 <div className="container">
                     <h2 className="DTitle">
                         <Link to={+ '/'} onClick={scrollTop}>
@@ -171,7 +170,7 @@ export default function VideoGallery() {
 
                     {/* <VideoCat1 state={videoCat} /> */}
                 </div>
-                : <RLoader />}
+              
             </main>
         </>
     )

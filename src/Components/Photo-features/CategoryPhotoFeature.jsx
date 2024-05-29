@@ -5,7 +5,7 @@ import DocumentTitle from "react-document-title";
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 // import LatestPopularNews from '../Category/LatestPopularNews';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
-import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var showMore = true
@@ -18,18 +18,18 @@ export default function CategoryPhotoFeature() {
 
     const [catLeadNews1, setcatLeadNews1] = useState([])
     const [catLeadNews2, setcatLeadNews2] = useState([])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
-        document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
-        setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
+        // setTimeout(() => { window.location.reload(1); }, 300000);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         offset = 0
         axios
             .get(`${process.env.REACT_APP_API_URL}json/file/generatePhotoFeature.json`)
             .then(({ data }) => {
                 if (data.data) {
-                    setisLoading(false)
+                    // setisLoading(false)
                     setcatLeadNews1(data.data[0]);
                     setcatLeadNews2(data.data.slice(1, 5));
                     // leadNews position array ------ start
@@ -91,7 +91,7 @@ export default function CategoryPhotoFeature() {
     return (
         <>
             <main>
-            {isLoading === false ? 
+      
                 <div className="container">
                     <h2 className="DTitle">
                         <Link to={+ '/'} onClick={scrollTop}>
@@ -107,7 +107,13 @@ export default function CategoryPhotoFeature() {
                                     <div className="PhotoGalleryTop">
                                         <Link to={"/photo-feature/news/" + catLeadNews1.PhotoFeatureID} onClick={scrollTop}>
                                             <div className="DImgZoomBlock">
-                                                <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + catLeadNews1.ImageBgPath} width={513} height={389} alt={catLeadNews1.PhotoFeatureTitle} title={catLeadNews1.PhotoFeatureTitle} /></picture>
+                                                <picture>
+                                                    {
+                                                        catLeadNews1.ImageBgPath ==null ?
+                                                        <img src={process.env.REACT_APP_LAZYL_IMG}  width={513} height={389} alt={catLeadNews1.PhotoFeatureTitle} title={catLeadNews1.PhotoFeatureTitle} /> :
+                                                        <img src={process.env.REACT_APP_IMG_Path + catLeadNews1.ImageBgPath} width={513} height={389} alt={catLeadNews1.PhotoFeatureTitle} title={catLeadNews1.PhotoFeatureTitle} />
+                                                    }
+                                                </picture>
                                                 <div className="card-video-icon"><i className="fa-solid fa-camera"></i></div>
                                             </div>
                                             <div className="Desc">
@@ -129,7 +135,13 @@ export default function CategoryPhotoFeature() {
                                                             <div className="row">
                                                                 <div className="col-lg-12 col-sm-3 col-5">
                                                                     <div className="DImgZoomBlock">
-                                                                        <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageBgPath} width={353} height={198} alt={nc.PhotoFeatureTitle} title={nc.PhotoFeatureTitle} /></picture>
+                                                                        <picture>
+                                                                            {
+                                                                                nc.ImageBgPath==null ?
+                                                                                <img src={process.env.REACT_APP_LAZYL_IMG}  width={353} height={198} alt={nc.PhotoFeatureTitle} title={nc.PhotoFeatureTitle} /> :
+                                                                                <img src={process.env.REACT_APP_IMG_Path + nc.ImageBgPath} width={353} height={198} alt={nc.PhotoFeatureTitle} title={nc.PhotoFeatureTitle} />
+                                                                            }
+                                                                        </picture>
                                                                         <div className="card-video-icon"><i className="fa-solid fa-camera"></i></div>
                                                                     </div>
                                                                 </div>
@@ -200,8 +212,7 @@ export default function CategoryPhotoFeature() {
                     </section>
 
                 </div>
-                :
-                <RLoader />}
+               
             </main>
         </>
     )

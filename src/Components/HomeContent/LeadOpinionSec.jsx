@@ -13,7 +13,7 @@ export default function LeadOpinionSec() {
             .get(`${process.env.REACT_APP_API_URL}json/file/generateSpecial2.json`)
             .then(({ data }) => {
                 if (data.data) {
-                    setState3(data.data.slice(0, 2));
+                    setState3(data.data.slice(0, 4));
                     setTimeout(function () {
                         lazyloaded = false
                         ForLazyLoaderImg(lazyloaded)
@@ -26,19 +26,15 @@ export default function LeadOpinionSec() {
     return (
         <>
 
-            <div className="DRightSideAdd">
-                <a href="#">
-                    <img src={"/media/Advertisement/lab-pharmacy.jpg"} />
-                </a>
-            </div>
+
             {state3.map((nc) => {
                 return (
-                    <div className="DHomeLeadList3 align-self-stretch" key={nc.ContentID}>
+                    <div className="DHomeLeadList4 align-self-stretch" key={nc.ContentID}>
                         <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
                             <div className="row">
                                 <div className="col-lg-7 col-7">
                                     <div className="Desc">
-                                        <h3 className="Title"><span> {nc.CategoryName} /</span>{nc.ContentHeading}
+                                        <h3 className="Title">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/"}</span> }{nc.ContentHeading}
                                         </h3>
                                     </div>
                                 </div>

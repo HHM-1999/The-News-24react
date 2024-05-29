@@ -21,13 +21,6 @@ var sticky = 0
 var navbarMobile
 var sticky2 = 0
 export default function Header() {
-    // const useToggle = (initialState) => {
-    //     const [toggleValue, setToggleValue] = useState(initialState);
-
-    //     const toggler = () => { setToggleValue(!toggleValue) };
-    //     return [toggleValue, toggler]
-    // };
-    // const [toggle, setToggle] = useToggle();
 
     let navigate = useNavigate();
     const [showSubCat, setShowSubCat] = useState(false);
@@ -149,7 +142,7 @@ export default function Header() {
                                 <div className="DateTime h-100 d-flex align-items-center ">
                                     <p className="date">
                                         {/* <i className="fa fa-calendar" aria-hidden="true"></i> <span>রোববার ২১ এপ্রিল ২০২৪, বৈশাখ ৮ ১৪৩১ </span> */}
-                                        <i className="fas fa-calendar"></i>&nbsp;{banglaDateConvetar(currentDay)}, {banglaDateConvetar(currentDate)}, {BNDATEs}, {banglaDateConvetar(arabicDate)}
+                                        <i className="fas fa-calendar"></i>&nbsp;{banglaDateConvetar(currentDay)}, {banglaDateConvetar(currentDate)}, {BNDATEs}
                                     </p>
                                 </div>
                             </div>
@@ -157,11 +150,15 @@ export default function Header() {
                             <div className="col-md-4 col-sm-12 d-flex justify-content-end">
                                 <div className="SocialIcon">
                                     <ul>
+                                        <li className="LiveTV"><a href='/namaj'>নামাজের সময়</a></li>
                                         <li className="LiveTV"><a href="/todays-sports">আজকের খেলা</a></li>
+                                        <li className="LiveTV"><a href="/horoscope">রাশিফল</a></li>
                                         <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
                                         <li className="li-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></li>
+                                        <li className="icoInstagram"><a href="#" target="_blank" rel="noreferrer" ><i class="fab fa-instagram"></i></a></li>
+                                        <li className="icoWhatApp"><a href="#" target="_blank" rel="noreferrer" ><i class="fab fa-whatsapp"></i></a></li>
 
                                         {/* <li className="LiveTV"><a href="/live">লাইভ <img src="/media/common/live.gif" className="img-fluid img100" alt='TheNews24 || দ্য নিউজ ২৪' title='TheNews24 || দ্য নিউজ ২৪' /></a></li> */}
                                     </ul>
@@ -183,7 +180,7 @@ export default function Header() {
                             <div className="col-12 col-md-9">
                                 <div className="DHeaderAdd d-flex justify-content-end">
                                     <a href="/">
-                                        <img src={"/media/Advertisement/Advertisement(728X90).png"} className="img-fluid img100 border" />
+                                        <img src={"/media/Advertisement/56.png"} className="img-fluid img100 border" />
                                     </a>
                                 </div>
 
@@ -319,32 +316,39 @@ export default function Header() {
                                                                 <ul className="nav flex-column">
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/court-law">আইন ও বিচার</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/education">শিক্ষা</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs">চাকরি</Link></li>
-
-                                                                </ul>
-                                                            </div>
-                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
-                                                                <ul className="nav flex-column">
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/health">স্বাস্থ্য</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/information-technology">তথ্য প্রযুক্তি</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/horoscope">রাশিফল</Link></li>
-                                                                </ul>
-                                                            </div>
-
-
-                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
-                                                                <ul className="nav flex-column">
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/motivation">অনুপ্রেরণা</Link></li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
+                                                                <ul className="nav flex-column">
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/jobs">চাকরি</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/health">স্বাস্থ্য</Link></li>
+
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/photo-feature">ছবিঘর</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/agriculture">কৃষি</Link></li>
+
+
+                                                                </ul>
+                                                            </div>
+
+
+                                                            <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
+                                                                <ul className="nav flex-column">
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/information-technology">তথ্য প্রযুক্তি</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/environment-and-climate">পরিবেশ ও জলবায়ু</Link></li>
+
+
+
                                                                 </ul>
                                                             </div>
                                                             <div className="col-md-3" style={{ flex: "0 0 20%", maxWidth: "20%" }}>
                                                                 <ul className="nav flex-column">
                                                                     {/* <li><Link className="dropdown-item" onClick={scrollTop} to="/video">ভিডিও</Link></li> */}
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/environment-and-climate">পরিবেশ ও জলবায়ু</Link></li>
+
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/lifestyle">লাইফস্টাইল</Link></li>
-                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/archives">আর্কাইভ</Link></li>
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/agriculture">কৃষি</Link></li>
+
 
                                                                 </ul>
                                                             </div>
@@ -352,7 +356,8 @@ export default function Header() {
                                                                 <ul className="nav flex-column">
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/the-news-special">দ্য নিউজ স্পেশাল</Link></li>
                                                                     <li><Link className="dropdown-item" onClick={scrollTop} to="/reader-s-news">পাঠকের সংবাদ</Link></li>
-                                                                    
+                                                                    <li><Link className="dropdown-item" onClick={scrollTop} to="/archives">আর্কাইভ</Link></li>
+
                                                                 </ul>
                                                             </div>
 
@@ -451,15 +456,20 @@ export default function Header() {
                                                     <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in linkedin icon" ></i></a>
                                                     <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter twitter icon"></i></a>
                                                     <a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube youtube icon"></i></a>
+                                                    <a href="#" target="_blank" rel="noreferrer" ><i class="fab fa-instagram instra"></i></a>
+                                                    <a href="#" target="_blank" rel="noreferrer" ><i class="fab fa-whatsapp whatsapp"></i></a>
+
                                                 </div>
-                                               
+
                                             </div>
 
                                         </div>
                                         <div className="col-12 d-flex justify-content-center">
-                                        <div className="SportsButton">
-                                                    <a href="/todays-sports">আজকের খেলা</a>
-                                                </div>
+                                            <div className="SportsButton d-flex justify-content-center">
+                                                <a href='/namaj'>নামাজের সময়</a>
+                                                <a href="/todays-sports">আজকের খেলা</a>
+                                                <a href="/horoscope">রাশিফল</a>
+                                            </div>
                                         </div>
                                         <div className="col-12">
                                             <ul>
@@ -592,7 +602,7 @@ export default function Header() {
                                                             {/* <li onClick={mobileHeader}><Link to="/todays-sports" onClick={scrollTop}>আজকের খেলা</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/health" onClick={scrollTop}>স্বাস্থ্য</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/information-technology" onClick={scrollTop}>তথ্য প্রযুক্তি</Link></li>
-                                                            <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li>
+                                                            {/* <li onClick={mobileHeader}><Link to="/horoscope" onClick={scrollTop}>রাশিফল</Link></li> */}
                                                             <li onClick={mobileHeader}><Link to="/the-news-special" onClick={scrollTop}>দ্য নিউজ স্পেশাল</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/reader-s-news" onClick={scrollTop}>পাঠকের সংবাদ</Link></li>
                                                             <li onClick={mobileHeader}><Link to="/motivation" onClick={scrollTop}>অনুপ্রেরণা</Link></li>

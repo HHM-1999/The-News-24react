@@ -3,6 +3,7 @@ import TopNews from './TopNews'
 import LeadLatestNews from './LeadLatestNews'
 import LeadOpinionSec from './LeadOpinionSec'
 import Ads from './Ads'
+import SpecialCatBanner from './SpecialCatBanner'
 
 export default function LeadNews() {
 
@@ -18,14 +19,30 @@ export default function LeadNews() {
                                 </div>
 
                             </div>
-                            <div className="col-lg-4 col-12">
-                                <LeadLatestNews />
+                            <div className="col-lg-4 col-12 mt-0">
+
+                                <LeadOpinionSec />
                             </div>
-                            <Ads />
+                            <SpecialCatBanner />
+
                         </div>
                     </div>
                     <div className="col-lg-3 col-12">
-                            <LeadOpinionSec />
+                        <div className="DRightSideAdd">
+                            <a href="#">
+                                <img src={"/media/Advertisement/lab-pharmacy.jpeg"} />
+                            </a>
+                        </div>
+
+                        <LeadLatestNews />
+
+                        <div className="DRightSideAdd">
+                            <a href="#">
+                                <img src={"/media/Advertisement/5470898439774741663.gif"} />
+                            </a>
+                        </div>
+
+
                     </div>
 
 

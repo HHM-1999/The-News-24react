@@ -51,7 +51,7 @@ const bnConfig = dbConfig.bnConfig();
 const mediaConfig = dbConfig.mediaConfig();
 
 var FEndPort = 3400;
-// var FEndUrl = 'https://www.karikori.com/';
+var FEndUrl = 'https://www.thenews24.com/';
 var BEndUrl = 'https://backoffice.thenews24.com/';
 
 // app.enable('trust proxy')

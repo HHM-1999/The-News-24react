@@ -8,7 +8,7 @@ export default function Ads() {
                     <div className="col-md-12">
                         <div className="DAdd2 d-flex  justify-content-center">
                             <a href="">
-                                <img src={"media/Advertisement/Advertisement(970X90).png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
+                                <img src={"/media/Advertisement/Add33.png"} alt="Header Advertisement" title="Header Advertisement" className="img-fluid img100" />
                             </a>
                         </div>
                     </div>

@@ -24,7 +24,6 @@ export default function DCountry() {
         <div className="SectionTitle"><h3><Link to="/country"  onClick={scrollTop}><span className="ColorBox"></span>স্বদেশ</Link></h3></div>
                     <div className="row">
                         {country.map((nc,i)=>{
-
                             return(
                                 <div className="col-lg-6 col-12">
                             <div className="SpecialEventTop">
@@ -38,7 +37,7 @@ export default function DCountry() {
                                         </picture>
                                     </div>
                                     <div className="Desc">
-                                        <h2 className="Title FW700">{nc.ContentHeading}</h2>
+                                        <h2 className="Title FW700">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + " /"}</span> } {nc.ContentHeading}</h2>
                                         <div className="Brief">
                                             <p>{nc.ContentBrief}</p>
                                         </div>
@@ -64,7 +63,7 @@ export default function DCountry() {
                                             </div>
                                             <div className="col-lg-8 col-8">
                                                 <div className="Desc">
-                                                    <h2 className="Title FW700">{nc.ContentHeading} </h2>
+                                                    <h2 className="Title FW700">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h2>
                                                 </div>
                                             </div>
                                         </div>

@@ -13,7 +13,7 @@ export default function DWriters({ writer, writersName }) {
                             {/* <img src={process.env.REACT_APP_IMG_Writer + nc.ImagePath} alt={nc.WriterName} title={nc.WriterName} className="Writer-img" /> */}
                             {writer.WriterName}
                         </Link>
-                        <span className='DInitial'>,দ্য নিউজ ২৪</span>
+                        {/* <span className='DInitial'>,দ্য নিউজ ২৪</span> */}
                     </p>
                 </div>
                 :

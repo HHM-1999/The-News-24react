@@ -25,6 +25,8 @@ import SearchResult from './SearchResult';
 import AboutUs from './AboutUs';
 import PrivacyPolicy from './Privacy-policy';
 import Terms from './Terms'
+import AdvertisementPage from './AdvertisementPage';
+import DPrayerTime from './DPrayerTime';
 
 
 export default function RouterLink() {
@@ -34,7 +36,7 @@ export default function RouterLink() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
-                
+                 
                 <Route path="/live" element={<Live />} />
                 <Route path="/pollresult" element={<OnlinePollDetails />} />
                 <Route path="/archives" element={<Archives />} />
@@ -55,6 +57,8 @@ export default function RouterLink() {
                 <Route path="/search/:searchSlug" element={<SearchResult />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-service" element={<Terms />} />
+                <Route path="/advertise" element={<AdvertisementPage />} />
+                <Route path="/namaj" element={<DPrayerTime />} />
 
                 <Route path="/*" element={<ErrorPage />} />
 

@@ -12,7 +12,7 @@ export default function DJob() {
             .get(`${process.env.REACT_APP_API_URL}json/file/generateCategory19.json`)
             .then(({ data }) => {
 
-                setJob(data.data.slice(0, 1))
+                setJob(data.data[0])
                 setJob2(data.data.slice(1, 4))
                 // setInternational3(data.data.slice(2,5))
                 setTimeout(function () {
@@ -29,30 +29,29 @@ export default function DJob() {
 
             <div className="SectionTitle"><h3><Link to="/jobs"  onClick={scrollTop}><span className="ColorBox"></span>চাকরি </Link></h3></div>
             <div className="DCatStyle1List">
-                {job.map((nc) => {
-                    return (
+              
                         <div className="DCatStyle1Top">
-                            <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
+                            <Link to={"/" + job.Slug + "/news/" + job.ContentID} key={job.ContentID} ojoblick={scrollTop}>
                                 <div className="thumbnail">
                                     <div className="Imgresize">
                                         <figure className="ImgViewer">
                                             <picture className="FixingRatio">
-                                                <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageBgPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100 ImgRatio" />
+                                                <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + job.ImageBgPath} alt={job.ContentHeading} title={job.ContentHeading} className="img-fluid img100 ImgRatio" />
 
-                                                {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
+                                                {job.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
                                             </picture>
                                         </figure>
                                     </div>
                                     <div className="Desc">
-                                        <h3 className="Title">{nc.ContentHeading}</h3>
+                                        <h3 className="Title">{job.ContentHeading}</h3>
                                     </div>
                                 </div>
 
                             </Link>
                         </div>
-                    )
+                    
 
-                })}
+          
                 {job2.map((nc) => {
                     return (
                         <div className="DCatStyle1ListItem">

@@ -90,7 +90,8 @@ export default function VideoSec() {
                             {...settings}>
                             {videos.map((nc) => {
                                 return (
-                                    <div className="DMoreVideoListItem   " key={nc.WebTVID} style={{ padding: "0 10px", margin: "0 10px" }}>
+                                    
+                                    <div className="DMoreVideoListItem" key={nc.WebTVID} style={{ padding: "0 10px", margin: "0 10px" }}>
                                         <Link to={"/video/show/" + nc.WebTVID} onClick={scrollTop}>
                                             <div className="DMoreVideoThumb">
                                                 <div className="Imgresize">

@@ -10,7 +10,7 @@ import ErrorPage from '../ErrorPage';
 import DivisionDistricName from '../Country/DivisionDistricName';
 import CatLdJson from './CatLdJson';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';
-import RLoader from '../RLoader';
+// import RLoader from '../RLoader';
 
 var lazyloaded = false
 var catID = 0
@@ -30,12 +30,12 @@ export default function Category() {
     const [catLeadNews3, setcatLeadNews3] = useState([])
 
     const [catLatest, setcatLatest] = useState([])
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     useEffect(() => {
         document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
         setTimeout(() => { window.location.reload(1); }, 300000);
-        setisLoading(true)
-        setTimeout(() => { setisLoading(false) }, 300);
+        // setisLoading(true)
+        // setTimeout(() => { setisLoading(false) }, 300);
         offset = 0
         axios
             .get(`${process.env.REACT_APP_API_URL}category/${catSlug}`)
@@ -43,7 +43,7 @@ export default function Category() {
 
                 setcatName(data.category);
                 if (data.category) {
-                    setisLoading(false)
+                    // setisLoading(false)
                     catID = data.category.CategoryID;
                 }
                 setTimeout(function () {
@@ -128,7 +128,7 @@ export default function Category() {
         <>
             {catName ?
                 <main>
-                    {isLoading === false ?
+                 
                         <div className="container">
                             <h2 className="DTitle">
                                 {/* <Link to={'/' + catName.Slug} onClick={scrollTop}> */}
@@ -278,9 +278,7 @@ export default function Category() {
                             </section>
 
                         </div>
-                    :
-                    <RLoader />    
-                    }
+                   
                 </main>
                 : <ErrorPage />}
         </>
