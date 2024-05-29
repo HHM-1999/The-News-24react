@@ -153,7 +153,6 @@ export default function Header() {
                                         <li className="LiveTV"><a href='/namaj'>নামাজের সময়</a></li>
                                         <li className="LiveTV"><a href="/todays-sports">আজকের খেলা</a></li>
                                         <li className="LiveTV"><a href="/horoscope">রাশিফল</a></li>
-                                        <li className="LiveTV"><a href="/horoscope">রাশিফল</a></li>
                                         <li className="fb-icon"><a href="https://www.facebook.com/thenews24digital/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
                                         <li className="yt-icon"><a href="https://www.youtube.com/@thenewsdhaka/" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></li>
                                         <li className="tw-icon"><a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
