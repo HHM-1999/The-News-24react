@@ -34,7 +34,7 @@ export default function SpecialTop1() {
                             <div className="row">
                                 <div className="col-lg-7 col-7">
                                     <div className="Desc">
-                                        <h3 className="Title">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/"}</span> }{nc.ContentHeading}
+                                        <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/"}</span> }{nc.ContentHeading}
                                         </h3>
                                     </div>
                                 </div>

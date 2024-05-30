@@ -10,7 +10,7 @@ let bnYear = getYear(date1, { format: 'YYYY' })
 let BNDATEs = bnDate + ' ' + bnMonth + ' ' + bnYear
 const currentDate = moment().format('DD MMMM YYYY')
 const currentDay = moment().format('dddd')
-var arabicDate = moment().subtract(1, 'days').format('iDD iMMMM iYYYY');
+// var arabicDate = moment().subtract(1, 'days').format('iDD iMMMM iYYYY');
 
 var todaysDate = new Date();
 todaysDate.setDate(todaysDate.getDate() - 1);
@@ -180,7 +180,7 @@ export default function Header() {
                             <div className="col-12 col-md-9">
                                 <div className="DHeaderAdd d-flex justify-content-end">
                                     <a href="/">
-                                        <img src={"/media/Advertisement/56.png"} className="img-fluid img100 border" />
+                                        <img src={"/media/Advertisement/56.png"} className="img-fluid img100 border" alt="advertisment" title="advertisment" />
                                     </a>
                                 </div>
 
@@ -369,7 +369,7 @@ export default function Header() {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <a href="" className="MBLogo" rel="home">
+                                        <a href="/" className="MBLogo" rel="home">
                                             <img src={process.env.REACT_APP_DOMAIN_URL + "media/common/logo.png"} alt="TheNews24 || দ্য নিউজ ২৪" title="TheNews24 || দ্য নিউজ ২৪" className="img-fluid img100" />
                                         </a>
                                         <div className="d-flex justify-content-end SearchArea" >

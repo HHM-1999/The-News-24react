@@ -37,7 +37,7 @@ export default function DCountry() {
                                         </picture>
                                     </div>
                                     <div className="Desc">
-                                        <h2 className="Title FW700">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + " /"}</span> } {nc.ContentHeading}</h2>
+                                        <h2 className="Title FW700">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + " /"}</span> } {nc.ContentHeading}</h2>
                                         <div className="Brief">
                                             <p>{nc.ContentBrief}</p>
                                         </div>
@@ -63,7 +63,7 @@ export default function DCountry() {
                                             </div>
                                             <div className="col-lg-8 col-8">
                                                 <div className="Desc">
-                                                    <h2 className="Title FW700">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h2>
+                                                    <h2 className="Title FW700">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h2>
                                                 </div>
                                             </div>
                                         </div>

@@ -39,7 +39,7 @@ export default function DNational() {
                                             </div>
                                             <div className="Desc">
                                                 <div className="NewsTitle">
-                                                    <h3 className="Title">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading}</h3>
+                                                    <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading}</h3>
                                                 </div>
                                                 <div className="Brief">
                                                     <p>{nc.ContentBrief}</p>
@@ -69,7 +69,7 @@ export default function DNational() {
                                             </div>
                                             <div className="col-lg-7 col-7">
                                                 <div className="Desc">
-                                                    <h3 className="Title">{nc.ContentSubHeading ==1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h3>
+                                                    <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h3>
                                                     <div className="Brief">
                                                         <p>{nc.ContentBrief}</p>
                                                     </div>

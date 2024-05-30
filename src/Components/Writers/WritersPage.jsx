@@ -4,7 +4,6 @@ import axios from 'axios'
 import { EmailShareButton, FacebookShareButton, LinkedinShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 import { EmailIcon, FacebookIcon, LinkedinIcon, TwitterIcon, WhatsappIcon } from "react-share";
 import DocumentTitle from 'react-document-title';
-import LatestPopularNews from '../Category/LatestPopularNews'
 import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import ErrorPage from '../ErrorPage';
 import LeadLatestNews from '../HomeContent/LeadLatestNews';

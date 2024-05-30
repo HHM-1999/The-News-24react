@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import LeadNewsSection from './HomeContent/LeadNewsSection'
 import Sports from './HomeContent/Sports'
 import { Link } from 'react-router-dom'
@@ -33,7 +33,7 @@ import FBpagePlugin from './FBpagePlugin'
 // import LazyLoaderGIF from '../icon/lazyComponentLoaderGIF.gif'
 // import RLoader from './RLoader'
 
-var allComponentsLoaded = false
+// var allComponentsLoaded = false
 export default function Home() {
     // useEffect(() => {
     //     document.querySelectorAll('link[rel="canonical"]')[0].setAttribute('href', window.location.href)
@@ -55,7 +55,7 @@ export default function Home() {
         // setisLoading(true)
         // setTimeout(() => { setisLoading(false) }, 300);
 
-        allComponentsLoaded = true
+        // allComponentsLoaded = true
 
     }, [])
     return (
@@ -149,7 +149,7 @@ export default function Home() {
                                             <OnlinePoll />
                                             <div className="DRightSideAdd mt-2">
                                                 <Link to="">
-                                                    <img src={"/media/Advertisement/ispahani.gif"} />
+                                                    <img src={"/media/Advertisement/ispahani.gif"} alt='ads' title='ads' />
                                                 </Link>
                                             </div>
                                         </div>
@@ -311,12 +311,12 @@ export default function Home() {
                                             <div className="col-lg-3 col-12">
                                                 <div className="DRightSideAdd PT15">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/15217118239208940339.png"} />
+                                                        <img src={"/media/Advertisement/15217118239208940339.png"} alt='ads' title='ads' />
                                                     </Link>
                                                 </div>
                                                 <div className="DRightSideAdd">
                                                     <Link to="">
-                                                        <img src={"/media/Advertisement/300x250.gif"} />
+                                                        <img src={"/media/Advertisement/300x250.gif"} alt='ads' title='ads'  />
                                                     </Link>
                                                 </div>
                                             </div>

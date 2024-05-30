@@ -32,7 +32,7 @@ export default function LeadNewsSection() {
                     <LeadLatestNews />
                         <div className="DRightSideAdd">
                             <a href="#">
-                                <img src={"/media/Advertisement/lab-pharmacy.jpeg"} />
+                                <img src={"/media/Advertisement/lab-pharmacy.jpeg"} alt='ads' title='ads' />
                             </a>
                         </div>
                     </div>

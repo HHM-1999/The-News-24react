@@ -44,7 +44,7 @@ export default function LeadLatestNews() {
                                                 <div className="DLatestNewsList" key={nc.ContentID}>
                                                     <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
                                                         <div className="d-flex flex-row">
-                                                            <p>{nc.ContentSubHeading ==1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
+                                                            <p>{nc.ContentSubHeading ===1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -60,7 +60,7 @@ export default function LeadLatestNews() {
                                     <div className="DLatestNewsList" key={nc.ContentID}>
                                         <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
                                             <div className="d-flex flex-row">
-                                                <p>{nc.ContentSubHeading ==1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
+                                                <p>{nc.ContentSubHeading ===1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
                                             </div>
                                         </a>
                                     </div>
