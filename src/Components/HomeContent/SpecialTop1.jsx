@@ -4,7 +4,7 @@ import { scrollTop, ForLazyLoaderImg } from '../AllFunctions'
 import { Link } from 'react-router-dom'
 
 var lazyloaded = false
-export default function LeadOpinionSec() {
+export default function SpecialTop1() {
 
     const [state3, setState3] = useState([])
     useEffect(() => {

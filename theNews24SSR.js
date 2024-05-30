@@ -262,6 +262,25 @@ app.get('/archives', function (request, response) {
     });
 });
 
+app.get('/namaj', function (request, response) {
+    console.log('namaj page visited!');
+    const filePath = path.resolve(__dirname, './build', 'index.html');
+    fs.readFile(filePath, 'utf8', async function (err, data) {
+        if (err) {
+            return console.log(err);
+        }
+        data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
+        data = data.replace(/\$OG_TITLE/g, 'দ্য নিউজ ২৪ :: নামাজের সময়');
+        data = data.replace(/\$OG_DESCRIPTION/g, "দ্য নিউজ ২৪ :: নামাজের সময়");
+        data = data.replace(/\$OG_KEYWORDS/g, "দ্য নিউজ ২৪, পত্রিকা, বাংলাদেশ, আজকের পত্রিকা, জাতীয়, সারাদেশ, বরিশাল, চট্টগ্রাম, ঢাকা,খুলনা, রাজশাহী, সিলেট, রংপুর, ময়মনসিংহ, রাজধানী, আন্তর্জাতিক, রাজনীতি, বিনোদন , দেশি, বিদেশি, খেলা, ক্রিকেট, বিশ্বকাপ ক্রিকেট, বিশেষ কলাম, অর্থনীতি, ধর্ম, লাইফস্টাইল, ফ্যাশন, রেসিপি, সাত রঙ, সাতরঙ,  দূরবীন, প্রথম প্রহর, বইমেলা, তথ্যপ্রযুক্তি, শিক্ষাঙ্গন, আইন-আদালত, আইন আদালত, শিল্প ও সাহিত্, শিল্প সাহিত্, স্বাস্থ্য ও চিকিৎসা, স্বাস্থ্য চিকিৎসা, ফিচার, বিজ্ঞান, ভ্রমণ, মুক্তকথা, মুখোমুখি, প্রবাস জীবন, জব কর্নার, জব, মজার খবর, কার্টুন, সোশ্যাল মিডিয়া, সাইবার স্পেস, আর্কাইভ, সাহিত্য, কম্পিউটার, মোবাইল ফোন, গেমস, সরকার, অপরাধ, আইন ও বিচার, পরিবেশ, দুর্ঘটনা, সংসদ, রাজধানী, শেয়ার বাজার, বাণিজ্য, পোশাক শিল্প, ফুটবল, সকাল, বিকাল");
+        data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+        // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+        var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
+        data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        response.send(data);
+    });
+});
+
 app.get('/video', function (request, response) {
     console.log('video-gallery page visited!');
     const filePath = path.resolve(__dirname, './build', 'index.html');

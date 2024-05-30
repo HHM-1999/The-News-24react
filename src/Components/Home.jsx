@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import LeadNews from './HomeContent/LeadNews'
+import LeadNewsSection from './HomeContent/LeadNewsSection'
 import Sports from './HomeContent/Sports'
 import { Link } from 'react-router-dom'
 import { scrollTop } from './AllFunctions'
@@ -68,7 +68,7 @@ export default function Home() {
                         <DocumentTitle title='TheNews24 || দ্য নিউজ ২৪' />
                         <HomeLdJson />
                         <section className='container'>
-                            <LeadNews />
+                            <LeadNewsSection />
                         </section>
                         <>
                         <Ads  />

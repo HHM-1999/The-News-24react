@@ -53,7 +53,7 @@ export default function DWriterNews() {
                     </div>
                     {news2.map((nc) => {
                         return (
-                            <div className="col-md-6  col-6">
+                            <div className="col-md-6  col-6 border-right-inner">
                                 <div className="SpecialEventTop">
                                     <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.CategoryID} onClick={scrollTop}>
                                         <div className="DImgZoomBlock">
