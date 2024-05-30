@@ -149,7 +149,7 @@ export default function SubCategory() {
                                 <div className="col-lg-9 col-sm-12 DBorderRight">
                                     <div className="row">
                                         <div className="col-lg-8 col-12 d-flex">
-                                            <div className="DCatLeadTop BorderRight">
+                                            <div className="DCatLeadTop ">
                                                 
                                                 {subCatLead ?
                                                     <Link to={"/" + catSlug + "/news/" + subCatLead.ContentID} onClick={scrollTop}>

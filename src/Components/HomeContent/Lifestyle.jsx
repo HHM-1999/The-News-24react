@@ -34,7 +34,7 @@ export default function Lifestyle() {
                     {lifeStyle.map((nc)=>{
                         return(
                             <div className="col-lg-4 col-12 d-flex">
-                            <div className="DLifestyleTop align-self-stretch BorderRight">
+                            <div className="DLifestyleTop align-self-stretch ">
                                 <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                     <div className="Imgresize">
                                         <figure className="ImgViewer">

@@ -23,6 +23,7 @@ h6 {
 	padding-left: 2px;
 }
 
+
 a {
 	color: #222;
 	text-decoration: none;
@@ -91,6 +92,9 @@ p {
 	font-size: 15px;
 	color: #5a5a5a;
 	display: inline-block
+}
+.MT100{
+margin-top: 100px;
 }
 
 .Brief p {
@@ -1754,7 +1758,7 @@ a.close-search {
 
 
 .DHomeLeadListSpecial picture img {
-	aspect-ratio: 1.4;
+	aspect-ratio: 1.66;
 }
 
 .DHomeLeadListSpecial .Desc .Title span {
@@ -2616,6 +2620,8 @@ a.close-search {
 	margin-top: 15px;
 	background: #fff;
 	width: 100%;
+	border-right: 1px solid #e2e2e2;
+	padding-right: 20px;
 }
 
 .DLifestyleTop .Desc {
@@ -2676,11 +2682,8 @@ a.close-search {
 
 /*============= DPhotoGalleryTop =================*/
 .DPhotoGalleryTop {
-	margin-top: 15px;
 	background: #fff;
 	width: 100%;
-	border-bottom: 1px solid #e2e2e2;
-	padding-bottom: 20px;
 }
 
 /* .DPhotoGalleryTop .Desc {
@@ -2690,6 +2693,7 @@ a.close-search {
 .DPhotoGalleryTop .Title {
 	font-size: 22px;
 	line-height: 30px;
+	margin-top: 5px;
 }
 
 .DPhotoGalleryTop:hover .Title {
@@ -2706,17 +2710,28 @@ a.close-search {
 }
 
 .DPhotoGalleryList {
-	margin-top: 20px;
 	width: 100%;
 	background: #fff;
-	border-right: 1px solid #e2e2e2;
-	padding-right: 20px;
 }
 
-.DPhotoGalleryTop2 .col-lg-4:nth-child(3) .DPhotoGalleryList {
+.DPhotoGalleryTop2 .col-md-6{
+	border-bottom: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+}
+.DPhotoGalleryTop2 .col-md-6.col-6:nth-child(2){
+	border-bottom: 1px solid #e2e2e2;
 	border-right: none;
 }
-
+.DPhotoGalleryTop2 .col-md-6:nth-child(3){
+	border-bottom: none;
+	border-right: 1px solid #e2e2e2;
+	margin-top: 10px;
+}
+.DPhotoGalleryTop2 .col-md-6:nth-child(4){
+	border-bottom: none;
+	border-right: none;
+	margin-top: 10px;
+}
 .PhotoGalleryList {
 	padding: 10px 0;
 	border-bottom: 1px solid #e2e2e2;
@@ -3115,6 +3130,8 @@ a.close-search {
 	width: 100%;
 	background: #fff;
 	margin-top: 15px;
+	border-right: 1px solid #e2e2e2;
+	padding-right: 20px;
 }
 
 .DSportsTop .Desc {
@@ -3785,9 +3802,18 @@ a.close-search {
 	#myHeader {
 		display: none;
 	}
+	.SocialIcon {
+		display: inline-block;
+		position: relative;
+		margin-left: -262px;
+		margin-bottom: -10px;
+	}
 }
 
 @media screen and (max-width:768px) {
+	.MT100{
+		margin-top: 0;
+	}
 	.container {
 		width: 100%;
 	}
@@ -3819,6 +3845,10 @@ a.close-search {
 	.DEntertainmentListItem .Title {
 		margin-top: 0;
 	}
+	.DSportsTop{
+		border-right: none;
+		padding-right: 0;
+	}
 
 	.DSportsTop2List .col-7 {
 		/* padding-left: 0; */
@@ -3826,6 +3856,10 @@ a.close-search {
 
 	.DLifestyleTop .Desc {
 		/* padding-left: 0; */
+	}
+	.DLifestyleTop {
+		border-right: none;
+		padding-right: 0;
 	}
 
 	.DLifestyleList .Brief p {
@@ -4023,7 +4057,9 @@ a.close-search {
 		text-overflow: ellipsis;
 		padding-left: 0;
 	}
-
+     .DCatTop2{
+		margin-top: 20px;
+	 }
 	.DCatTop2 .Desc {
 		padding: 5px 0px;
 	}
@@ -4049,7 +4085,7 @@ a.close-search {
 	}
 
 	.DCatLeadTop {
-		/* margin-top: 20px; */
+		margin-top: 20px;
 		background: #fff;
 		border-right: none;
 	}
@@ -4061,16 +4097,13 @@ a.close-search {
 
 	.BorderRight {
 		border-right: none;
-		padding-right: 0;
 	}
 	.BorderRight2 {
 		border-right: none;
-		padding-right: 0;
 	}
 
 	.DBorderRight {
 		border-right: none;
-		padding-right: 0;
 		margin-top: 0;
 	}
 	.border-right-inner {
@@ -4088,10 +4121,12 @@ a.close-search {
 		border-right: none;
 		padding-right: 0;
 	}
+	.National {
+		padding-right: 0px;
+	}
 
 	.National {
 		border-right: none;
-		padding-right: 0;
 	}
 
 	.SpecialEventTop {
@@ -4101,11 +4136,11 @@ a.close-search {
 
 	.Country {
 		border-right: none;
-		padding-right: 0;
 	}
 
 	.DCountryTop {
 		border-right: none;
+		padding-right: 0;
 	}
 
 	.DCountryList {
@@ -4128,10 +4163,9 @@ a.close-search {
 	.DCatStyle1ListItem {
 		padding: 20px 0;
 	}
-	.DPhotoGalleryList {
-		border-right: none;
-		padding-right: 0;
-	}
+	.DPhotoGalleryList  .Desc .Title{
+		font-size: 18px;}
+	
 	.about-us-area2 {
 		max-width: 100%;
 	}
@@ -4158,6 +4192,51 @@ a.close-search {
 		padding: 5px 7px;
 		height: 0;
 		margin-bottom: 50px;
+	}
+	.DHomeLeadListSpecialSec .col-lg-6:first-child .DHomeLeadListSpecial{
+		border-bottom: 1px solid #e2e2e2;
+		padding-bottom: 16px;
+	}
+	.DHomeLeadListSpecialSec .col-lg-6 .DHomeLeadListSpecial{
+		padding-top: 16px;
+	}
+	.DHomeLeadList4 picture img {
+		aspect-ratio: 1.66;
+	}
+	.DHomeLeadListSpecialSec {
+		margin-top: 5px;
+	}
+	.DHomeLeadList3Sec .col-lg-6:nth-child(4) .DHomeLeadList3 {
+		border-bottom: 1px solid #e2e2e2;
+		margin-bottom: 0;
+	}
+	.DHomeLeadList3 {
+		background: #fff;
+		width: 100%;
+		position: relative;
+		/* margin-top: 20px; */
+		padding: 16px 0;
+	}
+	.DHomeLeadListSpecial picture img {
+		aspect-ratio: 1.66;
+	}
+	.DCatStyle5List {
+		border-right:none;
+	}
+	.DCatStyle5List .WriterName {
+		margin-top: 0px;
+	}
+	.DCatNewsList picture img {
+		aspect-ratio: 1.66;
+	}
+	.DPhotoGalleryTop {
+		border-right: none;
+		padding-right: 0px;
+	}
+	.DPhotoGalleryTop .Brief p {
+		margin-top: 10px;
+		-webkit-line-clamp: 4;
+		margin-bottom: 10px;
 	}
 
 }
@@ -4984,6 +5063,7 @@ p.img-caption {
 
 .DCatNewsListArea .col-lg-6.col-12:nth-child(1) .DCatNewsList {
 	border-top: none;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 .DCatNewsListArea .col-lg-6.col-12:nth-child(2) .DCatNewsList {

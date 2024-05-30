@@ -302,18 +302,12 @@ export default function Home() {
                             </section>
                             <section className="PhotoGallery">
                                 <div className="container">
-                                    <div className="SectionTitle"><h3><Link onClick={scrollTop} to="/photo-feature"><span className="ColorBox"></span>ছবিঘর</Link></h3></div>
                                     <div className="DPhotoGallery">
                                         <div className="row">
                                             <div className="col-lg-9 col-12">
                                                 <PhotoSection />
                                             </div>
-                                            <div className="col-lg-3 col-12">
-                                                <div className="DRightSideAdd PT15">
-                                                    <Link to="">
-                                                        <img src={"/media/Advertisement/15217118239208940339.png"} alt='ads' title='ads' />
-                                                    </Link>
-                                                </div>
+                                            <div className="col-lg-3 col-12 MT100">
                                                 <div className="DRightSideAdd">
                                                     <Link to="">
                                                         <img src={"/media/Advertisement/300x250.gif"} alt='ads' title='ads'  />

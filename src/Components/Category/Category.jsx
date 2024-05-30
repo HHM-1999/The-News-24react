@@ -152,7 +152,7 @@ export default function Category() {
                                         </>
                                         <div className="row">
                                             <div className="col-lg-8 col-12 d-flex">
-                                                <div className="DCatLeadTop BorderRight">
+                                                <div className="DCatLeadTop">
                                                     {catLeadNews1 ?
                                                         <Link to={"/" + catLeadNews1.Slug + "/news/" + catLeadNews1.ContentID} onClick={scrollTop}>
                                                             <div className="row">

@@ -35,7 +35,7 @@ export default function Sports() {
                             {sports.map((nc) => {
                                 return (
                                     <div className="col-lg-6 col-12  mt-3">
-                                        <div className="DSportsTop BorderRight">
+                                        <div className="DSportsTop">
                                             <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
                                                 <div className="Imgresize">
                                                     <figure className="ImgViewer">

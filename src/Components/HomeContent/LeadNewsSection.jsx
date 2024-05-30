@@ -12,7 +12,7 @@ export default function LeadNewsSection() {
             <div className="TopLeadSection">
                 <div className="row">
                     <div className="col-lg-9  ">
-                        <div className="row border-bottom-inner">
+                        <div className="row border-bottom-inner pb-3">
                             <div className="col-lg-8 col-12">
                                 <div className="topNewsSection">
                                     <LeadNews />

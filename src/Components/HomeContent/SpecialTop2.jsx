@@ -30,12 +30,12 @@ export default function SpecialTop2() {
                                 <div className="DHomeLeadListSpecial align-self-stretch">
                                     <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
                                         <div className="row">
-                                            <div className="col-md-8 col-8">
+                                            <div className="col-md-8 col-7">
                                                 <div className="Desc">
                                                     <h3 className="Title"><span className="subheadTitle">{nc.CategoryName + "" + " /"}</span>{nc.ContentHeading}</h3>
                                                 </div>
                                             </div>
-                                            <div className="col-md-4 col-4">
+                                            <div className="col-md-4 col-5">
                                                 <div className="DImgZoomBlock">
                                                     <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img-fluid img100" />
                                                         {nc.ShowVideo === 1 && <div className="card-video-icon transition" ><i className="fa-solid fa-play"></i></div>}
