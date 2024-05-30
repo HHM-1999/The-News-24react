@@ -72,7 +72,6 @@ p {
 }
 .BorderRight2{
 	border-right: 1px solid #e2e2e2;
-	padding-right: 10px;
 }
 
 .DBorderRight {
@@ -2713,9 +2712,11 @@ a.close-search {
 	width: 100%;
 	background: #fff;
 }
-
-.DPhotoGalleryTop2 .col-md-6{
+.DPhotoGalleryTop2 .DPhotoGalleryList {
 	border-bottom: 1px solid #e2e2e2;
+}
+.DPhotoGalleryTop2 .col-md-6{
+	
 	border-right: 1px solid #e2e2e2;
 }
 .DPhotoGalleryTop2 .col-md-6.col-6:nth-child(2){
@@ -2752,10 +2753,18 @@ a.close-search {
 
 .DPhotoGalleryList .Desc {
 	padding: 7px 0px;
+	height: 67px;
 }
 
 .DPhotoGalleryList:hover .Desc .Title {
 	color: #0074ed;
+	font-size: 17px;
+	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .DPhotoGalleryList .ImgViewer {

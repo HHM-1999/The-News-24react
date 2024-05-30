@@ -257,7 +257,7 @@ export default function Home() {
                                         <div className="col-lg-3 col-12 BorderRight2 mb-3 mt-3">
                                                 <DForeign />
                                         </div>
-                                        <div className="col-lg-3 col-12 ">
+                                        <div className="col-lg-3 col-12 mt-3 ">
                                             <Religion />
                                         </div>
                                         <div className="col-lg-3 col-12 BorderRight2">
