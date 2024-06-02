@@ -27,7 +27,7 @@ export default function DForeign() {
     }, [])
     return (
         <>
-            <div className="SectionTitle"><h3><Link to="/migration"  onClick={scrollTop}><span className="ColorBox"></span>প্রবাস</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/migration" onClick={scrollTop}><span className="ColorBox"></span>প্রবাস</Link></h3></div>
             <div className="DCatStyle2">
                 <div className="DCatStyle2Top">
                     {
@@ -44,6 +44,7 @@ export default function DForeign() {
                                     </div>
                                     <div className="Desc">
                                         <h3 className="Title">{nc.ContentHeading}</h3>
+                                       
                                     </div>
                                 </Link>
                             )
@@ -53,14 +54,20 @@ export default function DForeign() {
                 </div>
                 <div className="DCatStyle2List">
                     <ul>
-                        {foreign2.map((nc)=>{
-                            return(
-                                <li><Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}><h4 className="Title">{nc.ContentHeading}</h4></Link></li>
+                        {foreign2.map((nc) => {
+                            return (
+                                <li><Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
+                                    
+                                    <h4 className="Title">{nc.ContentHeading}</h4>
+                                    {/* {nc.ContentSubHeading == null || "" ?
+                                        <h4 className="Title">{nc.ContentHeading} </h4> :
+                                        <h4 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h4>
+                                    } */}
+                                    
+                                    
+                                    </Link></li>
                             )
                         })}
-                       
-                        {/* <li><Link to=""><h4 className="Title">যুক্তরাজ্যের সংগে সম্পর্ক নতুন করে গড়ার কথা বললেন প্রধানমন্ত্রী</h4></Link></li>
-                        <li><Link to=""><h4 className="Title">যুক্তরাষ্ট্রে আবারও কাউন্সিলম্যান নির্বাচিত হলেন ড. নূরুন নবী</h4></Link></li> */}
                     </ul>
                 </div>
             </div>

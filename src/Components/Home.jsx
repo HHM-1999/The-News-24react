@@ -70,7 +70,7 @@ export default function Home() {
                             <LeadNewsSection />
                         </section>
                         <>
-                        <Ads  />
+                        <Ads   />
                         </>
                         <>
                             <div className="videoSection ">

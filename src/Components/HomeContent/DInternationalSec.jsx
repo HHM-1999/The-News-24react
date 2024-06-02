@@ -27,7 +27,7 @@ export default function DInternationalSec() {
     return (
         <>
             <section className="Country">
-                <div className="SectionTitle"><h3><Link to="/international"  onClick={scrollTop}><span className="ColorBox"></span>আন্তর্জাতিক</Link></h3></div>
+                <div className="SectionTitle"><h3><Link to="/international" onClick={scrollTop}><span className="ColorBox"></span>আন্তর্জাতিক</Link></h3></div>
                 <div className="DCountry">
                     <div className="row">
                         <div className="col-lg-8 col-12">
@@ -50,7 +50,11 @@ export default function DInternationalSec() {
                                                 <div className="col-lg-4 col-12">
                                                     <div className="Desc">
                                                         <div className="NewsTitle">
-                                                            <h3 className="Title">{nc.ContentHeading}</h3>
+                                                            {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                                            {nc.ContentSubHeading == null ?
+                                                                <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                                <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                            }
                                                         </div>
                                                         <div className="Brief">
                                                             <p>{nc.ContentBrief}</p>
@@ -81,7 +85,11 @@ export default function DInternationalSec() {
                                             </div>
                                             <div className="col-lg-12 col-7">
                                                 <div className="Desc">
-                                                    <h3 className="Title">{nc.ContentHeading}</h3>
+                                                    {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                                    {nc.ContentSubHeading == null ?
+                                                        <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                        <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +117,11 @@ export default function DInternationalSec() {
                                                 </div>
                                                 <div className="col-lg-12 col-7">
                                                     <div className="Desc">
-                                                        <h3 className="Title">{nc.ContentHeading}</h3>
+                                                        {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                                        {nc.ContentSubHeading == null ?
+                                                        <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                        <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                    }
                                                     </div>
                                                 </div>
                                             </div>

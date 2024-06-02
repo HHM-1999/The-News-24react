@@ -356,7 +356,7 @@ export default function Details() {
                         </div>
                         <section>
                             <div className="row d-print-none">
-                                <div className="col-lg-2 col-12 my-2">
+                                <div className="col-lg-12 col-12 my-2">
                                     <div className="DSecTitle">
                                         <Link to={'/' + catName.Slug}>
                                             <h2>{catName.CategoryName}</h2>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { scrollTop} from '../AllFunctions'
+import { scrollTop } from '../AllFunctions'
 import { Link } from 'react-router-dom';
 
 export default function LeadLatestNews() {
@@ -39,39 +39,48 @@ export default function LeadLatestNews() {
                         <div className="tab-content">
                             <div className="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div className="DLatestNews longEnough mCustomScrollbar" data-mcs-theme="dark">
-                                        {latest.map((nc, i) => {
-                                            return (
-                                                <div className="DLatestNewsList" key={nc.ContentID}>
-                                                    <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
-                                                        <div className="d-flex flex-row">
-                                                            <p>{nc.ContentSubHeading ===1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            )
-                                        })}
+                                    {latest.map((nc, i) => {
+                                        return (
+                                            <div className="DLatestNewsList" key={nc.ContentID}>
+                                                <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
+                                                    <div className="d-flex flex-row">
+                                                        {/* <p>{nc.ContentSubHeading === 1 && <span>{nc.ContentSubHeading + "/"}</span>} {nc.ContentHeading}</p> */}
+                                                        {nc.ContentSubHeading == null ?
+                                                            <p>{nc.ContentHeading} </p> :
+                                                            <p> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </p>
+                                                        }
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                             <div className="tab-pane" id="tabs-2" role="tabpanel">
                                 <div className="DLatestNews longEnough mCustomScrollbar" data-mcs-theme="dark">
 
-                                {popular.map((nc, i) => {
-                                return (
-                                    <div className="DLatestNewsList" key={nc.ContentID}>
-                                        <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
-                                            <div className="d-flex flex-row">
-                                                <p>{nc.ContentSubHeading ===1 && <span>{nc.ContentSubHeading + "/"}</span> } {nc.ContentHeading}</p>
+                                    {popular.map((nc) => {
+                                        return (
+                                            <div className="DLatestNewsList" key={nc.ContentID}>
+                                                <a href={"/" + nc.Slug + "/news/" + nc.ContentID} onClick={scrollTop}>
+                                                    <div className="d-flex flex-row">
+                                                        {/* <p>{nc.ContentSubHeading === 1 && <span>{nc.ContentSubHeading + "/"}</span>} {nc.ContentHeading}</p> */}
+                                                        {nc.ContentSubHeading == null ?
+                                                            <p>{nc.ContentHeading} </p> :
+                                                            <p> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </p>
+                                                        }
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
-                                    </div>
-                                )}
-                            )}
+                                        )
+                                    }
+                                    )}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="allnews"><Link to="/archives"  onClick={scrollTop}>সব খবর <i className="fa fa-angle-double-right"></i></Link></div>
+                <div className="allnews"><Link to="/archives" onClick={scrollTop}>সব খবর <i className="fa fa-angle-double-right"></i></Link></div>
             </section>
 
         </>

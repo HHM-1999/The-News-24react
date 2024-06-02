@@ -43,7 +43,12 @@ export default function Technology() {
                                         </figure>
                                     </div>
                                     <div className="Desc">
-                                        <h3 className="Title">{nc.ContentHeading}</h3>
+                                        {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                        {nc.ContentSubHeading == null ?
+                                            <h3 className="Title">{nc.ContentHeading} </h3> :
+                                            <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                        }
+
                                     </div>
                                 </Link>
                             )
@@ -54,8 +59,16 @@ export default function Technology() {
                 <div className="DCatStyle2List">
                     <ul>
                         {techNews2.map((nc) => {
-                            return( <li><Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}><h4 className="Title">{nc.ContentHeading} </h4></Link></li>)
-                           
+                            return (<li><Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
+
+                                {/* <h4 className="Title">{nc.ContentHeading} </h4> */}
+                                {nc.ContentSubHeading == null ?
+                                    <h4 className="Title">{nc.ContentHeading} </h4> :
+                                    <h4 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h4>
+                                }
+
+                            </Link></li>)
+
                         })}
 
                         {/* <li><Link to=""><h4 className="Title">যুক্তরাষ্ট্রে থাকার জন্য ২৮ হাজার আফগানদের মধ্যে ভাগ্য খুলল ১০০ জনের </h4></Link></li>

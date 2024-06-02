@@ -21,7 +21,7 @@ export default function DNational() {
     return (
         <>
             <section className="National">
-                <div className="SectionTitle"><h3><Link to="/national"  onClick={scrollTop}><span className="ColorBox"></span>জাতীয়</Link></h3></div>
+                <div className="SectionTitle"><h3><Link to="/national" onClick={scrollTop}><span className="ColorBox"></span>জাতীয়</Link></h3></div>
                 <div className="DNational">
                     <div className="row">
                         {national.map((nc) => {
@@ -39,7 +39,12 @@ export default function DNational() {
                                             </div>
                                             <div className="Desc">
                                                 <div className="NewsTitle">
-                                                    <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading}</h3>
+                                                    {nc.ContentSubHeading == null ?
+                                                        <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                        <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                    }
+
+                                                    {/* <h3 className="Title">{nc.ContentSubHeading === null && <span className='subheadTitle'> {nc.ContentSubHeading + "/ "}</span>} {nc.ContentHeading}</h3> */}
                                                 </div>
                                                 <div className="Brief">
                                                     <p>{nc.ContentBrief}</p>
@@ -53,34 +58,41 @@ export default function DNational() {
 
                         <div className="col-lg-6 col-sm-12">
                             <div className="DNationalTop2">
-                                {national2.map((nc)=>{
-                                    return(<div className="DNationalList">
-                                    <Link to={"/" + nc.Slug + "/news/" + nc.ContentID}  key={nc.ContentID} onClick={scrollTop}>
-                                        <div className="row">
-                                            <div className="col-lg-5 col-5">
-                                                <div className="Imgresize">
-                                                    <figure className="ImgViewer">
-                                                        <picture className="FixingRatio">
-                                                            <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img100 ImgRatio" />
-                                                            {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
-                                                        </picture>
-                                                    </figure>
+                                {national2.map((nc) => {
+                                    return (<div className="DNationalList">
+                                        <Link to={"/" + nc.Slug + "/news/" + nc.ContentID} key={nc.ContentID} onClick={scrollTop}>
+                                            <div className="row">
+                                                <div className="col-lg-5 col-5">
+                                                    <div className="Imgresize">
+                                                        <figure className="ImgViewer">
+                                                            <picture className="FixingRatio">
+                                                                <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ContentHeading} title={nc.ContentHeading} className="img100 ImgRatio" />
+                                                                {nc.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
+                                                            </picture>
+                                                        </figure>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="col-lg-7 col-7">
-                                                <div className="Desc">
-                                                    <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading  + "/ "}</span> }{nc.ContentHeading} </h3>
-                                                    <div className="Brief">
-                                                        <p>{nc.ContentBrief}</p>
+                                                <div className="col-lg-7 col-7">
+                                                    <div className="Desc">
+
+
+                                                        {nc.ContentSubHeading == null ?
+                                                            <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                            <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                        }
+
+
+                                                        <div className="Brief">
+                                                            <p>{nc.ContentBrief}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </Link>
-                                </div>)
+                                        </Link>
+                                    </div>)
                                 })}
-                                
-                              
+
+
                             </div>
                         </div>
                     </div>

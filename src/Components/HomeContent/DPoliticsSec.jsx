@@ -26,7 +26,7 @@ export default function DPoliticsSec() {
     return (
         <>
 
-            <div className="SectionTitle"><h3><Link to="/politics"  onClick={scrollTop}><span className="ColorBox"></span>রাজনীতি</Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/politics" onClick={scrollTop}><span className="ColorBox"></span>রাজনীতি</Link></h3></div>
             <div className="DCatStyle1List">
                 {politics.map((nc) => {
                     return (
@@ -43,7 +43,11 @@ export default function DPoliticsSec() {
                                         </figure>
                                     </div>
                                     <div className="Desc">
-                                        <h3 className="Title">{nc.ContentHeading}</h3>
+                                        {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                        {nc.ContentSubHeading == null ?
+                                            <h3 className="Title">{nc.ContentHeading} </h3> :
+                                            <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                        }
                                     </div>
                                 </div>
 
@@ -70,7 +74,11 @@ export default function DPoliticsSec() {
                                         </div>
                                         <div className="col-lg-8 col-7">
                                             <div className="Desc">
-                                                <h2 className="Title">{nc.ContentHeading}</h2>
+                                                {/* <h2 className="Title">{nc.ContentHeading}</h2> */}
+                                                {nc.ContentSubHeading == null ?
+                                                        <h2 className="Title">{nc.ContentHeading} </h2> :
+                                                        <h2 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h2>
+                                                    }
                                             </div>
                                         </div>
                                     </div>

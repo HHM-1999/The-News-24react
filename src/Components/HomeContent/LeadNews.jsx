@@ -13,7 +13,7 @@ export default function LeadNews() {
             .then(({ data }) => {
                 if (data.data.length > 0) {
                     setState(data.data[0]);
-                    setState2(data.data.slice(1,5));
+                    setState2(data.data.slice(1, 5));
                     setTimeout(function () {
                         lazyloaded = false
                         ForLazyLoaderImg(lazyloaded)
@@ -30,14 +30,18 @@ export default function LeadNews() {
                         <div className="col-lg-7">
                             <div className="DImgZoomBlock">
                                 <picture><img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + state.ImageBgPath} alt={state.ContentHeading} title={state.ContentHeading} className="img-fluid img100" />
-                                {state.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}</picture>
+                                    {state.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}</picture>
 
                             </div>
                         </div>
                         <div className="col-lg-5">
                             <div className="Desc">
-                                {state.ContentSubHeading ===1 && <h3 className="subheadTitle">{state.ContentSubHeading}</h3> } 
-                                <h1 className="Title">{state.ContentSubHeading ===1 && <span className="subheadTitle">{state.ContentSubHeading  + "/"}</span> } {state.ContentHeading}</h1>
+                                {state.ContentSubHeading == null ?
+                                    <h1 className="Title"> {state.ContentHeading}</h1> :
+                                    <h1 className="Title"> <span className="subheadTitle">{state.ContentSubHeading}/</span>  {state.ContentHeading}</h1>
+
+
+                                }
                                 <div className="Brief">
                                     <p>{state.ContentBrief}</p>
                                 </div>
@@ -57,7 +61,11 @@ export default function LeadNews() {
                                         <div className="row">
                                             <div className="col-md-7 col-7">
                                                 <div className="Desc">
-                                                    <h3 className="Title">{nc.ContentSubHeading ===1 && <span className="subheadTitle">{nc.ContentSubHeading + "" + "/"}</span> } {nc.ContentHeading}</h3>
+                                                    {nc.ContentSubHeading == null ?
+                                                        <h3 className="Title">{nc.ContentSubHeading} {nc.ContentHeading}</h3> :
+                                                        <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + "" + "/"}</span> {nc.ContentHeading}</h3>
+
+                                                    }
                                                 </div>
                                             </div>
                                             <div className="col-md-5 col-5">

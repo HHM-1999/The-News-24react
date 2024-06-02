@@ -27,31 +27,35 @@ export default function DJob() {
     return (
         <>
 
-            <div className="SectionTitle"><h3><Link to="/jobs"  onClick={scrollTop}><span className="ColorBox"></span>চাকরি </Link></h3></div>
+            <div className="SectionTitle"><h3><Link to="/jobs" onClick={scrollTop}><span className="ColorBox"></span>চাকরি </Link></h3></div>
             <div className="DCatStyle1List">
-              
-                        <div className="DCatStyle1Top">
-                            <Link to={"/" + job.Slug + "/news/" + job.ContentID} key={job.ContentID} ojoblick={scrollTop}>
-                                <div className="thumbnail">
-                                    <div className="Imgresize">
-                                        <figure className="ImgViewer">
-                                            <picture className="FixingRatio">
-                                                <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + job.ImageBgPath} alt={job.ContentHeading} title={job.ContentHeading} className="img-fluid img100 ImgRatio" />
 
-                                                {job.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
-                                            </picture>
-                                        </figure>
-                                    </div>
-                                    <div className="Desc">
-                                        <h3 className="Title">{job.ContentHeading}</h3>
-                                    </div>
-                                </div>
+                <div className="DCatStyle1Top">
+                    <Link to={"/" + job.Slug + "/news/" + job.ContentID} key={job.ContentID} ojoblick={scrollTop}>
+                        <div className="thumbnail">
+                            <div className="Imgresize">
+                                <figure className="ImgViewer">
+                                    <picture className="FixingRatio">
+                                        <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + job.ImageBgPath} alt={job.ContentHeading} title={job.ContentHeading} className="img-fluid img100 ImgRatio" />
 
-                            </Link>
+                                        {job.ShowVideo === 1 && <div className="card-video-icon big transition"> <i className="fa-solid fa-play"></i> </div>}
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div className="Desc">
+                                {/* <h3 className="Title">{job.ContentHeading}</h3> */}
+                                {job.ContentSubHeading == null ?
+                                    <h3 className="Title">{job.ContentHeading} </h3> :
+                                    <h3 className="Title"> <span className="subheadTitle">{job.ContentSubHeading + " /"}</span> {job.ContentHeading} </h3>
+                                }
+                            </div>
                         </div>
-                    
 
-          
+                    </Link>
+                </div>
+
+
+
                 {job2.map((nc) => {
                     return (
                         <div className="DCatStyle1ListItem">
@@ -70,7 +74,12 @@ export default function DJob() {
                                     </div>
                                     <div className="col-lg-8 col-7">
                                         <div className="Desc">
-                                            <h2 className="Title">{nc.ContentHeading} </h2>
+                                            {/* <h2 className="Title">{nc.ContentHeading} </h2> */}
+                                            {nc.ContentSubHeading == null ?
+                                                <h2 className="Title">{nc.ContentHeading} </h2> :
+                                                <h2 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h2>
+                                            }
+
                                         </div>
                                     </div>
                                 </div>

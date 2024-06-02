@@ -301,16 +301,14 @@ export default function Details() {
                         </div> */}
                             <section>
                                 <div className="row d-print-none">
-                                    <div className="col-lg-2 col-12 my-2">
+                                    <div className="col-lg-12 col-12 my-2">
                                         <div className="DSecTitle">
                                             <Link to={'/' + catName.Slug}>
                                                 <h3><span className="ColorBox"></span>{catName.CategoryName}</h3>
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="col-lg-10 col-12 my-2  d-none d-lg-block">
-                                        {/* <DFrom /> */}
-                                    </div>
+                                  
                                 </div>
                             </section>
 

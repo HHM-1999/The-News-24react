@@ -47,7 +47,12 @@ export default function Sports() {
                                                 </div>
                                                 <div className="Desc">
                                                     <div className="NewsTitle">
-                                                        <h3 className="Title">{nc.ContentHeading}</h3>
+                                                        {/* <h3 className="Title">{nc.ContentHeading}</h3> */}
+                                                        {nc.ContentSubHeading == null ?
+                                                            <h3 className="Title">{nc.ContentHeading} </h3> :
+                                                            <h3 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h3>
+                                                        }
+
                                                     </div>
                                                     <div className="Brief"><p>{nc.ContentBrief}</p></div>
                                                 </div>
@@ -78,7 +83,12 @@ export default function Sports() {
                                                 </div>
                                                 <div className="col-8">
                                                     <div className="Des8">
-                                                        <h2 className="Title">{nc.ContentHeading}</h2>
+                                                        {/* <h2 className="Title">{nc.ContentHeading}</h2> */}
+                                                        {nc.ContentSubHeading == null ?
+                                                            <h2 className="Title">{nc.ContentHeading} </h2> :
+                                                            <h2 className="Title"> <span className="subheadTitle">{nc.ContentSubHeading + " /"}</span> {nc.ContentHeading} </h2>
+                                                        }
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -88,7 +98,7 @@ export default function Sports() {
                             })}
 
 
-                            
+
                         </div>
                     </div>
                 </div>

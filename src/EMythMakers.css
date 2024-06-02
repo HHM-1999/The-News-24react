@@ -1616,6 +1616,12 @@ a.close-search {
 	font-weight: 600;
 }
 
+.subheadTitle{
+	font-size: 18px;
+	color: #F00000;
+	font-weight: 600;
+}
+
 
 .DHomeTopLead .Desc .Brief p {
 	-webkit-line-clamp: 3;
@@ -2615,12 +2621,12 @@ a.close-search {
 
 
 /*================= International =================*/
+.DLifestyle{
+	margin-top: 10px;
+}
 .DLifestyleTop {
-	margin-top: 15px;
 	background: #fff;
 	width: 100%;
-	border-right: 1px solid #e2e2e2;
-	padding-right: 20px;
 }
 
 .DLifestyleTop .Desc {
@@ -2642,17 +2648,13 @@ a.close-search {
 	padding-top: 60%;
 }
 
-.DLifestyleTop2 .col-lg-4:nth-child(3) .DLifestyleList {
+.DLifestyleTop2 .col-lg-4:nth-child(3) {
 	border-right: none;
-	padding-right: 0;
 }
 
 .DLifestyleList {
-	margin-top: 15px;
 	background: #fff;
 	width: 100%;
-	border-right: 1px solid #e2e2e2;
-	padding-right: 20px;
 }
 
 .DLifestyleList .Desc {
