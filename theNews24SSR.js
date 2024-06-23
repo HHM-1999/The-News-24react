@@ -87,6 +87,7 @@ app.get('/', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + request.originalUrl;
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -106,6 +107,7 @@ app.get('/aboutUs', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -125,6 +127,7 @@ app.get('/photo-feature', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -144,6 +147,7 @@ app.get('/live', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -163,6 +167,7 @@ app.get('/pollresult', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -182,6 +187,7 @@ app.get('/privacy-policy', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -201,6 +207,7 @@ app.get('/terms-service', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -220,6 +227,7 @@ app.get('/all_tags', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -239,6 +247,7 @@ app.get('/all_writers', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -258,6 +267,7 @@ app.get('/archives', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -277,6 +287,7 @@ app.get('/namaj', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -296,6 +307,7 @@ app.get('/video', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -1031,6 +1043,8 @@ app.get('/:catSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                 response.send(data);
             });
         } else {
@@ -1046,6 +1060,8 @@ app.get('/:catSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                 response.send(data);
             });
         }
@@ -1065,6 +1081,8 @@ app.get('/:catSlug', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+            data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
             response.send(data);
         });
     }
@@ -1085,6 +1103,7 @@ app.get('/search/:searchSlug', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
@@ -1114,6 +1133,7 @@ app.get('/divisions/:divisionSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1129,6 +1149,7 @@ app.get('/divisions/:divisionSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1148,6 +1169,7 @@ app.get('/divisions/:divisionSlug', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
@@ -1178,6 +1200,7 @@ app.get('/writers/:WriterSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1193,6 +1216,7 @@ app.get('/writers/:WriterSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1212,6 +1236,7 @@ app.get('/writers/:WriterSlug', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
@@ -1242,6 +1267,7 @@ app.get('/tags/:TagTitle', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1257,6 +1283,7 @@ app.get('/tags/:TagTitle', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1275,6 +1302,7 @@ app.get('/tags/:TagTitle', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
@@ -1306,6 +1334,8 @@ app.get('/:catSlug/:subCatSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                 response.send(data);
             });
         } else {
@@ -1321,6 +1351,8 @@ app.get('/:catSlug/:subCatSlug', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                 response.send(data);
             });
         }
@@ -1339,6 +1371,8 @@ app.get('/:catSlug/:subCatSlug', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+            data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
             response.send(data);
         });
     }
@@ -1379,6 +1413,7 @@ app.get('/photo-feature/news/:photoID', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1394,6 +1429,7 @@ app.get('/photo-feature/news/:photoID', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1412,6 +1448,7 @@ app.get('/photo-feature/news/:photoID', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
@@ -1483,6 +1520,8 @@ app.get('/:catSlug/news/:id', async function (request, response) {
                         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                        var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                        data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                         response.send(data);
                     });
                 }else{
@@ -1498,6 +1537,8 @@ app.get('/:catSlug/news/:id', async function (request, response) {
                         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                        var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                        data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                         return response.send(data);
                     });
                 }
@@ -1514,6 +1555,8 @@ app.get('/:catSlug/news/:id', async function (request, response) {
                     // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                     var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                     data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                    var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                    data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                     return response.send(data);
                 });
             }
@@ -1530,6 +1573,8 @@ app.get('/:catSlug/news/:id', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+                data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
                 response.send(data);
             });
         }
@@ -1549,6 +1594,8 @@ app.get('/:catSlug/news/:id', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            var ampUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + '/amp' + (request.originalUrl).replace(/\/+$/, '');
+            data = data.replace(/\$AMP_URL/g, '<link rel="amphtml" href="'+ampUrl+'"></link>');
             response.send(data);
         });
     }
@@ -1579,6 +1626,7 @@ app.get('/:catSlug/news/:id', async function (request, response) {
 //                 data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
 //                 var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
 //                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+//                 data = data.replace(/\$AMP_URL/g, '');
 //                 response.send(data);
 //             });
 //         } else {
@@ -1593,6 +1641,7 @@ app.get('/:catSlug/news/:id', async function (request, response) {
 //                 data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
 //                 var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
 //                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+//                 data = data.replace(/\$AMP_URL/g, '');
 //                 response.send(data);
 //             });
 //         }
@@ -1610,6 +1659,7 @@ app.get('/:catSlug/news/:id', async function (request, response) {
 //             data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
 //             var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
 //             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+//             data = data.replace(/\$AMP_URL/g, '');
 //             response.send(data);
 //         });
 //     }
@@ -1643,6 +1693,7 @@ app.get('/video/show/:vdoID', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1658,6 +1709,7 @@ app.get('/video/show/:vdoID', async function (request, response) {
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1676,6 +1728,7 @@ app.get('/video/show/:vdoID', async function (request, response) {
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
@@ -1707,6 +1760,7 @@ app.get('/divisions/:divisionSlug/:districtSlug', async function (request, respo
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         } else {
@@ -1722,6 +1776,7 @@ app.get('/divisions/:divisionSlug/:districtSlug', async function (request, respo
                 // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
                 var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
                 data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
                 response.send(data);
             });
         }
@@ -1740,10 +1795,288 @@ app.get('/divisions/:divisionSlug/:districtSlug', async function (request, respo
             // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
             var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
             data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
             response.send(data);
         });
     }
 });
+
+
+app.get('/amp/:catSlug', async function (request, response) {
+    let catSlug = request.params.catSlug;
+    console.log('AMP Category page visited!' + catSlug);
+    const filePath = path.resolve(__dirname, './build', 'index.html');
+
+    let sql = `SELECT CategoryID, CategoryName FROM bn_bas_categories WHERE Slug=?`;
+    try {
+        const queryData = await bnConfig.query( sql, [catSlug] );
+        if (queryData && queryData.length > 0) {
+            let title = queryData[0].CategoryName;
+            let keyword = title.split(" ");
+            keyword = keyword.toString();
+            fs.readFile(filePath, 'utf8', async function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
+                data = data.replace(/\$OG_TITLE/g, `${title} | ${title} সর্বশেষ খবর :: দ্য নিউজ ২৪`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `${title}`);
+                data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
+                response.send(data);
+            });
+        } else {
+            fs.readFile(filePath, 'utf8', function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
+                response.send(data);
+            });
+        }
+    }
+    catch (err) {
+        console.log('contentDetails error');
+        console.log(err);
+        fs.readFile(filePath, 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+            data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+            // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+            var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+            data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
+            response.send(data);
+        });
+    }
+});
+
+app.get('/amp/:catSlug/:subCatSlug', async function (request, response) {
+    let catSlug = request.params.catSlug;
+    let subCatSlug = request.params.subCatSlug;
+    console.log('AMP sub Category page visited! ' + catSlug + '/' + subCatSlug);
+    const filePath = path.resolve(__dirname, './build', 'index.html');
+
+    let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle FROM bn_bas_categories WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
+    // let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle, cat.CategoryName catTitle FROM bn_bas_categories JOIN bn_bas_categories cat ON cat.CategoryID=bn_bas_categories.ParentID WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
+    try {
+        const queryData = await bnConfig.query( sql, [subCatSlug] );
+        if (queryData && queryData.length > 0) {
+            let title = queryData[0].subCatTitle;
+            let keyword = title.split(" ");
+            keyword = keyword.toString();
+            fs.readFile(filePath, 'utf8', async function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
+                data = data.replace(/\$OG_TITLE/g, `${title}`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `${title}`);
+                data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                // var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
+                var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
+                response.send(data);
+            });
+        } else {
+            fs.readFile(filePath, 'utf8', function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                // var fullUrl = request.protocol + '://' + request.get('host') + (request.originalUrl).replace(/\/+$/, '');
+                var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
+                response.send(data);
+            });
+        }
+    }catch (err) {
+        console.log('contentDetails error');
+        console.log(err);
+        fs.readFile(filePath, 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+            data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+            // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+            var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+            data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
+            response.send(data);
+        });
+    }
+});
+
+app.get('/amp/:catSlug/news/:id', async function (request, response) {
+    let catSlug = request.params.catSlug;
+    let id = request.params.id;
+    console.log('Detail page visited!' + catSlug + ' ' + id);
+    const filePath = path.resolve(__dirname, './build', 'index.html');
+
+    let sql = `SELECT bn_contents.ContentID, bn_contents.CategoryIDs, bn_contents.ContentHeading, bn_contents.ContentBrief, bn_contents.ImageBgPath, bn_contents.URLAlies, bn_contents.Keywords, bn_contents.PlateType, bn_contents.ImagePlatePath FROM bn_contents WHERE bn_contents.ContentID=? AND bn_contents.ShowContent=1 AND bn_contents.Deletable=1`;
+    // let sql = `SELECT bn_contents.ContentID, bn_contents.CategoryIDs, bn_contents.ContentHeading, bn_contents.CategoryIDs, bn_contents.ContentSubHeading, bn_contents.DetailsHeading, bn_contents.ContentShoulder, bn_contents.WriterID, bn_contents.ReporterID, bn_contents.DistCorsID, bn_contents.SubEditorID, bn_contents.WriterName, bn_contents.ContentBrief, bn_contents.ContentDetails, bn_contents.ImageSmPath, bn_contents.ImageSmPathCaption, bn_contents.ImageBgPath, bn_contents.ImageBgPathCaption, bn_contents.Tags, bn_contents.RelNews, bn_contents.RelNewsIDs, bn_contents.InvolvedNews, bn_contents.InvolvedIDs, bn_contents.VideoSource AS Source, bn_contents.VideoID, bn_contents.VideoPath, bn_contents.VideoType, bn_contents.ShowVideo, bn_contents.URLAlies, bn_contents.Keywords, bn_contents.PlateType, bn_contents.ImagePlatePath, bn_contents.Initial, bn_contents.VideoID, bn_contents.VideoPath, bn_contents.VideoType, bas_districts.DistrictNameBn, bas_districts.DistrictSlug, bn_contents.created_at as create_date, bn_contents.updated_at as updated_date FROM bn_contents LEFT JOIN bas_districts ON bn_contents.DistrictID=bas_districts.DistrictID WHERE bn_contents.ContentID=? AND bn_contents.ShowContent=1 AND bn_contents.Deletable=1`;
+
+    try { const contentDetails = await bnConfig.query( sql, [id] );
+        if (contentDetails && contentDetails.length > 0) {
+
+            let categoryCheck;
+            try { categoryCheck = await bnConfig.query( 'SELECT CategoryID, CategoryName, Slug FROM bn_bas_categories WHERE Slug=?', [catSlug] );
+                // console.log(typeof categoryCheck);
+            }
+            catch (err) { console.log('categoryCheck error'); return ''; }
+            // try { categoryCheck = await bnConfig.query( 'SELECT CategoryName, Slug FROM bn_bas_categories WHERE CategoryID IN (?)', [contentDetails[0].CategoryIDs] );
+            //     // console.log(typeof categoryCheck);
+            // }
+            // catch (err) { console.log('categoryCheck error'); return ''; }
+
+            if (categoryCheck && categoryCheck.length > 0) {
+                let categoryMatched = false
+                let categoryCheckValues=(contentDetails[0].CategoryIDs).split(",");
+                if(categoryCheckValues.includes((categoryCheck[0].CategoryID).toString())){categoryMatched=true}
+                // // let categoryCheckValues = [];
+                // // let categoryCheckValues = Object.values(categoryCheck.Slug);
+                // for (let i = 0; i < categoryCheckValues.length; i++) {
+                //     if(categoryCheck[i].Slug==catSlug){ categoryMatched=true; break; }
+                // }
+                // // console.log(categoryCheckValues);
+
+                if(categoryMatched){
+                    let title = contentDetails[0].ContentHeading;
+                    let description = contentDetails[0].ContentBrief;
+                    if (!description) {
+                        description = title
+                    } else {
+                        description = (contentDetails[0].ContentBrief).replace(/(<([^>]+)>)/ig, '')
+                    }
+                    let image = '';
+                    if (contentDetails[0].PlateType > 0) {
+                        image = contentDetails[0].ImagePlatePath;
+                    } else {
+                        image = contentDetails[0].ImageBgPath
+                    }
+                    let keyword = '';
+                    if (contentDetails[0].Keywords) {
+                        keyword = contentDetails[0].Keywords
+                    } else {
+                        keyword = title.split(" ");
+                        keyword = keyword.toString();
+                    }
+                    fs.readFile(filePath, 'utf8', async function (err, data) {
+                        if (err) {
+                            return console.log(err);
+                        }
+                        data = data.replace(/\$OG_ROBOTS/g, `index, follow`);
+                        data = data.replace(/\$OG_TITLE/g, `${title}`);
+                        data = data.replace(/\$OG_DESCRIPTION/g, `${description}`);
+                        data = data.replace(/\$OG_KEYWORDS/g, `${keyword}`);
+                        data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/imgAll/${image}`);
+                        // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                        var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                        data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                        data = data.replace(/\$AMP_URL/g, '');
+                        response.send(data);
+                    });
+                }else{
+                    fs.readFile(filePath, 'utf8', function (err, data) {
+                        if (err) {
+                            return console.log(err);
+                        }
+                        data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                        data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                        data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                        data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                        data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                        // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                        var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                        data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                        data = data.replace(/\$AMP_URL/g, '');
+                        return response.send(data);
+                    });
+                }
+            }else{
+                fs.readFile(filePath, 'utf8', function (err, data) {
+                    if (err) {
+                        return console.log(err);
+                    }
+                    data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                    data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                    data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                    data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                    data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                    // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                    var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                    data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                    data = data.replace(/\$AMP_URL/g, '');
+                    return response.send(data);
+                });
+            }
+        } else {
+            fs.readFile(filePath, 'utf8', function (err, data) {
+                if (err) {
+                    return console.log(err);
+                }
+                data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+                data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found`);
+                data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found`);
+                data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+                // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+                var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+                data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+                data = data.replace(/\$AMP_URL/g, '');
+                response.send(data);
+            });
+        }
+    }
+    catch (err) {
+        console.log('contentDetails error');
+        console.log(err);
+        fs.readFile(filePath, 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            data = data.replace(/\$OG_ROBOTS/g, `noindex, nofollow`);
+            data = data.replace(/\$OG_TITLE/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_DESCRIPTION/g, `404 - Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_KEYWORDS/g, `404, Nothing Found - Something Went Wrong`);
+            data = data.replace(/\$OG_IMAGE/g, `${BEndUrl}media/common/logo-fb.png`);
+            // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
+            var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace("/amp/", '/').replace(/\/+$/, '');
+            data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+            data = data.replace(/\$AMP_URL/g, '');
+            response.send(data);
+        });
+    }
+});
+
 
 app.use(express.static(path.resolve(__dirname, './build')));
 
@@ -1764,6 +2097,7 @@ app.get('*', function (request, response) {
         // var fullUrl = request.protocol + '://' + request.hostname + (request.originalUrl).replace(/\/+$/, '');
         var fullUrl = request.get('x-forwarded-proto') + '://' + request.get('X-Forwarded-Host') + (request.originalUrl).replace(/\/+$/, '');
         data = data.replace(/\$OG_URL/g, `${fullUrl}`);
+        data = data.replace(/\$AMP_URL/g, '');
         response.send(data);
     });
 });
