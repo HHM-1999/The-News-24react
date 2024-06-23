@@ -36,7 +36,7 @@ export default function LeadNews() {
                         </div>
                         <div className="col-lg-5">
                             <div className="Desc">
-                                {state.ContentSubHeading == null ?
+                                {state.ContentSubHeading == null  ?
                                     <h1 className="Title"> {state.ContentHeading}</h1> :
                                     <h1 className="Title"> <span className="subheadTitle">{state.ContentSubHeading}/</span>  {state.ContentHeading}</h1>
 

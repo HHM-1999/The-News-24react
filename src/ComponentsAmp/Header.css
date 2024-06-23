@@ -1,0 +1,231 @@
+.amp-site [role="button"] {
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.amp-site amp-sidebar[side][i-amphtml-sidebar-opened] {
+    transform: none;
+    animation: none;
+    width: 300px;
+}
+
+.amp-site .navberTimeDate {
+    padding: 0 20px;
+}
+
+.amp-site .navberTimeDate p {
+    font-size: 17px;
+}
+
+.ampstart-social-box {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ampstart-social-box>amp-social-share {
+    background-color: #000;
+}
+
+.ampstart-icon {
+    fill: #003f93;
+}
+
+.ampstart-input {
+    width: 100%;
+}
+
+main .ampstart-social-follow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 315px;
+}
+
+main .ampstart-social-follow li {
+    transform: scale(1.8);
+}
+
+h1+.ampstart-byline time {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.ampstart-dropdown>section>header {
+    background-color: #fff;
+    border: 0;
+    color: #222;
+}
+
+.ampstart-dropdown-item {
+    background-color: #fff;
+    color: #003f93;
+    opacity: 0.9;
+}
+
+.ampstart-sidebar .ampstart-dropdown-item,
+.ampstart-sidebar .ampstart-dropdown header,
+.ampstart-sidebar .ampstart-faq-item,
+.ampstart-sidebar .ampstart-nav-item,
+.ampstart-sidebar .ampstart-social-follow {
+    margin: 0 0;
+    font-size: 17px;
+}
+
+.ampstart-dropdown-item.subcat {
+    margin: 10px 0;
+}
+
+.amp-site .m0 {
+    margin: 0;
+}
+
+.ampstart-sidebar .ampstart-icon {
+    fill: #003f93;
+}
+
+.ampstart-sidebar-header {
+    line-height: 3.5rem;
+    min-height: 3.5rem;
+}
+
+/* .ampstart-sidebar .ampstart-dropdown-item,
+.ampstart-sidebar .ampstart-dropdown header,
+.ampstart-sidebar .ampstart-faq-item,
+.ampstart-sidebar .ampstart-nav-item,
+.ampstart-sidebar .ampstart-social-follow {
+    margin: 0 0 1rem;
+} */
+
+.ampstart-sidebar .ampstart-nav-dropdown {
+    margin: 0;
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger {
+    line-height: inherit;
+}
+
+.ampstart-headerbar {
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    color: #000;
+    z-index: 999;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ampstart-headerbar+ :not(amp-sidebar),
+.ampstart-headerbar+amp-sidebar+* {
+    margin-top: 3.5rem;
+}
+
+.ampstart-headerbar-nav .ampstart-nav-item {
+    padding: 0 1rem;
+    background: transparent;
+    opacity: 0.8;
+}
+
+.ampstart-nav-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.ampstart-headerbar-nav {
+    line-height: 3.5rem;
+}
+
+.ampstart-nav-item:active,
+.ampstart-nav-item:focus,
+.ampstart-nav-item:hover {
+    opacity: 1;
+}
+
+.ampstart-navbar-trigger:focus {
+    outline: none;
+}
+
+.ampstart-nav a,
+.ampstart-navbar-trigger,
+.ampstart-sidebar-faq li a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.ampstart-nav .ampstart-label {
+    color: #fff;
+}
+
+.ampstart-navbar-trigger {
+    line-height: 3.5rem;
+    font-size: 2rem;
+}
+
+.ampstart-headerbar-nav {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.ampstart-nav-search {
+    -ms-flex-positive: 0.5;
+    flex-grow: 0.5;
+}
+
+.ampstart-headerbar .ampstart-nav-search:active,
+.ampstart-headerbar .ampstart-nav-search:focus,
+.ampstart-headerbar .ampstart-nav-search:hover {
+    box-shadow: none;
+}
+
+.ampstart-nav-search>input {
+    border: none;
+    border-radius: 3px;
+    line-height: normal;
+}
+
+.ampstart-nav-dropdown {
+    min-width: 200px;
+}
+
+.ampstart-nav-dropdown > amp-accordion header {
+    background-color: #fff;
+    border: none;
+}
+
+
+/* .ampstart-headerbar {
+    position: fixed;
+    overflow: hidden;
+  } */
+
+.ampstart-nav-dropdown > amp-accordion ul {
+    background-color: #fff;
+}
+
+.ampstart-nav-dropdown .ampstart-dropdown-item,
+.ampstart-nav-dropdown .ampstart-dropdown>section>header {
+    background-color: #fff;
+    color: #000;
+}
+
+.ampstart-nav-dropdown .ampstart-dropdown-item {
+    color: #003f93;
+}
+
+.ampstart-sidebar {
+    background-color: #fff;
+    min-width: 300px;
+    width: 300px;
+}
+
+.amp-site .px3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .amp-site ul{
+    text-decoration: none;
+  }
+  .amp-site li{
+    text-decoration: none;
+    color: transparent;
+  }
+  .collapse:not(.show) {
+	display: block;
+}

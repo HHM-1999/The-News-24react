@@ -1,42 +1,42 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './Header'
-import Footer from './Footer'
-import Home from './Home'
-import OnlinePollDetails from './OnlinePollDetails';
-import Category from './Category/Category';
-import SubCategory from './Category/SubCategory';
-import Details from './DetailsPage/Details';
-import ErrorPage from './ErrorPage';
-import Archives from './Archives';
-import TagPage from './Tags/TagPage';
-import AllTagList from './Tags/AllTagList';
-import WritersPage from './Writers/WritersPage';
-import AllWriters from './Writers/AllWriters';
-import VideoGallery from './Video/VideoGallery';
-import VideoCategory from './Video/VideoCategory';
-import VideoDetails from './Video/VideoDetails';
-import DivisionSlug from './Country/DivisionSlug';
-import DistrictSlug from './Country/DistrictSlug';
-import Live from './Live';
-import CategoryPhotoFeature from './Photo-features/CategoryPhotoFeature';
-import DetailsPhotoFeature from './Photo-features/DetailsPhotoFeature';
-import SearchResult from './SearchResult';
-import AboutUs from './AboutUs';
-import PrivacyPolicy from './Privacy-policy';
-import Terms from './Terms'
-import AdvertisementPage from './AdvertisementPage';
-import DPrayerTime from './DPrayerTime';
+import {  Routes, Route } from "react-router-dom";
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Home from './Components/Home'
+import OnlinePollDetails from './Components/OnlinePollDetails';
+import Category from './Components/Category/Category';
+import SubCategory from './Components/Category/SubCategory';
+import Details from './Components/DetailsPage/Details';
+import ErrorPage from './Components/ErrorPage';
+import Archives from './Components/Archives';
+import TagPage from './Components/Tags/TagPage';
+import AllTagList from './Components/Tags/AllTagList';
+import WritersPage from './Components/Writers/WritersPage';
+import AllWriters from './Components/Writers/AllWriters';
+import VideoGallery from './Components/Video/VideoGallery';
+import VideoCategory from './Components/Video/VideoCategory';
+import VideoDetails from './Components/Video/VideoDetails';
+import DivisionSlug from './Components/Country/DivisionSlug';
+import DistrictSlug from './Components/Country/DistrictSlug';
+import Live from './Components/Live';
+import CategoryPhotoFeature from './Components/Photo-features/CategoryPhotoFeature';
+import DetailsPhotoFeature from './Components/Photo-features/DetailsPhotoFeature';
+import SearchResult from './Components/SearchResult';
+import AboutUs from './Components/AboutUs';
+import PrivacyPolicy from './Components/Privacy-policy';
+import Terms from './Components/Terms'
+import AdvertisementPage from './Components/AdvertisementPage';
+import DPrayerTime from './Components/DPrayerTime';
 
 
-export default function RouterLink() {
+export default function MainRouterLink() {
     return (
-        <BrowserRouter>
+        <div className="main-site">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
-                 
+
                 <Route path="/live" element={<Live />} />
                 <Route path="/pollresult" element={<OnlinePollDetails />} />
                 <Route path="/archives" element={<Archives />} />
@@ -64,6 +64,8 @@ export default function RouterLink() {
 
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </div>
+
+
     )
 }
