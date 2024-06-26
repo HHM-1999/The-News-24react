@@ -52,7 +52,8 @@ export default function SubCategory() {
                         .get(`${process.env.REACT_APP_API_URL}json/file/generateCategoryPopular${catID}.json`)
                         .then(({ data }) => {
                             if (data.data) {
-                            setcatLatest(data.data);}
+                                setcatLatest(data.data);
+                            }
                         });
                     axios
                         .get(`${process.env.REACT_APP_API_URL}sub-category-content/${catID}/${LeadNewsLimit}`)
@@ -62,7 +63,7 @@ export default function SubCategory() {
                             if (data.sub_category_content) {
                                 // setSubCatLead(data.sub_category_content[0]);
                                 // setSubCatLead2(data.sub_category_content[1]);
-                                setSubCatLead3(data.sub_category_content.slice(0,12));
+                                setSubCatLead3(data.sub_category_content.slice(0, 12));
                                 // leadNews position array ------ start
                                 InnerSpecialContents = ``
                                 for (let i = 0; i < data.sub_category_content.length; i++) {
@@ -125,56 +126,80 @@ export default function SubCategory() {
     };
     return (
         <>
-                  <div className='container'>
-            <div className="row">
-                <div className="col-lg-10 m-auto">
-                    <div className=" ampstart-related-section m-5 ">
-                        {subCatName ?
-                            <h1>{subCatName.CategoryName}</h1> : ""}
+            {/* <div className='container'>
+                <div className="row">
+                    <div className="col-lg-10 m-auto">
+                        <div className=" ampstart-related-section m-5 ">
+                            {subCatName ?
+                                <h1>{subCatName.CategoryName}</h1> : ""}
 
-                        <div className="border-bottom"></div>
-                        <div className="row">
-                            {
-                                subCatLead3.map((nc) => {
-                                    return <div className="col-md-4 mt-5 ">
-                                        <a href={"/amp/" + catSlug + "/news/" + nc.ContentID} >
-                                            <div className="row">
-                                                <div className="col-md-4 col-4 ">
-                                                    <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ImageSmPath} layout="responsive" width="100" height="80"
-                                                    ></amp-img>
+                            <div className="border-bottom"></div>
+                            <div className="row">
+                                {
+                                    subCatLead3.map((nc) => {
+                                        return <div className="col-md-4 mt-5 ">
+                                            <a href={"/amp/" + catSlug + "/news/" + nc.ContentID} >
+                                                <div className="row">
+                                                    <div className="col-md-4 col-4 ">
+                                                        <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ImageSmPath} layout="responsive" width="100" height="80"
+                                                        ></amp-img>
 
-
-                                                </div>
-                                                <div className="col-md-8 col-8">
-
-                                                    <div className="desc">
-                                                        <p>
-                                                            {nc.ContentHeading}
-                                                        </p>
 
                                                     </div>
+                                                    <div className="col-md-8 col-8">
 
+                                                        <div className="desc">
+                                                            <p>
+                                                                {nc.ContentHeading}
+                                                            </p>
+
+                                                        </div>
+
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                        </a>
+                                            </a>
 
 
-                                    </div>
-                                })
+                                        </div>
+                                    })
 
-                            }
+                                }
+
+                            </div>
+
 
                         </div>
-
-
                     </div>
                 </div>
-            </div>
 
 
 
-        </div>
+            </div> */}
+              <article class="recipe-article">
+                <section class="ampstart-related-section mb4 ">
+                    {subCatName ?
+                        <h1 style={{display:"flex", fontSize:"23px",borderBottom:'3px solid #eee',lineHeight:"32px",justifyContent:"center"}} >{subCatName.CategoryName}</h1> : ""}
+
+                    <ul class="ampstart-related-section-items list-reset flex flex-wrap m0">
+                        {
+                            subCatLead3.map((nc) => {
+                                return <li class="col-12 sm-col-4 md-col-8 lg-col-8 pr2" >
+
+                                    <a href={"/amp/" + catSlug + "/news/" + nc.ContentID} class="text-decoration-none">
+                                        <figure class="ampstart-image-with-caption  relative ">
+                                            <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ImageSmPath} layout="responsive" width="233" height="202"
+                                            ></amp-img>
+                                            <figcaption >
+                                                {nc.ContentHeading}</figcaption>
+                                        </figure>
+                                    </a>
+
+                                </li>
+                            })}
+                    </ul>
+                </section>
+            </article >
         </>
     )
 }

@@ -1,11 +1,8 @@
-import './EMythMakers.css';
+// import './EMythMakers.css';
 import './SolaimanLipi.css';
 import "lightgallery.js/dist/css/lightgallery.css";
 import RouterLink from './RouterLink';
 import { useEffect } from 'react';
-import { scrollTop } from './Components/AllFunctions';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 var scrollBtn
 
 function Emyth() {
@@ -54,7 +51,7 @@ function Emyth() {
         </div>
         <div id="closeText" onClick={closeText}>বন্ধ করুন</div>
       </div> */}
-      <div id="back_to_top" onClick={scrollTop} className="back_to_top on d-print-none"><span className="go_up"><i className="fa-solid fa-angles-up"></i></span></div>
+      {/* <div id="back_to_top" onClick={scrollTop} className="back_to_top on d-print-none"><span className="go_up"><i className="fa-solid fa-angles-up"></i></span></div> */}
       <RouterLink />
     </>
   );

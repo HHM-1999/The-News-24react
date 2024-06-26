@@ -1,5 +1,4 @@
 import React from 'react'
-import './Header.css';
 import { banglaDateConvetar } from './AllFunctions'
 import { getDate, getMonth, getYear } from 'bangla-calendar';
 import moment from 'moment-hijri';
@@ -17,15 +16,15 @@ const currentDay = moment().format('dddd')
 export default function Header() {
 
     return (
-        <div className='container text-black body-' amp-custom="">
+        <div className=' text-black body-' amp-custom="">
 
             {/* <!-- Start Navbar --> */}
-            <header amp-fx="float-in-top" class="ampstart-headerbar d-flex ">
+            <header amp-fx="float-in-top" class="ampstart-headerbar" style={{display:'flex'}} >
                 <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabIndex="0"
                     class="ampstart-navbar-trigger pr2">
                     ☰
                 </div>
-                <a href="/" class=" d-flex m-auto justify-content-center"><amp-img src={Logo} width="100" height="55" layout="fixed"
+                <a href="/" style={{display:'flex', justifyContent:'center' ,alignItems:'center', margin:"auto"}}><amp-img src={Logo} width="100" height="55" layout="fixed"
                     alt="The News 24"></amp-img></a>
             </header>
             {/* <!-- Start Sidebar --> */}
@@ -37,10 +36,10 @@ export default function Header() {
                         ✕
                     </div>
                 </div>
-                <div class="navberTimeDate pb-4">
+                <div class="navberTimeDate">
                     <p>&nbsp;{banglaDateConvetar(currentDay)}, {banglaDateConvetar(currentDate)}, {BNDATEs}</p>
                 </div>
-                <a href="/">  <amp-img src={Logo} width="100" height="55" layout="fixed" class=" pt-5   d-flex m-auto justify-content-center"
+                <a href="/" class='flex justify-end items-center'>  <amp-img src={Logo} width="100" height="55" layout="fixed" 
                     alt="The News 24"></amp-img></a>
                 <nav class="ampstart-sidebar-nav ampstart-nav">
                     <ul class="list-reset m0 p0 ampstart-label">

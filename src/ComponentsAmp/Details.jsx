@@ -312,85 +312,76 @@ export default function Details() {
                                             <div className="newsDetail" id={news.ContentID} data-title={news.ContentHeading} key={news.ContentID}>
                                                 {/* <Ldjson news={news} catName={catName} catSlug={catSlug} /> */}
                                                 <div className=" mt-2">
-                                                        <div className="ContentDetails">
-                                                            {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
-                                                            <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
-                                                            {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
-                                                        </div>
-                                                
-                                                        {news.VideoID !== null && news.VideoID !== '' && news.ShowVideo === 1 ?
-                                                            <>
-                                                                <div className={allTags === null ? "col-sm-12 video-container mt-2" : "col-sm-12 video-container"}>
-                                                                    {news.VideoType === "youtube" ?
-                                                                        <iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
-                                                                        : news.VideoType === "vimeo" ?
-                                                                            <iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                                                                            : news.VideoType === "facebook" ?
-                                                                                <iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                                                                                : news.VideoType === "instagram" ?
-                                                                                    <iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></iframe>
-                                                                                    : false}
+                                                    <div className="ContentDetails">
+                                                        {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
+                                                        <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
+                                                        {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>}
+                                                    </div>
+
+                                                    {news.VideoID !== null && news.VideoID !== '' && news.ShowVideo === 1 ?
+                                                        <>
+                                                            <div className={allTags === null ? "col-sm-12 video-container mt-2" : "col-sm-12 video-container"}>
+                                                                {news.VideoType === "youtube" ?
+                                                                    <iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+                                                                    : news.VideoType === "vimeo" ?
+                                                                        <iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                                        : news.VideoType === "facebook" ?
+                                                                            <iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                            : news.VideoType === "instagram" ?
+                                                                                <iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></iframe>
+                                                                                : false}
+                                                            </div>
+
+                                                            <div style={{ paddingTop: "20px", paddingLeft: "5px" }}>
+                                                                <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
+                                                            </div>
+
+                                                        </> :
+                                                        <>
+                                                            <div className="DTopImg">
+                                                                <div className="Details">
+                                                                    <picture><amp-img src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} layout="responsive" width="600" height='351px' /></picture>
                                                                 </div>
-                                                                <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
-                                                                    {/* {(writer[i] || news.WriterName !== "") ?
-                                                                        <DWriters writer={writer[i]} writersName={news.WriterName} />
-                                                                        : false} */}
-                                                                    <div className='d-flex PRINTBTN'>
-                                                                        <p className="DTopImgCaption" style={{ paddingRight: '10px', paddingTop: '10px' }}>{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
-                                                                        <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
-                                                                        <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
-                                                                    </div>
+                                                                {/* <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /> */}
+                                                                <div className="DetailsTopCap">
+                                                                    <p className="DTopImgCaption">{news.ImageBgPathCaption}</p>
+                                                                    {/* <p className="DTopImgCaption">{dateArray[i][1] && banglaDateConvetar(dateArray[i][1])}</p> */}
+                                                                    <p className="DTopImgCaption">{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
                                                                 </div>
-                                                            </> :
-                                                            <>
-                                                                <div className="DTopImg">
-                                                                    <div className="Details">
-                                                                        <picture><amp-img  src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} layout="responsive" width="600" height='351px'   /></picture>
-                                                                    </div>
-                                                                    {/* <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /> */}
-                                                                    <div className="DetailsTopCap">
-                                                                        <p className="DTopImgCaption">{news.ImageBgPathCaption}</p>
-                                                                        {/* <p className="DTopImgCaption">{dateArray[i][1] && banglaDateConvetar(dateArray[i][1])}</p> */}
-                                                                        <p className="DTopImgCaption">{dateArray[i] && banglaDateConvetar(format(new Date(dateArray[i]), 'dd MMMM yyyy, H:mm'))}</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="mt-2 d-contents d-sm-flex justify-content-between align-items-center d-print-none">
-                                                                    {/* {(writer[i] || news.WriterName !== "") ?
-                                                                        <DWriters writer={writer[i]} writersName={news.WriterName} />
-                                                                        : false} */}
-                                                                    <div className='d-flex PRINTBTN'>
-                                                                        <button type="button" title='Print' onClick={PrintAble} aria-label='Print' className="printMe"><i className="fa-solid fa-print"></i></button>
-                                                                        <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
-                                                                    </div>
-                                                                </div>
-                                                            </>
-                                                        }
-                                          
+                                                            </div>
+                                                            <div style={{ paddingTop: "20px", paddingLeft: "5px" }}>
+                                                                <DSocialShare title={news.ContentHeading} contentID={news.ContentID} />
+                                                            </div>
+
+
+                                                        </>
+                                                    }
+
                                                     {/* <div className="col-lg-4 col-12 d-none d-lg-block detailsPage">
                                                     <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
                                                 </div> */}
                                                 </div>
-                                                <div className=" mt-3">
-                                                  
-                                                        <div className={'ContentDetails page-break  ContentDetails' + news.ContentID} id="contentDetails">
-                                                            {/* {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
+
+
+                                                <div className={'ContentDetails page-break  ContentDetails' + news.ContentID} id="contentDetails">
+                                                    {/* {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
                                                     <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
                                                     {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>} */}
-                                                            {/* <DocumentTitle title={news.ContentHeading} /> */}
-                                                            <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
+                                                    {/* <DocumentTitle title={news.ContentHeading} /> */}
+                                                    <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
 
-                                                        </div>
-                                                        {/* <div className="DTagsNews d-print-none">
+                                                </div>
+                                                {/* <div className="DTagsNews d-print-none">
                                                             {tagArray && tagArray[i].map((nc) => {
                                                                 return (
                                                                     <Link to={"/tags/" + nc} key={nc} onClick={scrollTop}><p>{nc}</p></Link>
                                                                 )
                                                             })}
                                                         </div> */}
-                                                        {/* <DfbComment contentID={news.ContentID} /> */}
-                                                 
+                                                {/* <DfbComment contentID={news.ContentID} /> */}
 
-                                                </div>
+
+
                                             </div>
                                         )
                                     })}
