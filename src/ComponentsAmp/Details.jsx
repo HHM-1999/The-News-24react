@@ -257,37 +257,6 @@ export default function Details() {
 
         const relatedNewsMainDiv = document.createElement('div');
         relatedNewsMainDiv.className = 'row';
-
-        // let R_Arr = R_ContentData['id' + id]
-        // let R_HTML = ''
-        // for (let i = 0; i < R_Arr.length; i++) {
-        //     if (contentDetailsChildDiv !== null) {
-        //         R_HTML += `<div class="col-lg-3 col-12 d-flex ss">
-        //             <div class="DRelatedNewsList align-self-stretch">
-        //                 <a href=${process.env.REACT_APP_FONT_DOMAIN_URL + R_Arr[i].Slug + "/news/" + R_Arr[i].ContentID}>
-        //                     <div class="row">
-        //                         <div class="col-lg-12 col-sm-4 col-5">
-        //                             <div class="DImgZoomBlocktest">
-        //                                 <picture><img src=${process.env.REACT_APP_DOMAIN_URL + "media/imgAll/" + R_Arr[i].ImageSmPath} alt='${R_Arr[i].ContentHeading}' title='${R_Arr[i].ContentHeading}' /></picture>
-        //                                 ${R_Arr[i].ShowVideo === 1 || R_Arr[i].VideoID ? '<div class="card-video-icon"><i class="fa-solid fa-play"></i></div>' : ''}
-        //                             </div>
-        //                         </div>
-        //                         <div class="col-lg-12 col-sm-8 col-7">
-        //                             <div class="Desc">
-        //                                 <h3 class="Title">${R_Arr[i].ContentHeading}</h3>
-        //                             </div>
-        //                         </div>
-        //                     </div>
-        //                 </a>
-        //             </div>
-        //         </div>`;
-        //         if (R_Arr.length >= i + 1) {
-        //             relatedNewsDiv.appendChild(relatedNewsMainDiv);
-        //             relatedNewsMainDiv.innerHTML = R_HTML
-        //             contentDetails.insertBefore(relatedNewsDiv, contentDetailsChildDiv2);
-        //         }
-        //     }
-        // }
     }
 
     return (
@@ -322,13 +291,13 @@ export default function Details() {
                                                         <>
                                                             <div className={allTags === null ? "col-sm-12 video-container mt-2" : "col-sm-12 video-container"}>
                                                                 {news.VideoType === "youtube" ?
-                                                                    <iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+                                                                    <amp-iframe className="embed-responsive-item" title="youtube-video" src={"https://www.youtube.com/embed/" + news.VideoID + "?autoplay=0"} frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></amp-iframe>
                                                                     : news.VideoType === "vimeo" ?
-                                                                        <iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                                        <amp-iframe src={"https://player.vimeo.com/video/" + news.VideoID} title="vimeo-video" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></amp-iframe>
                                                                         : news.VideoType === "facebook" ?
-                                                                            <iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                                            <amp-iframe src={"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebookapp%2Fvideos%2F" + news.VideoID + "%2F&show_text=0&width=560"} title="facebook-video" width="560" height="315" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></amp-iframe>
                                                                             : news.VideoType === "instagram" ?
-                                                                                <iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></iframe>
+                                                                                <amp-iframe className="embed-responsive-item" title="instagram-video" src={"//instagram.com/p/" + news.VideoID + ">/embed"} width="100%" frameBorder="0" scrolling="no" allowtransparency="true"></amp-iframe>
                                                                                 : false}
                                                             </div>
 
@@ -356,56 +325,16 @@ export default function Details() {
 
                                                         </>
                                                     }
-
-                                                    {/* <div className="col-lg-4 col-12 d-none d-lg-block detailsPage">
-                                                    <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
-                                                </div> */}
                                                 </div>
 
 
                                                 <div className={'ContentDetails page-break  ContentDetails' + news.ContentID} id="contentDetails">
-                                                    {/* {news.ContentSubHeading && <h3 className='DHeadingSubHeading'>{news.ContentSubHeading}</h3>}
-                                                    <h1>{news.DetailsHeading ? news.DetailsHeading : news.ContentHeading}</h1>
-                                                    {news.ContentShoulder && <h4 className='DHeadingContentShoulder'>{news.ContentShoulder}</h4>} */}
-                                                    {/* <DocumentTitle title={news.ContentHeading} /> */}
                                                     <p dangerouslySetInnerHTML={{ __html: news.ContentDetails }}></p>
-
                                                 </div>
-                                                {/* <div className="DTagsNews d-print-none">
-                                                            {tagArray && tagArray[i].map((nc) => {
-                                                                return (
-                                                                    <Link to={"/tags/" + nc} key={nc} onClick={scrollTop}><p>{nc}</p></Link>
-                                                                )
-                                                            })}
-                                                        </div> */}
-                                                {/* <DfbComment contentID={news.ContentID} /> */}
-
-
-
                                             </div>
                                         )
                                     })}
                                 </section>
-
-                                {/* <section>
-                                <div className="row mt-3 d-print-none">
-                                    <div className="col-lg-9 col-12">
-                                        <div className="row d-block d-lg-none">
-                                            <div className="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 my-4">
-                                                <DFrom />
-                                            </div>
-                                        </div>
-                                        <div className="DRelatedNews">
-                                            <DCatPopular catPopular={catPopular} catName={catName.CategoryName} catSlug={catSlug} />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3 col-12">
-                                        <div className="mt-4 d-block d-lg-none">
-                                            <DCatLatest catLatest={catLatest} catName={catName.CategoryName} catSlug={catSlug} />
-                                        </div>
-                                    </div>
-                                </div>
-                            </section> */}
                             </>
 
                         </main>

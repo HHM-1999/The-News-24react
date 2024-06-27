@@ -176,10 +176,12 @@ export default function SubCategory() {
 
 
             </div> */}
-              <article class="recipe-article">
+            <div className="row">
+                <div className='col-lg-8 m-auto'>
+                <article class="recipe-article">
                 <section class="ampstart-related-section mb4 ">
                     {subCatName ?
-                        <h1 style={{display:"flex", fontSize:"23px",borderBottom:'3px solid #eee',lineHeight:"32px",justifyContent:"center"}} >{subCatName.CategoryName}</h1> : ""}
+                        <h1 style={{ display: "flex", fontSize: "23px", borderBottom: '3px solid #eee', lineHeight: "32px", justifyContent: "center" }} >{subCatName.CategoryName}</h1> : ""}
 
                     <ul class="ampstart-related-section-items list-reset flex flex-wrap m0">
                         {
@@ -200,6 +202,10 @@ export default function SubCategory() {
                     </ul>
                 </section>
             </article >
+
+                </div>
+            </div>
+
         </>
     )
 }
