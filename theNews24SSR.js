@@ -1805,7 +1805,7 @@ app.get('/divisions/:divisionSlug/:districtSlug', async function (request, respo
 app.get('/amp/:catSlug', async function (request, response) {
     let catSlug = request.params.catSlug;
     console.log('AMP Category page visited!' + catSlug);
-    const filePath = path.resolve(__dirname, './build', 'index.html');
+    const filePath = path.resolve(__dirname, './buildAmp', 'index.html');
 
     let sql = `SELECT CategoryID, CategoryName FROM bn_bas_categories WHERE Slug=?`;
     try {
@@ -1872,7 +1872,7 @@ app.get('/amp/:catSlug/:subCatSlug', async function (request, response) {
     let catSlug = request.params.catSlug;
     let subCatSlug = request.params.subCatSlug;
     console.log('AMP sub Category page visited! ' + catSlug + '/' + subCatSlug);
-    const filePath = path.resolve(__dirname, './build', 'index.html');
+    const filePath = path.resolve(__dirname, './buildAmp', 'index.html');
 
     let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle FROM bn_bas_categories WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
     // let sql = `SELECT bn_bas_categories.CategoryID subCatID, bn_bas_categories.CategoryName subCatTitle, cat.CategoryName catTitle FROM bn_bas_categories JOIN bn_bas_categories cat ON cat.CategoryID=bn_bas_categories.ParentID WHERE bn_bas_categories.Slug=? AND bn_bas_categories.ParentID!=0`;
@@ -1939,7 +1939,7 @@ app.get('/amp/:catSlug/news/:id', async function (request, response) {
     let catSlug = request.params.catSlug;
     let id = request.params.id;
     console.log('Detail page visited!' + catSlug + ' ' + id);
-    const filePath = path.resolve(__dirname, './build', 'index.html');
+    const filePath = path.resolve(__dirname, './buildAmp', 'index.html');
 
     let sql = `SELECT bn_contents.ContentID, bn_contents.CategoryIDs, bn_contents.ContentHeading, bn_contents.ContentBrief, bn_contents.ImageBgPath, bn_contents.URLAlies, bn_contents.Keywords, bn_contents.PlateType, bn_contents.ImagePlatePath FROM bn_contents WHERE bn_contents.ContentID=? AND bn_contents.ShowContent=1 AND bn_contents.Deletable=1`;
     // let sql = `SELECT bn_contents.ContentID, bn_contents.CategoryIDs, bn_contents.ContentHeading, bn_contents.CategoryIDs, bn_contents.ContentSubHeading, bn_contents.DetailsHeading, bn_contents.ContentShoulder, bn_contents.WriterID, bn_contents.ReporterID, bn_contents.DistCorsID, bn_contents.SubEditorID, bn_contents.WriterName, bn_contents.ContentBrief, bn_contents.ContentDetails, bn_contents.ImageSmPath, bn_contents.ImageSmPathCaption, bn_contents.ImageBgPath, bn_contents.ImageBgPathCaption, bn_contents.Tags, bn_contents.RelNews, bn_contents.RelNewsIDs, bn_contents.InvolvedNews, bn_contents.InvolvedIDs, bn_contents.VideoSource AS Source, bn_contents.VideoID, bn_contents.VideoPath, bn_contents.VideoType, bn_contents.ShowVideo, bn_contents.URLAlies, bn_contents.Keywords, bn_contents.PlateType, bn_contents.ImagePlatePath, bn_contents.Initial, bn_contents.VideoID, bn_contents.VideoPath, bn_contents.VideoType, bas_districts.DistrictNameBn, bas_districts.DistrictSlug, bn_contents.created_at as create_date, bn_contents.updated_at as updated_date FROM bn_contents LEFT JOIN bas_districts ON bn_contents.DistrictID=bas_districts.DistrictID WHERE bn_contents.ContentID=? AND bn_contents.ShowContent=1 AND bn_contents.Deletable=1`;
