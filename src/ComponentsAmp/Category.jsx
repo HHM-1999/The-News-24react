@@ -115,7 +115,7 @@ export default function Category() {
 
                                     <a href={"/amp/" + nc.Slug + "/news/" + nc.ContentID} class="text-decoration-none">
                                         <figure class="ampstart-image-with-caption  relative ">
-                                            <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ImageSmPath} layout="responsive" width="233" height="202"
+                                            <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath}  layout="responsive" width="233" height="202"
                                             ></amp-img>
                                             <figcaption >
                                                 {nc.ContentHeading}</figcaption>

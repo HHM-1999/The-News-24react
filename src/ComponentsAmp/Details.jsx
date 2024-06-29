@@ -193,17 +193,17 @@ export default function Details() {
     const inner_Caption = (id) => {
         let contentImages = document.querySelectorAll(`#contentDetails.contentDetails${id} p img`)
         for (let index = 0; index < contentImages.length; index++) {
-            let caption = contentImages[index].getAttribute('alt');
-            let pstyle = contentImages[index].getAttribute('style');
+            // let caption = contentImages[index].getAttribute('alt');
+            // let pstyle = contentImages[index].getAttribute('style');
             contentImages[index].removeAttribute('style');
-            let image = contentImages[index].outerHTML
-            if (caption !== "") {
-                let newDiv = `<div className="dCaption2" style="${pstyle}">${image}<p className="img-caption">${caption}</p></div>`
-                contentImages[index].outerHTML = newDiv
-            } else {
-                let newDiv = `<div class="dCaption2" style="${pstyle}">${image}</div>`
-                contentImages[index].outerHTML = newDiv
-            }
+            // let image = contentImages[index].outerHTML
+            // if (caption !== "") {
+            //     let newDiv = `<div className="dCaption2" style="${pstyle}">${image}<p className="img-caption">${caption}</p></div>`
+            //     contentImages[index].outerHTML = newDiv
+            // } else {
+            //     let newDiv = `<div class="dCaption2" style="${pstyle}">${image}</div>`
+            //     contentImages[index].outerHTML = newDiv
+            // }
         }
 
         let contentIframes = document.querySelectorAll(`#contentDetails.ContentDetails${id} p iframe`)
@@ -287,9 +287,9 @@ export default function Details() {
                                                         <>
                                                             <div className="DTopImg">
                                                                 <div className="Details">
-                                                                    <picture><amp-img src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} layout="responsive" width="600" height='351px' /></picture>
+                                                                    <picture><amp-img src={process.env.REACT_APP_IMG_Path + news.ImageBgPath}  title={news.ContentHeading} layout="responsive" width="600" height='351px' /></picture>
                                                                 </div>
-                                                                {/* <img src={process.env.REACT_APP_LAZYL_IMG} data-src={process.env.REACT_APP_IMG_Path + news.ImageBgPath} alt={news.ContentHeading} title={news.ContentHeading} className="img-fluid img100" /> */}
+                                                        
                                                                 <div className="DetailsTopCap">
                                                                     <p className="DTopImgCaption">{news.ImageBgPathCaption}</p>
                                                                     {/* <p className="DTopImgCaption">{dateArray[i][1] && banglaDateConvetar(dateArray[i][1])}</p> */}

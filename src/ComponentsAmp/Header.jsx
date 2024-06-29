@@ -25,7 +25,7 @@ export default function Header() {
                     ☰
                 </div>
                 <a href="/" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: "auto" }}><amp-img src={Logo} width="100" height="55" layout="fixed"
-                    alt="The News 24"></amp-img></a>
+                   ></amp-img></a>
             </header>
             {/* <!-- Start Sidebar --> */}
             <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3" layout="nodisplay">
@@ -40,7 +40,7 @@ export default function Header() {
                     <p>&nbsp;{banglaDateConvetar(currentDay)}, {banglaDateConvetar(currentDate)}, {BNDATEs}</p>
                 </div>
                 <a href="/" class='flex justify-end items-center'>  <amp-img src={Logo} width="100" height="55" layout="fixed"
-                    alt="The News 24"></amp-img></a>
+                    ></amp-img></a>
                 <nav class="ampstart-sidebar-nav ampstart-nav">
                     <ul class="list-reset m0 p0 ampstart-label">
                         <li class="ampstart-nav-item">
