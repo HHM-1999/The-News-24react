@@ -227,10 +227,6 @@ export default function Details() {
     }
 
     const ineerRelatedNews = (id) => {
-        var contentDetails = document.querySelectorAll(`#contentDetails.ContentDetails${id} p`)[0]
-        var contentDetailsChildDiv = document.querySelectorAll(`#contentDetails.ContentDetails${id} p`)[0].children[1]
-        var contentDetailsChildDiv2 = document.querySelectorAll(`#contentDetails.ContentDetails${id} p`)[0].children[2]
-
         const relatedNewsDiv = document.createElement('div');
         relatedNewsDiv.className = 'DRelatedNewsSection d-print-none';
         const para = document.createElement("p");
@@ -248,7 +244,6 @@ export default function Details() {
                 <div className="col-lg-8 m-auto">
                     {state ?
                         <main>
-
                             <>
                                 <section>
                                     <div className="DSecTitle">

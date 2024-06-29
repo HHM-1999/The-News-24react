@@ -126,56 +126,6 @@ export default function SubCategory() {
     };
     return (
         <>
-            {/* <div className='container'>
-                <div className="row">
-                    <div className="col-lg-10 m-auto">
-                        <div className=" ampstart-related-section m-5 ">
-                            {subCatName ?
-                                <h1>{subCatName.CategoryName}</h1> : ""}
-
-                            <div className="border-bottom"></div>
-                            <div className="row">
-                                {
-                                    subCatLead3.map((nc) => {
-                                        return <div className="col-md-4 mt-5 ">
-                                            <a href={"/amp/" + catSlug + "/news/" + nc.ContentID} >
-                                                <div className="row">
-                                                    <div className="col-md-4 col-4 ">
-                                                        <amp-img src={process.env.REACT_APP_IMG_Path + nc.ImageSmPath} alt={nc.ImageSmPath} layout="responsive" width="100" height="80"
-                                                        ></amp-img>
-
-
-                                                    </div>
-                                                    <div className="col-md-8 col-8">
-
-                                                        <div className="desc">
-                                                            <p>
-                                                                {nc.ContentHeading}
-                                                            </p>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                            </a>
-
-
-                                        </div>
-                                    })
-
-                                }
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div> */}
             <div className="row">
                 <div className='col-lg-8 m-auto'>
                 <article class="recipe-article">
